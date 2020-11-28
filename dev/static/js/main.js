@@ -96,6 +96,66 @@ $('.hero-slider').slick({
     prevArrow: document.querySelector('#hero-prev')
   });
 
+//Слайдер с товарами + прогресс бар
+  function setProgressProduct(index) {
+    const calc = ((index + 1) / ($sliderProduct.slick('getSlick').slideCount)) * 100;
+  
+    $progressBarProduct
+      .css('background-size', `${calc}% 100%`)
+      .attr('aria-valuenow', calc);
+
+  }
+  
+  const $sliderProduct = $('.product-slider__list');
+  const $progressBarProduct = $('#progressBarProduct');
+  
+  $sliderProduct.on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
+    setProgressProduct(nextSlide);
+  });
+  
+  $sliderProduct.slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    rows: 0,
+    //autoplay: true,
+    //autoplaySpeed: 3000,
+    nextArrow: document.querySelector('#catalog-next'),
+    prevArrow: document.querySelector('#catalog-prev')
+  });  
+  
+  setProgressProduct(0);
+
+
+//Слайдер с постами из инсты + прогресс бар
+function setProgressInstagram(index) {
+    const calc = ((index + 1) / ($sliderInstagram.slick('getSlick').slideCount)) * 100;
+  
+    $progressBarInstagram
+      .css('background-size', `${calc}% 100%`)
+      .attr('aria-valuenow', calc);
+
+  }
+  
+  const $sliderInstagram = $('.instagram-slider__list');
+  const $progressBarInstagram = $('#progressBarInstagram');
+  
+  $sliderInstagram.on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
+    setProgressInstagram(nextSlide);
+  });
+  
+  $sliderInstagram.slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    rows: 0,
+    //autoplay: true,
+    //autoplaySpeed: 3000,
+    nextArrow: document.querySelector('#inst-next'),
+    prevArrow: document.querySelector('#inst-prev')
+  });  
+  
+  setProgressInstagram(0);
 
 
 });
