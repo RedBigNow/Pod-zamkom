@@ -1,0 +1,67 @@
+.action-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.action-form__input {
+    width: 240px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $brown;
+    margin: 0 15px;
+    padding: 5px 5px 5px 0;
+    color: $white;
+}
+
+.action-form__input::placeholder {
+    color: $white;
+}
+
+.btn-form__action {
+    margin: 0 15px;
+}
+
+.action-form_privacy {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.action-form__checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+
+.action-form__checkbox+label {
+    color: #8c8c8c;
+    font-size: 14px;
+    line-height: 160%;
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.action-form__checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid $white;
+    border-radius: 2px;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
+
+.action-form__checkbox:checked+label::before {
+    border-color: $white;
+    background-image: url(/static/images/general/checked.png);
+}

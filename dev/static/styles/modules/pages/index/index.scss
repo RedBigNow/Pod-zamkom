@@ -1,0 +1,333 @@
+.hero {
+    height: 90vh;
+    background: url(/static/images/general/hero-bg.jpg) 100% 100% no-repeat;
+    background-size: cover;
+}
+
+.hero .container{
+    height: 100%;
+}
+
+.hero-slider {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.hero-slider__item {
+    display: flex !important;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hero-slider__item-left {
+    width: 45%;
+}
+
+.hero-slider__item-right {
+    width: 55%;
+}
+
+h2.hero-title {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.hero-description {
+    padding: 15px 0 30px 0;
+}
+
+.hero-slider__item-right {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-height: 640px;
+
+    .circle-bg {
+        width: 95%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        overflow: hidden;
+
+        .circle-big {
+            margin-top: -20px;
+
+            img {
+                animation-name: rotation-right;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+
+        }
+
+        .circle-small {
+            margin-top: -100%;
+
+            img {
+                animation-name: rotation-left;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+
+        }
+
+    }
+
+    .hero-img {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+.hero-slider__nav .slider-nav {
+    margin-top: -135px;
+}
+
+ul.hero-dots {
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 -15px;
+
+    li {
+        width: 100%;
+        padding: 0 10px;
+
+        button {
+            width: 100%;
+            background: transparent;
+            border: none;
+            color: transparent;
+            border-bottom: 2px solid #FFF4E8;
+            opacity: 0.3;
+        }
+
+    }
+
+    li.slick-active {
+        width: 100%;
+
+        button {
+            width: 100%;
+            background: transparent;
+            border: none;
+            color: transparent;
+            border-bottom: 2px solid #FFF4E8;
+            opacity: 1;
+        }
+
+    }
+
+}
+
+.hero .slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+
+
+//СЛАЙДЕР С УСЛУГАМИ НА ГЛАВНОЙ СТРАНИЦЕ
+
+.services {
+    padding: 120px 0;
+    position: relative;
+}
+
+.service-slider__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.service-slider__item {
+    width: 28%;
+    position: relative;
+    padding: 25px;
+    height: 520px;
+    color: $white;
+}
+
+.service-slider__item:nth-child(2), .service-slider__item:nth-child(5), .service-slider__item:nth-child(8)  {
+    margin-top: 80px;
+}
+
+.service-slider__item:nth-child(3), .service-slider__item:nth-child(6), .service-slider__item:nth-child(9) {
+    margin-top: 160px;
+}
+
+.service-slider__item-bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+
+    img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 9;
+        background: #0E0900;
+        border-radius: 8px;
+        opacity: 0.5;
+    }
+
+}
+
+h2.service-slider__item-title {
+    font-size: 56px;
+    line-height: 120%;
+}
+.service-slider__item-subtitle {
+    text-align: right;
+    font-size: 32px;
+    line-height: 100%;
+    text-transform: lowercase;
+}
+
+.service-slider__item .btn-wraper {
+    margin: 25px 0 25px 65%;
+}
+
+.action {
+    background: linear-gradient(0deg, rgba(14, 9, 0, 0.5), rgba(14, 9, 0, 0.5)), url(/static/images/general/action-bg.jpg) 0% 5% no-repeat;
+    padding: 35px 0;
+}
+
+.action-title {
+    text-align: center;
+    font-size: 24px;
+    color: $white;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+
+//СЛАЙДЕР С ТОВАРАМИ НА ГЛАВНОЙ СТРАНИЦЕ
+
+.index-category {
+    padding: 120px 0;
+    position: relative;
+}
+
+.index-category__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+
+.index-category__wrap-left {
+    width: 42%;
+}
+
+.index-category__wrap-right {
+    width: 58%;
+}
+
+
+.index-category__item {
+    margin-bottom: 20px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.index-category__item h3 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+
+.index-category__item_active {
+    opacity: 1;
+}
+
+.index-category__item-desc .btn-wraper {
+    margin-top: 30px;
+}
+
+.index-category__list-desc {
+    width: 75%;
+    margin: 30px 0;
+}
+
+.index-category__item-img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.index-category__img-small {
+    width: 37%;
+}
+
+.index-category__img-small img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.index-category__img-big {
+    width: 60%;
+}
+
+.index-category__img-big img {
+    height: 380px;
+    object-fit: cover;
+}
+
+.index-category__wrap-nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-top: -50px;
+}
+
+.index-category__wrap-nav_current {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 100%;
+    color: $light_brown;
+}
+
+.index-category__wrap-nav_separator::before {
+    content: '/';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 100%;
+    color: $light_brown;
+    margin: 0 10px;
+}
+
+.index-category__wrap-nav_total {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 24px;
+}

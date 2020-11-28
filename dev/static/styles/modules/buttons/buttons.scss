@@ -1,0 +1,128 @@
+.btn-wraper {
+    width: 180px;
+}
+
+.btn {
+    display: inline-block;
+    width: 100%;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: .3s;
+    text-align: center;
+}
+
+//БЕЖЕВАЯ КНОПКА
+.btn-beige {
+    background-color: $beige;
+    border: 1px solid $beige;
+    color: $brown;
+    transition: .3s;
+}
+
+.btn-beige:hover {
+    background-color: $brown;
+    border: 1px solid $brown;
+    color: $beige;
+    transition: .3s;
+}
+
+//БЕЖЕВАЯ КНОПКА С ПРОЗРАЧНЫМ ФОНОМ
+.btn-beige__outline {
+    background-color: transparent;
+    border: 1px solid $beige;
+    color: $beige;
+    transition: .3s;
+}
+
+.btn-beige__outline:hover {
+    background-color: $beige;
+    border: 1px solid $beige;
+    color: $brown;
+    transition: .3s;
+}
+
+//КОРИЧНЕВАЯ КНОПКА
+.btn-brown {
+    background-color: $brown;
+    border: 1px solid $brown;
+    color: $white;
+    transition: .3s;
+}
+
+.btn-brown:hover {
+    background-color: $light_brown;
+    border: 1px solid $light_brown;
+    color: $white;
+    transition: .3s;
+}
+
+//КОРИЧНЕВАЯ КНОПКА С ПРОЗРАЧНЫМ ФОНОМ
+.btn-brown__outline {
+    background-color: transparent;
+    border: 1px solid $brown;
+    color: $brown;
+    transition: .3s;
+}
+
+.btn-brown__outline:hover {
+    background-color: $brown;
+    border: 1px solid $brown;
+    color: $white;
+    transition: .3s;
+}
+
+//СВЕТЛО-КОРИЧНЕВАЯ КНОПКА
+.btn-light__brown {
+    background-color: $light_brown;
+    border: 1px solid $light_brown;
+    color: $white;
+    transition: .3s;
+}
+
+.btn-light__brown:hover {
+    background-color: $brown;
+    border: 1px solid $brown;
+    color: $white;
+    transition: .3s;
+}
+
+//СВЕТЛО-КОРИЧНЕВАЯ КНОПКА С ПРОЗРАЧНЫМ ФОНОМ
+.btn-light__brown-outline {
+    background-color: transparent;
+    border: 1px solid $light_brown;
+    color: $light_brown;
+    transition: .3s;
+}
+
+.btn-light__brown-outline:hover {
+    background-color: $light_brown;
+    border: 1px solid $light_brown;
+    color: $white;
+    transition: .3s;
+}
+
+.slider-nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 9;
+}
+
+.arrow-prev, .arrow-next {
+    opacity: 0.5;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.arrow-next {
+    margin-left: 25px;
+}
+
+.arrow-prev:hover, .arrow-next:hover {
+    opacity: 1;
+}

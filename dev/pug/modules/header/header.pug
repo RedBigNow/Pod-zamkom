@@ -1,1 +1,92 @@
 header.header
+	.container.header-container
+		.header-logo
+			a(href="/")
+				img(src="/static/images/general/logo.svg", alt="Дом под замком")
+		.menu-container
+			nav.nav-menu
+				ul.nav-menu__list
+					li.nav-menu__item.nav-menu__item-parent
+						a(href="/catalog.html") Услуги
+						ul.nav-submenu
+							li.nav-submenu__item-back
+								a(href="#") Назад
+							li.nav-submenu__item
+								a(href="/catalog-2.html") Монтаж
+							li.nav-submenu__item
+								a(href="/catalog-2.html") Замер
+							li.nav-submenu__item
+								a(href="/catalog-2.html") Доставка
+					li.nav-menu__item.nav-menu__item-parent.active
+						a(href="/catalog.html") Каталог
+						ul.nav-submenu
+							li.nav-submenu__item-back
+								a(href="#") Назад
+							li.nav-submenu__item.nav-menu__item-parent
+								a(href="/catalog-2.html") Входные двери
+								ul.nav-submenu
+									li.nav-submenu__item-back
+										a(href="#") Назад
+									li.nav-submenu__item
+										a(href="/catalog-detail.html") As-doors
+									li.nav-submenu__item
+										a(href="/catalog-detail.html") As-doors 2
+									li.nav-submenu__item
+										a(href="/catalog-detail.html") As-doors 3
+									li.nav-submenu__item
+										a(href="/catalog-detail.html") As-doors 4
+							li.nav-submenu__item.nav-menu__item-parent
+								a(href="#") Тамбурные двери
+								ul.nav-submenu
+									li.nav-submenu__item-back
+										a(href="#") Назад
+									li.nav-submenu__item
+										a(href="/catalog-detail.html") As-doors
+									li.nav-submenu__item
+										a(href="/catalog-detail.html") As-doors 2
+									li.nav-submenu__item
+										a(href="/catalog-detail.html") As-doors 3
+									li.nav-submenu__item
+										a(href="/catalog-detail.html") As-doors 4
+							li.nav-submenu__item.nav-menu__item-parent
+								a(href="#") Противопожарные двери
+								ul.nav-submenu
+									li.nav-submenu__item-back
+										a(href="#") Назад
+									li.nav-submenu__item
+										a(href="/catalog-detail.html") As-doors
+									li.nav-submenu__item
+										a(href="/catalog-detail.html") As-doors 2
+									li.nav-submenu__item
+										a(href="/catalog-detail.html") As-doors 3
+									li.nav-submenu__item
+										a(href="/catalog-detail.html") As-doors 4
+							li.nav-submenu__item
+								a(href="/selection.html") Индивидуальный подбор
+					li.nav-menu__item
+						a(href="/sales.html") О нас
+					li.nav-menu__item
+						a(href="/reviews.html") Отзывы
+					li.nav-menu__item
+						a(href="/about.html") Полезное
+					li.nav-menu__item
+						a(href="/contacts.html") Контакты
+		.mobile-menu__overlay
+		.header-contacts
+			a.phone(href="tel:+79262625289") +7 (926) 262-52-89
+		.header-callback
+			span.callback(data-fancybox data-src="#callback") Заказать звонок
+		.header-toolbar
+			.header-toolbar__social
+				ul.social-list
+					li.social-item
+						a(href="#")
+							img(src="/static/images/general/instagram.svg")
+			.header-toolbar__search
+				a(href="#")
+					img(src="/static/images/general/search.svg")
+		.header-burger
+			button(type="button" id="burger" class="burger")
+				span.burger__icon
+				span.burger__text
+				span.burger__hidden-text
