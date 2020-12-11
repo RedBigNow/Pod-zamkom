@@ -50,6 +50,7 @@ if (!Array.from) {
 
 
 $(document).ready(function () {
+
 //Мобильное меню
 if (window.matchMedia("(max-width: 770px)").matches) {
     $(function() {
@@ -95,6 +96,104 @@ $('.hero-slider').slick({
     nextArrow: document.querySelector('#hero-next'),
     prevArrow: document.querySelector('#hero-prev')
   });
+
+
+//Слайдер с отзывами на главной странице
+$('.review-slider___list').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    rows: 1,
+    fade: true,
+    cssEase: 'linear',
+    dots: true,
+    appendDots: $('.reviews-slider__dots'),
+    //autoplay: true,
+    //autoplaySpeed: 3000,
+    nextArrow: document.querySelector('#reviews-next'),
+    prevArrow: document.querySelector('#reviews-prev')
+  });
+ 
+
+//Слайдер с категориями товаров
+var catLength = $('.index-category__item').length;
+var catSlider = $('[data-slider="category"]');
+
+$('.index-category__list').slick({
+  infinite: true,
+  slidesToShow: catLength,
+  slidesToScroll: 1,
+  vertical: true,
+  verticalSwiping: true,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  focusOnSelect: true,
+  asNavFor: catSlider
+});
+
+catSlider.slick({
+  draggable: false,
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  fade: true,
+  cssEase: 'linear',
+  asNavFor: '.index-category__list'
+});
+
+//Выводим номер текущего слайда
+$(".index-category__list").on('afterChange', function(event, slick, currentSlide){
+  $("#current").text(currentSlide + 1);
+});
+
+//Выводим общее кол-во слайдов
+$("#total").text(catLength)
+
+//Кастомный autoplay для слайдера с категориями
+function autoplayCategorySlider() {
+  $( ".index-category .slick-next" ).trigger( "click" );
+}
+setInterval(autoplayCategorySlider, 10000);
+
+
+//Слайдер с постами из блога
+var blogLength = $('.blog-preview__item').length;
+var blogSlider = $('[data-slider="blog"]');
+
+$('.blog-preview__list').slick({
+  arrows: true,
+  infinite: true,
+  slidesToShow: blogLength,
+  slidesToScroll: 1,
+  focusOnSelect: true,
+  asNavFor: blogSlider
+});
+
+blogSlider.slick({
+  arrows: true,
+  draggable: false,
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  fade: true,
+  cssEase: 'linear',
+  asNavFor: '.blog-preview__list'
+});
+
+$('#blog-next').click(function() {
+  $( ".blog .slick-next" ).trigger( "click" );
+});
+
+$('#blog-prev').click(function() {
+  $( ".blog .slick-prev" ).trigger( "click" );
+});
+
+function autoplayBlobSlider() {
+  $( ".blog .slick-next" ).trigger( "click" );
+}
+setInterval(autoplayBlobSlider, 10000);
+
+
 
 //Слайдер с товарами + прогресс бар
   function setProgressProduct(index) {
@@ -158,4 +257,61 @@ function setProgressInstagram(index) {
   setProgressInstagram(0);
 
 
+  $('.accordion-item__title').click(function () {
+
+    var faqItemIcon = $(this).find('.accordion-item__icon');
+
+    if(faqItemIcon.hasClass('accordion-item__icon_active')) {
+        faqItemIcon.removeClass('accordion-item__icon_active');
+    } else {
+        faqItemIcon.addClass('accordion-item__icon_active');
+    }
+
+    $(this).parent().toggleClass('accordion-item_active');
+  });
+
+
+  $("#ConsultSubmit").click(function() {
+    $.fancybox.close($('#consult'));
+    $.fancybox.open($('#success'));
+
+    setTimeout(function() {
+      $.fancybox.close($('#success'));
+    }, 5000);
+
+  }); 
+  
+  $("#actionSubmit").click(function() {
+    $('.action-form__success').addClass('action-form__success-show');
+    setTimeout(function() {
+      $('.action-form__success').removeClass('action-form__success-show');
+    }, 10000);
+  }); 
+
+  //Кнопка "Наверх"
+  (function () {
+    $(document).on('scroll', function () {
+      if ($(document).scrollTop() > 400) {
+        $('.back-top').show();
+      } else {
+        $('.back-top').hide();
+      }
+    });
+    $('.back-top').on('click', function () {
+      $('html, body').animate({
+        scrollTop: 0
+      }, 'slow');
+      return false;
+    });
+  })();
+
+  $('.seo-open').click(function () {
+    $('.seo-wrapper__hidden').slideToggle('slow');
+    $('.seo-open').toggleClass('seo-close');
+  });
+
+
 });
+
+
+

@@ -65,3 +65,29 @@
     border-color: $white;
     background-image: url(/static/images/general/checked.png);
 }
+
+.action-form__success {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    width: 100%;
+    background: $beige;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    padding: 50px 0;
+    transition: .3s;
+}
+
+.action-form__success-show {
+    z-index: 1;
+    opacity: 1;
+}
+
+.action-form__success-title {
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0;
+}

@@ -1,1 +1,93 @@
 footer.footer
+    .container
+        .footer-wrapper
+            .footer-wrapper__col
+                a(href="#")
+                    img.footer-logo(src="/static/images/general/logo.svg", alt="Дом под замком")
+                .phone-footer
+                    a(href="tel:+79991233223") +7 (999) 123-32-23
+                .mail-footer
+                    a(href="mailto:dom_pod_zamkom@mail.ru") info@pod-zamkom.ru
+                a.politic-footer(href="#") Политика конфиденциальности
+            .footer-wrapper__col
+                h3 Инфо
+                ul.footer-menu
+                    li.footer-menu__item
+                        a(href="#") О нас
+                    li.footer-menu__item
+                        a(href="#") Отзывы
+                    li.footer-menu__item
+                        a(href="#") Полезное
+                    li.footer-menu__item
+                        a(href="#") Контакты
+            .footer-wrapper__col
+                h3 Каталог
+                ul.footer-menu
+                    li.footer-menu__item
+                        a(href="#") Входные двери
+                    li.footer-menu__item
+                        a(href="#") Тамбурные двери
+                    li.footer-menu__item
+                        a(href="#") Противопожарные двери
+            .footer-wrapper__col
+                h3 Услуги
+                ul.footer-menu
+                    li.footer-menu__item
+                        a(href="#") Замер
+                    li.footer-menu__item
+                        a(href="#") Доставка
+                    li.footer-menu__item
+                        a(href="#") Установка
+            .footer-wrapper__col
+                .search-wrapper
+                    form(class="search-footer" action="/search" method="get")
+                        input(class="search-input form-control" type="text" name="search" id="search" placeholder="Поиск")
+                        input(type="hidden" name="id" value="1")
+                        input(type="submit" class="search-submit" value="")
+                .inst-footer
+                    p Наш Instagram:
+                    a.inst-footer__link(href="#") @dom_pod_zamkom
+    .developed
+        p Разработано <a href="https://meduza-web.ru/" target="_blank">Meduza</a>
+.popup#consult
+    .container
+        .close-popup(data-fancybox-close)
+            img(src="/static/images/general/close.svg", alt="")
+        .popup-wrapper
+            .popup-wrapper__consult
+                p.consult-popup__title Бесплатная консультация<br>и помощь с выбором
+                p.consult-popup__subtitle Оставьте свои данные для дальнейшего оформления заказа.<br>Наш менеджер свяжеться с вами в течении 5 минут, для уточнения информации.
+                form(class="consult-form" id="consult-form")
+                    input(class="consult-form__input" type="text" name="name" placeholder="Ваше имя")
+                    input(class="consult-form__input mask__input_phone" type="tel" name="phone" placeholder="Телефон*" required)
+                    .btn-wrapper.btn-form__consult
+                        button(class="btn btn-light__brown" id="ConsultSubmit") Оставить заявку
+                    .consult-form_privacy
+                        input(type="checkbox" class="consult-form__checkbox" id="privacy_consult" name="privacy_consult" value="yes")
+                        label(for="privacy_consult") Соглашаюсь с политикой конфидециальности
+            .consult-popup__img
+                img(src="/static/images/general/consult.png", alt="")
+.popup#success
+    .container
+        .close-popup(data-fancybox-close)
+            img(src="/static/images/general/close.svg", alt="")
+        .popup-wrapper
+            .popup-wrapper__success
+                img(src="/static/images/general/success.svg", alt="")
+                p.success-popup__title Заявка отправлена
+                p.success-popup__subtitle Ожидайте звонка от нашего менеджера в ближайшее время
+                p.success-popup__timer Окно закроется автоматически через 5 секунд
+.popup#searchPopup
+    .container
+        .close-popup(data-fancybox-close)
+            img(src="/static/images/general/close.svg", alt="")
+        .popup-wrapper
+            .popup-wrapper__search
+                form(class="search-popup" action="/search" method="get")
+                    input(class="search-popup__input form-control" type="text" name="search" id="search" placeholder="Поиск")
+                    input(type="hidden" name="id" value="1")
+                    .btn-wrapper
+                        input(type="submit" class="btn btn-brown search-popup__submit" value="Найти")
+
+.back-top
+    p(class="top-btn") Наверх

@@ -3,8 +3,12 @@
     form(class="action-form" id="action-form")
         input(class="action-form__input" type="text" name="name" placeholder="Ваше имя")
         input(class="action-form__input mask__input_phone" type="tel" name="phone" placeholder="Телефон*" required)
-        .btn-wraper.btn-form__action
-            button(class="btn btn-light__brown") Оставить заявку
+        .btn-wrapper.btn-form__action
+            button(class="btn btn-light__brown" id="actionSubmit") Оставить заявку
         .action-form_privacy
             input(type="checkbox" class="action-form__checkbox" id="privacy" name="privacy" value="yes")
             label(for="privacy") Соглашаюсь с политикой конфидециальности
+.action-form__success
+    img(src="/static/images/general/success.svg", alt="")
+    p.action-form__success-title Заявка отправлена
+    p.action-form__success-subtitle Ожидайте звонка от нашего менеджера в ближайшее время

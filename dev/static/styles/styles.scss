@@ -79,7 +79,10 @@ textarea { vertical-align: middle; }
 
 textarea { resize: none; }
 
-section { position: relative; }
+section {
+  position: relative;
+  overflow-x: hidden;
+}
 
 input,
 select,
@@ -233,7 +236,6 @@ h2.title-line::before {
   -webkit-text-stroke-color: #b7b5b3;
   letter-spacing: 0.1em;
 }
-
 
 //Модули
 @import "modules/modules";

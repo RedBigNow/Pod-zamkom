@@ -1,9 +1,17 @@
 header {
     position: fixed;
     flex: 0 0 auto;
-    z-index: 999;
+    z-index: 99999;
     width: 100%;
     background: $beige;
+}
+
+body.compensate-for-scrollbar {
+    overflow: auto !important;
+}
+
+.compensate-for-scrollbar {
+    margin-right: 0 !important;
 }
 
 .header-container {
@@ -137,6 +145,7 @@ li.social-item {
 
 .header-toolbar__search {
     margin-left: 15px;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 770px) {
