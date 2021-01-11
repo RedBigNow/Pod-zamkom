@@ -1,15 +1,14 @@
-@import "utils/libs";
-@import "utils/vars";
-@import "utils/mixins";
-@import "utils/fonts";
+@import "modules/utils/libs";
 
-@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+@import "modules/utils/vars";
+
+@import "modules/utils/mixins";
 
 html {
   height: 100%;
   font-size: $base-font-size;
   color: $black;
-  background-color: $white;
+  background-color: #fff;
 }
 
 body {
@@ -20,6 +19,10 @@ body {
   font-style: normal;
   font-weight: normal;
   line-height: 1.5;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 *,
@@ -84,161 +87,114 @@ section {
   overflow-x: hidden;
 }
 
+section.page-content {
+  overflow-x: visible;
+}
+
 input,
 select,
 button { outline: none; }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+textarea {
+  outline: 0 none !important;
 }
 
-.content {
-  padding-top: 86px;
-  flex: 1 0 auto;
+div {
+  outline: 0 none !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 500;
-  font-style: normal;
-  line-height: 120%;
-  letter-spacing: 0.01em;
-}
+@import "modules/fonts/fonts"; // Шрифты
 
-h1 {
-  font-size: 60px;
-}
+@import "modules/grid/grid"; // Рабочая область (Контейнер)
 
-h2 {
-  font-size: 32px;
-}
+@import "modules/header/header"; // Шапка
 
-h3 {
-  font-size: 24px;
-}
+@import "modules/footer/footer"; // Подвал
 
-h4 {
-  font-size: 20px;
-}
+@import "modules/popups/popups"; // Попапы
 
-h5 {
-  font-size: 18px;
-}
+@import "modules/texts/texts"; // Заголовки и текстовые блоки
 
-h6 {
-  font-size: 16px;
-}
+@import "modules/buttons/buttons"; // Кнопки
 
-p {
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 160%;
-  letter-spacing: 0.01em;
-  margin: 15px 0;
-}
+@import "modules/breadcrumbs/breadcrumbs"; // Хлебные крошки
 
-a {
-  letter-spacing: 0.01em;
-}
+@import "modules/pagination/pagination"; // Пагинация
 
-.container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin: 0 auto;
-  width: 100%;
-  position: relative;
-}
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
-
-@media (min-width: 1350px) {
-  .container {
-    width: 1320px;
-  }
-}
-
-.container-fluid {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.row {
-  margin-right: -15px;
-  margin-left: -15px;
-}
-
-.hide {
-  display: none !important;
-}
-.show {
-  display: block !important;
-}
-
-h2.title-line {
-  font-size: 24px;
-  padding-left: 120px;
-}
-
-h2.title-line::before {
-  content: '';
-    position: absolute;
-    width: 100px;
-    top: 15px;
-    left: 15px;
-    border-bottom: 1px solid #0E0900;
-}
+@import "modules/animations/animations"; // Анимации
 
 
-.bg-title__right {
-  position: absolute;
-  right: 0;
-  top: 100px;
-  z-index: -1;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 200px;
-  line-height: 120%;
-  text-transform: uppercase;
-  color: transparent;
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: #b7b5b3;
-  letter-spacing: 0.1em;
-}
+// Главная страница
+@import "pages/index/hero";
 
-.bg-title__left {
-  position: absolute;
-  left: 0;
-  top: 100px;
-  z-index: -1;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 200px;
-  line-height: 120%;
-  text-transform: uppercase;
-  color: transparent;
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: #b7b5b3;
-  letter-spacing: 0.1em;
-}
+@import "pages/index/services-index";
 
-//Модули
-@import "modules/modules";
+@import "pages/index/index-category";
 
-//Анимации
-@import "utils/animations";
+@import "pages/index/index-consult";
+
+@import "pages/index/index-about";
+
+@import "pages/index/steps";
+
+@import "pages/index/index-reviews";
+
+@import "pages/index/faq";
+
+@import "pages/index/seo";
+
+
+// Услуги
+@import "pages/services/services";
+
+@import "pages/services/service-detail";
+
+
+// Каталог
+@import "pages/catalog/catalog";
+
+@import "pages/catalog/catalog-list";
+
+@import "pages/catalog/product";
+
+
+// Отзывы
+@import "pages/reviews/reviews";
+
+
+// Блог
+@import "pages/blog/blog";
+
+@import "pages/blog/blog-post";
+
+
+// О нас
+@import "pages/about/about";
+
+
+// Поиск
+@import "pages/search/search";
+
+
+// 404 страница
+@import "pages/not-found/not-found";
+
+
+// Общие блоки
+@import "pages/common/accordion";
+
+@import "pages/common/form";
+
+@import "pages/common/product-slider";
+
+@import "pages/common/blog";
+
+@import "pages/common/instagram";
+
+@import "pages/common/contacts";
+
+
+
+
+
+

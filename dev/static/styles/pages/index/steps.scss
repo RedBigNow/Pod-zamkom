@@ -1,0 +1,31 @@
+.steps {
+    padding-bottom: 60px;
+}
+
+.step-item {
+    position: relative;
+    padding: 120px 0 0 120px;
+    width: 50%;
+
+    &:nth-child(2n) {
+        margin-left: 50%;
+    }
+}
+
+p.step-item__number {
+    position: absolute;
+    top: -40px;
+    left: 80px;
+    z-index: -1;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 200px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #b7b5b3;
+}
+
+h3.step-item__title {
+    font-size: 20px;
+}

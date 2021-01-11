@@ -1,0 +1,29 @@
+.index-consult {
+    padding: 120px 0;
+}
+
+.consult-info {
+    display: flex;
+}
+
+.consult-info__subtitle {
+    max-width: 400px;
+    margin-left: 160px;
+
+    p {
+        margin: 0;
+    }
+}
+
+.index-consult__wrapper {
+
+    h3 {
+        font-weight: 500;
+        font-size: 32px;
+        margin: 40px 0 40px 120px;
+    }
+
+    .btn-wrapper {
+        margin-left: 120px;
+    }
+}

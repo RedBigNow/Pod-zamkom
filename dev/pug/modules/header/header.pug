@@ -7,72 +7,63 @@ header.header
 			nav.nav-menu
 				ul.nav-menu__list
 					li.nav-menu__item.nav-menu__item-parent
-						a(href="/catalog.html") Услуги
+						a(href="/services.html") Услуги
 						ul.nav-submenu
-							li.nav-submenu__item-back
-								a(href="#") Назад
 							li.nav-submenu__item
-								a(href="/catalog-2.html") Монтаж
+								a(href="/service-detail.html") Замер
 							li.nav-submenu__item
-								a(href="/catalog-2.html") Замер
+								a(href="/service-detail.html") Доставка
 							li.nav-submenu__item
-								a(href="/catalog-2.html") Доставка
+								a(href="/service-detail.html") Установка
 					li.nav-menu__item.nav-menu__item-parent.active
 						a(href="/catalog.html") Каталог
 						ul.nav-submenu
-							li.nav-submenu__item-back
-								a(href="#") Назад
-							li.nav-submenu__item.nav-menu__item-parent
-								a(href="/catalog-2.html") Входные двери
-								ul.nav-submenu
-									li.nav-submenu__item-back
-										a(href="#") Назад
-									li.nav-submenu__item
-										a(href="/catalog-detail.html") As-doors
-									li.nav-submenu__item
-										a(href="/catalog-detail.html") As-doors 2
-									li.nav-submenu__item
-										a(href="/catalog-detail.html") As-doors 3
-									li.nav-submenu__item
-										a(href="/catalog-detail.html") As-doors 4
-							li.nav-submenu__item.nav-menu__item-parent
-								a(href="#") Тамбурные двери
-								ul.nav-submenu
-									li.nav-submenu__item-back
-										a(href="#") Назад
-									li.nav-submenu__item
-										a(href="/catalog-detail.html") As-doors
-									li.nav-submenu__item
-										a(href="/catalog-detail.html") As-doors 2
-									li.nav-submenu__item
-										a(href="/catalog-detail.html") As-doors 3
-									li.nav-submenu__item
-										a(href="/catalog-detail.html") As-doors 4
-							li.nav-submenu__item.nav-menu__item-parent
-								a(href="#") Противопожарные двери
-								ul.nav-submenu
-									li.nav-submenu__item-back
-										a(href="#") Назад
-									li.nav-submenu__item
-										a(href="/catalog-detail.html") As-doors
-									li.nav-submenu__item
-										a(href="/catalog-detail.html") As-doors 2
-									li.nav-submenu__item
-										a(href="/catalog-detail.html") As-doors 3
-									li.nav-submenu__item
-										a(href="/catalog-detail.html") As-doors 4
 							li.nav-submenu__item
+								a(href="/catalog-list.html") Входные двери
+								//ul.nav-submenu
+									li.nav-submenu__item
+										a(href="/product.html") As-doors
+									li.nav-submenu__item
+										a(href="/product.html") As-doors 2
+									li.nav-submenu__item
+										a(href="/product.html") As-doors 3
+									li.nav-submenu__item
+										a(href="/product.html") As-doors 4
+							li.nav-submenu__item
+								a(href="/catalog-list.html") Тамбурные двери
+								//ul.nav-submenu
+									li.nav-submenu__item
+										a(href="/product.html") As-doors
+									li.nav-submenu__item
+										a(href="/product.html") As-doors 2
+									li.nav-submenu__item
+										a(href="/product.html") As-doors 3
+									li.nav-submenu__item
+										a(href="/product.html") As-doors 4
+							li.nav-submenu__item
+								a(href="/catalog-list.html") Противопожарные двери
+								//ul.nav-submenu
+									li.nav-submenu__item
+										a(href="/product.html") As-doors
+									li.nav-submenu__item
+										a(href="/product.html") As-doors 2
+									li.nav-submenu__item
+										a(href="/product.html") As-doors 3
+									li.nav-submenu__item
+										a(href="/product.html") As-doors 4
+							//li.nav-submenu__item
 								a(href="/selection.html") Индивидуальный подбор
 					li.nav-menu__item
-						a(href="/sales.html") О нас
+						a(href="/about.html") О нас
 					li.nav-menu__item
 						a(href="/reviews.html") Отзывы
 					li.nav-menu__item
-						a(href="/about.html") Полезное
+						a(href="/blog.html") Блог
 					li.nav-menu__item
 						a(href="/contacts.html") Контакты
-		.mobile-menu__overlay
 		.header-contacts
+			svg(class="phone-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+				path(d="M7.55081 0.799805H4.00005C2.23274 0.799805 0.800049 2.23249 0.800049 3.9998V7.1998C0.800049 16.0364 7.96349 23.1998 16.8 23.1998H20C21.7674 23.1998 23.2 21.7671 23.2 19.9998V17.7887C23.2 17.1826 22.8576 16.6286 22.3156 16.3576L18.4501 14.4248C17.5792 13.9894 16.5246 14.4262 16.2167 15.35L15.7402 16.7792C15.4316 17.705 14.4819 18.2562 13.525 18.0648C9.69491 17.2988 6.70108 14.3049 5.93506 10.4749C5.74367 9.51792 6.29481 8.56822 7.22062 8.25961L8.99443 7.66834C9.78759 7.40396 10.2435 6.57349 10.0407 5.76239L9.10303 2.01175C8.92497 1.29948 8.28499 0.799805 7.55081 0.799805Z" stroke="black")
 			a.phone(href="tel:+79262625289") +7 (926) 262-52-89
 		.header-callback
 			span.callback(data-fancybox data-src="#consult") Заказать звонок
@@ -81,12 +72,34 @@ header.header
 				ul.social-list
 					li.social-item
 						a(href="#")
-							img(src="/static/images/general/instagram.svg")
+							svg(class="inst-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+								path(d="M17.6 5.5998H19.2M7.20005 0.799805H16.8C20.3347 0.799805 23.2 3.66518 23.2 7.1998V16.7998C23.2 20.3344 20.3347 23.1998 16.8 23.1998H7.20005C3.66543 23.1998 0.800049 20.3344 0.800049 16.7998V7.1998C0.800049 3.66518 3.66543 0.799805 7.20005 0.799805ZM12 16.7998C9.34908 16.7998 7.20005 14.6508 7.20005 11.9998C7.20005 9.34884 9.34908 7.1998 12 7.1998C14.651 7.1998 16.8 9.34884 16.8 11.9998C16.8 14.6508 14.651 16.7998 12 16.7998Z" stroke="black")
 			.header-toolbar__search
 				span(data-fancybox data-src="#searchPopup")
-					img(src="/static/images/general/search.svg")
-		.header-burger
-			button(type="button" id="burger" class="burger")
-				span.burger__icon
-				span.burger__text
-				span.burger__hidden-text
+					svg(class="search-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+						path(d="M23.2 23.1998L16.8 16.7998M10.4 19.9998C5.09812 19.9998 0.800049 15.7017 0.800049 10.3998C0.800049 5.09787 5.09812 0.799805 10.4 0.799805C15.702 0.799805 20 5.09787 20 10.3998C20 15.7017 15.702 19.9998 10.4 19.9998Z" stroke="black")
+		
+		.header-mobile__bottom
+			.header-contacts
+				svg(class="phone-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+					path(d="M7.55081 0.799805H4.00005C2.23274 0.799805 0.800049 2.23249 0.800049 3.9998V7.1998C0.800049 16.0364 7.96349 23.1998 16.8 23.1998H20C21.7674 23.1998 23.2 21.7671 23.2 19.9998V17.7887C23.2 17.1826 22.8576 16.6286 22.3156 16.3576L18.4501 14.4248C17.5792 13.9894 16.5246 14.4262 16.2167 15.35L15.7402 16.7792C15.4316 17.705 14.4819 18.2562 13.525 18.0648C9.69491 17.2988 6.70108 14.3049 5.93506 10.4749C5.74367 9.51792 6.29481 8.56822 7.22062 8.25961L8.99443 7.66834C9.78759 7.40396 10.2435 6.57349 10.0407 5.76239L9.10303 2.01175C8.92497 1.29948 8.28499 0.799805 7.55081 0.799805Z" stroke="black")
+				a.phone(href="tel:+79262625289") +7 (926) 262-52-89
+			.header-callback
+				span.callback(data-fancybox data-src="#consult") Заказать звонок
+			.header-toolbar
+				.header-toolbar__social
+					ul.social-list
+						li.social-item
+							a(href="#")
+								svg(class="inst-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+									path(d="M17.6 5.5998H19.2M7.20005 0.799805H16.8C20.3347 0.799805 23.2 3.66518 23.2 7.1998V16.7998C23.2 20.3344 20.3347 23.1998 16.8 23.1998H7.20005C3.66543 23.1998 0.800049 20.3344 0.800049 16.7998V7.1998C0.800049 3.66518 3.66543 0.799805 7.20005 0.799805ZM12 16.7998C9.34908 16.7998 7.20005 14.6508 7.20005 11.9998C7.20005 9.34884 9.34908 7.1998 12 7.1998C14.651 7.1998 16.8 9.34884 16.8 11.9998C16.8 14.6508 14.651 16.7998 12 16.7998Z" stroke="black")
+				.header-toolbar__search
+					span(data-fancybox data-src="#searchPopup")
+						svg(class="search-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+							path(d="M23.2 23.1998L16.8 16.7998M10.4 19.9998C5.09812 19.9998 0.800049 15.7017 0.800049 10.3998C0.800049 5.09787 5.09812 0.799805 10.4 0.799805C15.702 0.799805 20 5.09787 20 10.3998C20 15.7017 15.702 19.9998 10.4 19.9998Z" stroke="black")
+	
+	.header-burger
+		button(type="button" id="burger" class="burger")
+			span.burger__icon
+			span.burger__text
+			span.burger__hidden-text

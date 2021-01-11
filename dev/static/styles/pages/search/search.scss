@@ -1,0 +1,29 @@
+//Детальная страница поиска
+.page-content__search-wrapper {
+    padding: 120px 15% 50px 15%;
+}
+
+p.search-result__quantity {
+    padding-left: 15px;
+}
+
+p.search-result__null {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    padding-top: 40px;
+}
+
+.product-list__search {
+    padding: 0 0 40px 0;
+    margin: 0 -33px;
+
+    .product-item {
+        width: 20%;
+        margin: 32px;
+    }
+}
+
+.catalog-slider__wrapper-search {
+    padding-bottom: 60px;
+}

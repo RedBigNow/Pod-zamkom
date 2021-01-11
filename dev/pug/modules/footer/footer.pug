@@ -13,31 +13,31 @@ footer.footer
                 h3 Инфо
                 ul.footer-menu
                     li.footer-menu__item
-                        a(href="#") О нас
+                        a(href="/about.html") О нас
                     li.footer-menu__item
-                        a(href="#") Отзывы
+                        a(href="/reviews.html") Отзывы
                     li.footer-menu__item
-                        a(href="#") Полезное
+                        a(href="/blog.html") Блог
                     li.footer-menu__item
-                        a(href="#") Контакты
+                        a(href="/contacts.html") Контакты
             .footer-wrapper__col
                 h3 Каталог
                 ul.footer-menu
                     li.footer-menu__item
-                        a(href="#") Входные двери
+                        a(href="/catalog-list.html") Входные двери
                     li.footer-menu__item
-                        a(href="#") Тамбурные двери
+                        a(href="/catalog-list.html") Тамбурные двери
                     li.footer-menu__item
-                        a(href="#") Противопожарные двери
+                        a(href="/catalog-list.html") Противопожарные двери
             .footer-wrapper__col
                 h3 Услуги
                 ul.footer-menu
                     li.footer-menu__item
-                        a(href="#") Замер
+                        a(href="/service-detail.html") Замер
                     li.footer-menu__item
-                        a(href="#") Доставка
+                        a(href="/service-detail.html") Доставка
                     li.footer-menu__item
-                        a(href="#") Установка
+                        a(href="/service-detail.html") Установка
             .footer-wrapper__col
                 .search-wrapper
                     form(class="search-footer" action="/search" method="get")
@@ -61,9 +61,9 @@ footer.footer
                     input(class="consult-form__input" type="text" name="name" placeholder="Ваше имя")
                     input(class="consult-form__input mask__input_phone" type="tel" name="phone" placeholder="Телефон*" required)
                     .btn-wrapper.btn-form__consult
-                        button(class="btn btn-light__brown" id="ConsultSubmit") Оставить заявку
+                        button(class="btn btn__light-brown" id="ConsultSubmit") Оставить заявку
                     .consult-form_privacy
-                        input(type="checkbox" class="consult-form__checkbox" id="privacy_consult" name="privacy_consult" value="yes")
+                        input(type="checkbox" class="consult-form__checkbox" id="privacy_consult" name="privacy_consult" value="yes" checked onchange="document.getElementById('ConsultSubmit').disabled = !this.checked;")
                         label(for="privacy_consult") Соглашаюсь с политикой конфидециальности
             .consult-popup__img
                 img(src="/static/images/general/consult.png", alt="")
@@ -87,7 +87,103 @@ footer.footer
                     input(class="search-popup__input form-control" type="text" name="search" id="search" placeholder="Поиск")
                     input(type="hidden" name="id" value="1")
                     .btn-wrapper
-                        input(type="submit" class="btn btn-brown search-popup__submit" value="Найти")
+                        input(type="submit" class="btn btn__brown search-popup__submit" value="Найти")
+.popup#reviewPopup
+    .container
+        .close-popup(data-fancybox-close)
+            img(src="/static/images/general/close.svg", alt="")
+        .popup-wrapper
+            .popup-wrapper__review
+                p.review-popup__title Отзыв о работе компании
+                p.review-popup__subtitle Мы всегда рады обратной связи от наших клиентов
+                form(class="review-form" id="review-form")
+                    input(class="review-form__input" type="text" name="name" placeholder="Ваше имя*" required)
+                    input(class="review-form__input mask__input_phone" type="email" name="phone" placeholder="E-mail")
+                    textarea(class="review-form__textarea" name="message" placeholder="Отзыв*" required)
+                    .review-form__bottom
+                        .btn-wrapper.btn-form__review
+                            button(class="btn btn__light-brown" id="reviewSubmit") Оставить отзыв
+                        .review-form_privacy
+                            input(type="checkbox" class="review-form__checkbox" id="privacy_review" name="privacy_review" value="yes" checked onchange="document.getElementById('reviewsSubmit').disabled = !this.checked;")
+                            label(for="privacy_review") Соглашаюсь с политикой конфидециальности
+            .review-popup__img
+                img(src="/static/images/general/consult.png", alt="")
+.popup#reviewSuccess
+    .container
+        .close-popup(data-fancybox-close)
+            img(src="/static/images/general/close.svg", alt="")
+        .popup-wrapper
+            .popup-wrapper__success
+                img(src="/static/images/general/success.svg", alt="")
+                p.success-popup__title Спасибо за отзыв!
+                p.success-popup__subtitle После модерации Ваш отзыв будет опубликован на сайте
+                p.success-popup__timer Окно закроется автоматически через 5 секунд
+.popup#order
+    .container
+        .close-popup(data-fancybox-close)
+            img(src="/static/images/general/close.svg", alt="")
+        .popup-wrapper
+            .popup-wrapper__order
+                .popup-wrapper__order-left
+                    p.order-popup__title Оформление заказа
+                    p.order-popup__subtitle Оставьте свои данные для дальнейшего оформления заказа.<br>Мы свяжемся с Вами в ближайшее время.
+                    form(class="order-form" id="order-form")
+                        input(class="order-form__input" type="text" name="name" placeholder="Ваше имя")
+                        input(class="order-form__input mask__input_phone" type="tel" name="phone" placeholder="Телефон*" required)
+                        textarea(class="order-form__textarea" name="message" placeholder="Примечание к заказу")
+                        input(type="hidden" name="productName" value="")
+                        .order-form__bottom
+                            .btn-wrapper.btn-form__order
+                                button(class="btn btn__light-brown" id="orderSubmit") Оформить заказ
+                            .order-form_privacy
+                                input(type="checkbox" class="order-form__checkbox" id="privacy_order" name="privacy_order" value="yes" checked onchange="document.getElementById('orderSubmit').disabled = !this.checked;")
+                                label(for="privacy_order") Соглашаюсь с политикой конфидециальности
+                .popup-wrapper__order-right
+                    .circle-bg
+                        .circle-big
+                            img(src="/static/images/general/circle-big-brown.png", alt="")
+                        .circle-small
+                            img(src="/static/images/general/circle-small-brown.png", alt="")
+                    .order-img
+                        img( src="/static/images/general/slider-img.png", alt="Монтаж входной двери")
+.popup#buy1click
+    .container
+        .close-popup(data-fancybox-close)
+            img(src="/static/images/general/close.svg", alt="")
+        .popup-wrapper
+            .popup-wrapper__order
+                .popup-wrapper__order-left
+                    p.order-popup__title Оформление заказа
+                    p.order-popup__subtitle Оставьте свои данные для дальнейшего оформления заказа.<br>Мы свяжемся с Вами в ближайшее время.
+                    form(class="order-form" id="order-form")
+                        input(class="order-form__input" type="text" name="name" placeholder="Ваше имя")
+                        input(class="order-form__input mask__input_phone" type="tel" name="phone" placeholder="Телефон*" required)
+                        textarea(class="order-form__textarea" name="message" placeholder="Примечание к заказу")
+                        input(id="orderProductName" class="fsdsfdsdfdsfsdf" type="hidden" name="productName")
+                        .order-form__bottom
+                            .btn-wrapper.btn-form__order
+                                button(class="btn btn__light-brown" id="orderSubmit") Оформить заказ
+                            .order-form_privacy
+                                input(type="checkbox" class="order-form__checkbox" id="privacy_order" name="privacy_order" value="yes" checked onchange="document.getElementById('orderSubmit').disabled = !this.checked;")
+                                label(for="privacy_order") Соглашаюсь с политикой конфидециальности
+                .popup-wrapper__order-right
+                    .circle-bg
+                        .circle-big
+                            img(src="/static/images/general/circle-big-brown.png", alt="")
+                        .circle-small
+                            img(src="/static/images/general/circle-small-brown.png", alt="")
+                    .order-img.order-img__buy1click
+                        img(id="orderProductImage" src="/static/images/general/slider-img.png", alt="Монтаж входной двери")
+.popup#orderSuccess
+    .container
+        .close-popup(data-fancybox-close)
+            img(src="/static/images/general/close.svg", alt="")
+        .popup-wrapper
+            .popup-wrapper__success
+                img(src="/static/images/general/success.svg", alt="")
+                p.success-popup__title Спасибо за заказ!
+                p.success-popup__subtitle В ближайшее время мы с Вами свяжемся.
+                p.success-popup__timer Окно закроется автоматически через 5 секунд
 
 .back-top
     p(class="top-btn") Наверх

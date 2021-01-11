@@ -1,0 +1,30 @@
+section.contacts
+    .bg-title__right(data-enllax-ratio="1" data-enllax-type="foreground" data-enllax-direction="horizontal") Контакты
+    .container
+        .contacts-wrapper
+            .contacts-wrapper__left
+                .contacts-form__container
+                    h3 Остались вопросы? Оставьте<br>заявку и мы с вами свяжемся.
+                    form(class="contacts-form" id="contacts-form")
+                        input(class="contacts-form__input" type="text" name="name" placeholder="Ваше имя")
+                        input(class="contacts-form__input mask__input_phone" type="tel" name="phone" placeholder="Телефон*" required)
+                        .contacts-form_privacy
+                            input(type="checkbox" class="contacts-form__checkbox" id="privacy-contacts" name="privacy-contacts" value="yes" checked onchange="document.getElementById('contactsSubmit').disabled = !this.checked;")
+                            label(for="privacy-contacts") Соглашаюсь с политикой конфидециальности
+                        .btn-wrapper.btn-form__contacts
+                            button(class="btn btn__light-brown" id="contactsSubmit") Оставить заявку
+                    .contacts-form__success
+                        img(src="/static/images/general/success.svg", alt="")
+                        p.contacts-form__success-title Заявка отправлена
+                        p.contacts-form__success-subtitle Ожидайте звонка от нашего менеджера
+            .contacts-wrapper__right
+                .contacts-list
+                    .contacts-item
+                        p.contacts-item__title Телефон:
+                        a.contacts-item__link(href="tel:+79991233223") +7 (999) 123-32-23
+                    .contacts-item
+                        p.contacts-item__title E-mail:
+                        a.contacts-item__link(href="mailto:dom_pod_zamkom@mail.ru") dom_pod_zamkom@mail.ru
+                    .contacts-item
+                        p.contacts-item__title Instagram:
+                        a.contacts-item__link.contacts-item__link--inst(href="#") @dom_pod_zamkom

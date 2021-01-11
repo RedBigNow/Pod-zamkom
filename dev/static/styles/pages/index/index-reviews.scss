@@ -1,0 +1,119 @@
+.index-reviews {
+    padding: 120px 0;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(216, 168, 101, 0) 0%, #D8A865 100%), linear-gradient(0deg, rgba(216, 168, 101, 0.8), rgba(216, 168, 101, 0.8)), url(/static/images/general/reviews-bg.jpg) 0 25% no-repeat;
+
+    .bg-title__left {
+        z-index: 1;
+        top: 50px;
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color:$white;
+        opacity: 0.3;
+    }
+}
+
+.index-reviews__wrapper {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.index-reviews__wrapper-left {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 80px;
+
+    h2 {
+        position: relative;
+        font-weight: 500;
+        font-size: 60px;
+        color: $white;
+        margin-top: 120px;
+    
+        &::before {
+            content:'“';
+            position: absolute;
+            top: -30px;
+            left: -120px;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 200px;
+            text-transform: uppercase;
+            color: $white;
+        }
+    }
+}
+
+.index-reviews__wrapper-right {
+    width: 50%;
+}
+
+.index-reviews__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    max-width: 360px;
+    height: 420px;
+    border-radius: 8px;
+    background-color: $brown;
+    box-shadow: 16px 16px 16px rgba(14, 9, 0, 0.1);
+}
+
+.review-slider___list {
+    width: 100%;
+
+    .slick-list {
+        width: 420px;
+    }
+}
+
+.reviews-slider__nav {
+    position: absolute;
+    top: 20px;
+    right: -45px;
+}
+
+.review-author__name {
+    font-weight: 500;
+    font-size: 20px;
+    color: $white;
+}
+
+.review-author__text {
+    color: $white;
+}
+
+.reviews-slider__dots {
+    position: absolute;
+    bottom: 50px;
+    left: 0px;
+    width: 360px;
+    display: flex;
+    justify-content: center;
+
+    .slick-dots li {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+
+        button:before {
+            font-size: 8px;
+            color: $white;
+            transition: .2s;
+        }
+    }
+
+    .slick-dots li.slick-active button::before {
+        color: $white;
+        width: 20px;
+        height: 20px;
+        font-size: 14px;
+        transition: .2s;
+    }
+}

@@ -1,0 +1,96 @@
+.index-about {
+    position: relative;
+    padding-bottom: 40px;
+
+    .bg-title__right {
+        top: -50px;
+    }
+}
+
+.index-about__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.index-about__wrapper-left {
+    position: relative;
+    width: 66.6%;
+    padding-left: 120px;
+}
+
+.index-about__info-first {
+    width: 220px;
+
+    p {
+        font-weight: 500;
+    }
+}
+
+.index-about__info-link {
+    float: left;
+    padding-top: 30px;
+
+    a {
+        color: $brown;
+        font-weight: 500;
+        text-decoration: none;
+        transition: .3s;
+
+        &:hover {
+            color: $black;
+        }
+    }
+}
+
+.index-about__info-second {
+    position: absolute;
+    right: 15%;
+    top: 100px;
+    width: 260px;
+}
+
+.index-about__wrapper-right {
+    width: 33.4%;
+}
+
+.index-about__img img {
+    max-height: 600px;
+}
+
+//ПРЕИМУЩЕСТВА НА ГЛАВНОЙ СТРАНИЦЕ
+.advantage-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 0;
+}
+
+.advantage-item {
+    max-width: 220px;
+    text-align: center;
+}
+
+.advantage-item__img {
+
+    img {
+        width: 80px;
+        margin: 0 auto;
+    }
+}
+
+.advantage-item__title {
+    padding: 15px 0 10px 0;
+
+    h5 {
+        font-weight: 600;
+        font-size: 18px;
+        margin: 0;
+    }
+}
+
+.advantage-item__desc {
+
+    p {
+        margin: 0;
+    }
+}

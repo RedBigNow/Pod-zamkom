@@ -1,0 +1,142 @@
+.page-about {
+    overflow: hidden;
+}
+
+.about-top {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-top__content {
+    width: 50%;
+
+    h2.title-line {
+        padding-top: 60px;
+        padding-bottom: 120px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100px;
+            top: 75px;
+            left: 0;
+            border-bottom: 1px solid #0E0900;
+        }
+
+    }
+
+    p {
+        padding-left: 120px;
+    }
+}
+
+.about-top__image {
+    position: relative;
+    width: 50%;
+
+    img {
+        position: absolute;
+        right: -20%;
+        max-height: 650px;
+    }
+
+}
+
+.about-center {
+    padding: 160px 0;
+}
+
+.about-center__preview {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.about-center__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 120px;
+}
+
+.about-center__wrapper-left {
+    width: 41.6%;
+}
+
+.about-center__wrapper-right {
+    width: 58.4%;
+    padding: 0 120px;
+
+    h2.title-line {
+        padding-bottom: 40px;
+    }
+}
+
+.about-bottom {
+    margin-bottom: 120px;
+}
+
+.about-bottom__wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 120px;
+}
+
+.about-bottom__wrapper-left {
+    position: relative;
+    width: 50%;
+
+    p {
+        line-height: 160%;
+    }
+
+    img {
+        position: relative;
+        z-index: 3;
+        max-width: 80%;
+        height: 400px;
+        object-fit: cover;
+    }
+}
+
+.about-bottom__wrapper-right {
+    position: relative;
+    width: 50%;
+
+    p {
+        padding-left: 120px;
+        padding-top: 160px;
+        line-height: 160%;
+    }
+
+    img {
+        position: relative;
+        z-index: 1;
+        max-width: 80%;
+        height: 440px;
+        object-fit: cover;
+        margin-left: 180px;
+    }
+}
+
+.about-bottom__title {
+    position: relative;
+    margin: -120px 0 -80px 120px;
+    z-index: 2;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 200px;
+    line-height: 120%;
+    text-transform: uppercase;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #0E0900;
+    letter-spacing: 0.1em;
+  }
+
+
+.instagram-about__page {
+    padding: 180px 0 60px 0;
+}

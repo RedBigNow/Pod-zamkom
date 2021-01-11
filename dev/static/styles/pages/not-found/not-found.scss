@@ -1,0 +1,40 @@
+//404 Страница
+section.not-found {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url(/static/images/general/404-bg.png) no-repeat;
+    background-size: cover;
+}
+
+p.not-found__title {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+p.not-found__404 {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 200px;
+    line-height: 100%;
+}
+
+a.not-found__back {
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: $brown;
+    transition: .3s;
+
+    &:hover {
+        color: $black;
+    }
+}

@@ -1,0 +1,236 @@
+.container.page-container
+    ul.breadcrumbs
+        li.breadcrumbs-item
+            a.breadcrumbs-item__link(href="/") Главная /
+        li.breadcrumbs-item
+            a.breadcrumbs-item__link(href="/") Каталог /
+        li.breadcrumbs-item
+            a.breadcrumbs-item__link(href="/") Входные двери /
+        li.breadcrumbs-item.breadcrumbs__item--active Стальная дверь «Next 1»
+    .product-wrapper
+        .product-wrapper__left
+            .product-image__wrapper
+                .product-image__front
+                    a(href="/static/images/general/door-front.jpg" data-fancybox="productFront")
+                        img(src="/static/images/general/door-front.jpg", alt="")
+                .product-image__list-back
+                    .product-image__item-back
+                        a(href="/static/images/general/door-back.jpg" data-fancybox="productBack")
+                            img(src="/static/images/general/door-back.jpg", alt="")
+                    .product-image__item-back
+                        a(href="/static/images/general/product-back2.png" data-fancybox="productBack")
+                            img(src="/static/images/general/product-back2.png", alt="")
+                    .product-image__item-back
+                        a(href="/static/images/general/door-back.jpg" data-fancybox="productBack")
+                            img(src="/static/images/general/door-back.jpg", alt="")
+                .preview-back__list
+                    .preview-back__item.preview-back__item-active
+                        img(src="/static/images/general/door-back.jpg", alt="")
+                    .preview-back__item
+                        img(src="/static/images/general/product-back2.png", alt="")
+                    .preview-back__item
+                        img(src="/static/images/general/door-back.jpg", alt="")
+
+                //.product-image__list
+                    .product-image__item
+                        a(href="/static/images/general/door-front.jpg" data-fancybox="productImages")
+                            img(src="/static/images/general/door-front.jpg", alt="")
+                    .product-image__item
+                        a(href="/static/images/general/product-back.png" data-fancybox="productImages")
+                            img(src="/static/images/general/product-back.png", alt="")
+                    .product-image__item
+                        a(href="/static/images/general/door-front.jpg" data-fancybox="productImages")
+                            img(src="/static/images/general/door-front.jpg", alt="")
+                    .product-image__item
+                        a(href="/static/images/general/door-back.jpg" data-fancybox="productImages")
+                            img(src="/static/images/general/door-back.jpg", alt="")
+                    .product-image__item
+                        a(href="/static/images/general/door-front.jpg" data-fancybox="productImages")
+                            img(src="/static/images/general/door-front.jpg", alt="")
+                    .product-image__item
+                        a(href="/static/images/general/door-back.jpg" data-fancybox="productImages")
+                            img(src="/static/images/general/door-back.jpg", alt="")
+
+                //.product-image__slider-nav
+                    .slider__nav
+                        .arrow-next#productImage-next
+                            img(src="/static/images/general/arrow-right-brown.svg", alt="")
+                        .arrow-prev#productImage-prev
+                            img(src="/static/images/general/arrow-left-brown.svg", alt="")
+            .accordion-list
+                .accordion-item.accordion-item--active
+                    .accordion-item__title
+                        h3 Описание <span class="accordion-item__icon accordion-item__icon--active"></span>
+                    .accordion-item__content
+                        p В двери Гардиан ДС 2 толщина металла 1.5 мм(без покраски, чистый металл), которой достаточно для жесткости конструкции. А вот для максимальной защиты мы усиливаем карман замка, где суммарная толщина листов металла составляет 16,5 мм(с опцией бронепакет). А вот для тех кто все еще верит, что более толстый металл 2мм или 3мм в конструкции двери защитит дверь от вспарывания, мы провели тест у себя на производстве, в котором мы резали полотна металла 3мм, 2мм, 1.5мм и 1.2мм киличным ножом.
+                .accordion-item
+                    .accordion-item__title
+                        h3 Характеристики <span class="accordion-item__icon"></span>
+                    .accordion-item__content
+                        table.product-feature__table
+                            tbody
+                                tr
+                                    td Дверная коробка
+                                    td П-2 два контура уплотнения, толщина полотна – 70 мм
+                                tr
+                                    td Порошковое покрытие
+                                    td Медный антик
+                                tr
+                                    td Петли
+                                    td 2 петли с подшипником
+                                tr
+                                    td Внешняя отделка
+                                    td Лист металла — 1,2 мм
+                                tr
+                                    td Внутреняя отделка
+                                    td ФЛ 6 мм, цвет «Эко дуб»
+                                tr
+                                    td Замок верхний
+                                    td Галеон 1211 цилиндровый
+                                tr
+                                    td Замок нижний
+                                    td Галеон 1001 сувальдный
+                                tr
+                                    td Фурнитура
+                                    td Ручка, глазок цвет «Хром»
+                                tr
+                                    td Дополнительно
+                                    td Евроцилиндр К-В перфокарта, на сувальдном замке накладки со шторками автомат КЛС, штырь антисъемный 3 шт.
+                                tr
+                                    td Утепление
+                                    td Полотно утеплено
+                                tr
+                                    td Размер блока
+                                    td 2050х880; 2050х960 правое и левое открывание
+                .accordion-item
+                    .accordion-item__title
+                        h3 Дополнительные услуги <span class="accordion-item__icon"></span>
+                    .accordion-item__content
+                        .accordion-service__list
+                            .accordion-service__item
+                                h4 Доставка
+                                p Доставка выбранной  дверной конструкции производится на собственном транспорте компании на следующий день после оформления заказа. Стоимость доставки расчитывается от расстояния и габаритов груза.
+                                a.accordion-item__link(href="/service-detail.html") Подробнее
+                            .accordion-service__item
+                                h4 Установка
+                                p От качества установки напрямую зависит то, как будет служить дверь. Двери устанавливаются высококвалифицированными специалистами нашей компании. Таким образом вы можете гарантировать высокое качество установки и долгую безотказную службу дверной конструкции. Обратите внимание: стоимость услуг по установке дверей может отличаться в зависимости от модели конкретной двери, некоторых технических особенностей дверного проёма, наличия дополнительных аксессуаров и некоторых других аспектов.
+                                a.accordion-item__link(href="/service-detail.html") Подробнее
+
+        .product-wrapper__right
+            p.product-available В наличии
+            h1.product-name Стальная дверь «Next 1»
+            .product-preview
+                p В двери Гардиан ДС 2 толщина металла 1.5 мм(без покраски, чистый металл), которой достаточно для жесткости конструкции. А вот для максимальной защиты мы усиливаем карман замка, где суммарная толщина листов металла составляет 16,5 мм(с опцией бронепакет).
+            .product-manufacturer
+                p.product-manufacturer__title Производитель: <span class="product-manufacturer__name">АСД</span>
+                    
+            .product-price__wrapper
+                .product-price__wrapper-left
+                    p.product-price 10 000 ₽
+                    p.product-price__old 16 000 ₽
+                .product-price__wrapper-right
+                    .btn-wrapper.btn-wrapper__cart
+                        a.btn.btn__brown(href="#" data-fancybox data-src="#order") Купить
+
+    .catalog-slider__wrapper.catalog-slider__wrapper-product
+        .catalog-slider__wrapper-left
+            h3 Похожие товары
+            .catalog-slider__nav
+                .slider__nav
+                    .arrow-prev#catalog-prev
+                        img(src="/static/images/general/arrow-left-brown.svg", alt="")
+                    .arrow-next#catalog-next
+                        img(src="/static/images/general/arrow-right-brown.svg", alt="")
+        .catalog-slider__wrapper-right
+            .product-slider__list
+                .product-slider__item
+                    .product-slider__item-overlay
+                        .btn-wrapper
+                            a.btn.btn__light-brown.buy1click-slider(href="#" data-fancybox data-src="#buy1click") Купить
+                        .btn-wrapper
+                            a.btn.btn__brown--outline(href="/product.html") Подробнее
+                    .product-slider__item-img
+                        img(src="/static/images/general/slider-img.png", alt="")
+                    .product-slider__item-title
+                        h4 Гардиан ДС 2
+                    .product-slider__item-category
+                        p Входные двери
+                    .product-slider__item-price
+                        p.actual-price 10 000 руб.
+                        p.old-price 16 000 руб.
+                .product-slider__item
+                    .product-slider__item-overlay
+                        .btn-wrapper
+                            a.btn.btn__light-brown.buy1click-slider(href="#" data-fancybox data-src="#buy1click") Купить
+                        .btn-wrapper
+                            a.btn.btn__brown--outline(href="/product.html") Подробнее
+                    .product-slider__item-img
+                        img(src="/static/images/general/door-front.jpg", alt="")
+                    .product-slider__item-title
+                        h4 Гардиан ДС 2
+                    .product-slider__item-category
+                        p Входные двери
+                    .product-slider__item-price
+                        p.actual-price 10 000 руб.
+                        p.old-price 16 000 руб.
+                .product-slider__item
+                    .product-slider__item-overlay
+                        .btn-wrapper
+                            a.btn.btn__light-brown.buy1click-slider(href="#" data-fancybox data-src="#buy1click") Купить
+                        .btn-wrapper
+                            a.btn.btn__brown--outline(href="/product.html") Подробнее
+                    .product-slider__item-img
+                        img(src="/static/images/general/slider-img.png", alt="")
+                    .product-slider__item-title
+                        h4 Гардиан ДС 2
+                    .product-slider__item-category
+                        p Входные двери
+                    .product-slider__item-price
+                        p.actual-price 10 000 руб.
+                        p.old-price 16 000 руб.
+                .product-slider__item
+                    .product-slider__item-overlay
+                        .btn-wrapper
+                            a.btn.btn__light-brown.buy1click-slider(href="#" data-fancybox data-src="#buy1click") Купить
+                        .btn-wrapper
+                            a.btn.btn__brown--outline(href="/product.html") Подробнее
+                    .product-slider__item-img
+                        img(src="/static/images/general/slider-img.png", alt="")
+                    .product-slider__item-title
+                        h4 Гардиан ДС 2
+                    .product-slider__item-category
+                        p Входные двери
+                    .product-slider__item-price
+                        p.actual-price 10 000 руб.
+                        p.old-price 16 000 руб.
+                .product-slider__item
+                    .product-slider__item-overlay
+                        .btn-wrapper
+                            a.btn.btn__light-brown.buy1click-slider(href="#" data-fancybox data-src="#buy1click") Купить
+                        .btn-wrapper
+                            a.btn.btn__brown--outline(href="/product.html") Подробнее
+                    .product-slider__item-img
+                        img(src="/static/images/general/slider-img.png", alt="")
+                    .product-slider__item-title
+                        h4 Гардиан ДС 2
+                    .product-slider__item-category
+                        p Входные двери
+                    .product-slider__item-price
+                        p.actual-price 10 000 руб.
+                        p.old-price 16 000 руб.
+                .product-slider__item
+                    .product-slider__item-overlay
+                        .btn-wrapper
+                            a.btn.btn__light-brown.buy1click-slider(href="#" data-fancybox data-src="#buy1click") Купить
+                        .btn-wrapper
+                            a.btn.btn__brown--outline(href="/product.html") Подробнее
+                    .product-slider__item-img
+                        img(src="/static/images/general/slider-img.png", alt="")
+                    .product-slider__item-title
+                        h4 Гардиан ДС 2
+                    .product-slider__item-category
+                        p Входные двери
+                    .product-slider__item-price
+                        p.actual-price 10 000 руб.
+                        p.old-price 16 000 руб.
+            .slider-progress_bar#progressBarProduct(role="progressbar" aria-valuemin="0" aria-valuemax="100")
