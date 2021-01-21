@@ -2,7 +2,7 @@
     height: auto;
     background: url(/static/images/general/hero-bg.jpg) 100% 100% no-repeat;
     background-size: cover;
-    padding: 4% 0;
+    padding: 6% 0;
 
     .container {
         height: 100%;
@@ -216,7 +216,7 @@ ul.hero-dots {
 
     .hero {
         height: auto;
-        padding: 80px 0 60px 0;
+        padding: 120px 0 60px 0;
     }
 
     .hero-slider__item-left {
@@ -252,7 +252,7 @@ ul.hero-dots {
 @media screen and (max-width: 768px) {
 
     .hero {
-        padding: 100px 0 80px 0;
+        padding: 120px 0 40px 0;
     }
 
     .hero-slider__item-left {
@@ -287,6 +287,7 @@ ul.hero-dots {
 
     .hero {
         background: url(/static/images/general/hero-bg.jpg) 0% no-repeat;
+        padding: 120px 0 40px 0;
     }
 
     .hero-slider__item-left {

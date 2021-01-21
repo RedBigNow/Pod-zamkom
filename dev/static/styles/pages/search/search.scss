@@ -3,6 +3,21 @@
     padding: 120px 15% 50px 15%;
 }
 
+.search-page {
+    display: flex;
+    justify-content: center;
+}
+
+.search-page__input {
+    width: 70%;
+    margin-right: 55px;
+    padding: 5px 5px 5px 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #D8A865;
+    color: #000;
+}
+
 p.search-result__quantity {
     padding-left: 15px;
 }
@@ -14,7 +29,7 @@ p.search-result__null {
     padding-top: 40px;
 }
 
-.product-list__search {
+.product-list--search {
     padding: 0 0 40px 0;
     margin: 0 -33px;
 
@@ -24,6 +39,111 @@ p.search-result__null {
     }
 }
 
-.catalog-slider__wrapper-search {
+.catalog-slider__wrapper--search {
     padding-bottom: 60px;
 }
+
+
+@media screen and (max-width: 1350px) {
+
+    p.search-result__quantity {
+        padding-left: 0px;
+    }
+
+
+    .product-list--search {
+
+        .product-item {
+            width: 23%;
+            margin: 10px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    .page-content__search-wrapper {
+        padding: 80px 10% 50px 10%;
+    }
+    .product-list--search {
+        margin: 0 -15px;
+
+        .product-item {
+            width: 30%;
+            margin: 15px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .page-content__search-wrapper {
+        padding: 50px 0;
+    }
+
+    p.search-result__quantity {
+        padding-left: 0px;
+    }
+
+    .product-list--search {
+        margin: 0px -45px;
+
+        .product-item {
+            width: 38%;
+            margin: 30px 48px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .page-content__search-wrapper {
+        padding: 50px 0;
+    }
+
+    .product-list--search {
+        margin: 0px -5px;
+
+        .product-item {
+            width: 48%;
+            margin: 5px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .page-content__search-wrapper {
+        padding: 20px 0;
+
+
+        .search-page__input {
+            margin-right: 20px;
+        }
+
+    }
+
+    p.search-result__null {
+        font-size: 18px;
+    }
+
+    .product-list--search {
+        margin: 0px;
+
+        .product-item {
+            width: 100%;
+            margin: 15px 0;
+
+            img {
+                max-height: 250px;
+            }
+        }
+    }
+
+}
+
+

@@ -12,12 +12,13 @@
 .service-price__wrapper {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-between;
 }
 
 .service-price__left {
     width: 60%;
+    display: flex;
+    flex-flow: column;
 }
 
 table.service-price__table {
@@ -46,6 +47,7 @@ table.service-price__table {
 }
 
 .service-price__right {
+    display: flex;
     width: 40%;
     padding: 0px 40px;
 
@@ -55,4 +57,70 @@ table.service-price__table {
         object-fit: cover;
         margin: 0 auto;
     }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .service-price__right {
+        padding: 0px 20px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .service-row {
+        padding-top: 10px;
+    }
+
+    .service-col {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .service-price__wrapper {
+        margin-top: 0;
+    }
+
+    .service-price__left {
+        width: 100%;
+        order: 2;
+    }
+
+    .service-price__right {
+        width: 100%;
+        padding: 0 0 40px 0;
+
+        img {
+            height: auto;
+            max-height: 350px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    h2.service-page__title {
+        margin-top: 40px;
+    }
+
+    table.service-price__table {
+
+        tr {
+
+            td {
+                padding: 12px;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .service-price__right {
+
+        img {
+            max-height: 300px;
+        }
+    }
+
 }

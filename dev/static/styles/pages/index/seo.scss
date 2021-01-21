@@ -70,3 +70,43 @@
         width: 80%;
     }
 }
+
+@media screen and (max-width: 1200px) {
+
+    .seo-wrapper {
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .seo {
+
+        padding-bottom: 80px;
+
+        h2.title-line {
+            padding-left: 0;
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+
+    .seo-wrapper {
+        margin: 20px auto 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .seo-wrapper {
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+}

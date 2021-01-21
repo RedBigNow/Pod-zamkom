@@ -10,23 +10,111 @@ ul.pagination {
     }
   }
   
-  li.page-item a {
-    font-size: 16px;
-    padding: 0 10px;
+  li.page-item {
+
+    a {
+      font-size: 16px;
+      font-weight: 500;
+      color: $brown;
+      border: 1px solid #D8A865;
+      border-radius: 2px;
+      padding: 10px 20px;
+      text-decoration: none;
+      transition: .3s;
+
+      &:hover {
+        background-color: $brown;
+        color: $white;
+      }
+    }
   }
   
-  li.page-item.disabled a {
-    background: #ccc;
-    border: 1px solid #ccc;
-    cursor: not-allowed;
+  li.page-item.disabled {
+
+    a {
+      font-size: 16px;
+      font-weight: 500;
+      color: #ccc;
+      border: 1px solid #ccc;
+      border-radius: 2px;
+      padding: 10px 20px;
+      cursor: not-allowed;
+      transition: .3s;
+
+      &:hover {
+        background-color: transparent;
+        color: #ccc;
+      }
+    }
+  }
+
+  a.pagination-item {
+    color: $black;
+    padding: 10px 15px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: .3s;
+    
+    &:hover {
+      color: $brown;
+    }
   }
   
-  a.pagination-item__current {
-    font-weight: 600;
-    color: #5AAC45;
+  a.pagination-item--current {
+    color: $brown;
   }
   
   li.pagination-prev a, li.pagination-next a {
-    border-radius: 50% !important;
+    color: $brown;
+    border: 1px solid $brown;
+    border-radius: 2px !important;
     padding: 10px 17px !important;
+    transition: .3s;
+
+    &:hover {
+      background-color: $brown;
+      color: $white;
+    }
+  }
+
+  li.pagination-prev.disabled a, li.pagination-next.disabled a {
+    color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 2px !important;
+    padding: 10px 17px !important;
+    cursor: not-allowed;
+    transition: .3s;
+
+    &:hover {
+      background-color:transparent;
+      color: #ccc;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+
+  li.page-item a {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  li.page-item.disabled a {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  li.pagination-prev a, li.pagination-next a {
+    font-size: 14px;
+    padding: 8px 14px !important;   
+  }
+
+  li.pagination-prev.disabled a, li.pagination-next.disabled a {
+    font-size: 14px;
+    padding: 8px 14px !important;   
+  }
+
+    a.pagination-item {
+      display: none;
+    }
+
   }

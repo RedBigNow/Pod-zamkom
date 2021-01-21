@@ -3,7 +3,7 @@
     padding-bottom: 40px;
 
     .bg-title__right {
-        top: -50px;
+        top: -40px;
     }
 }
 
@@ -57,6 +57,133 @@
     max-height: 600px;
 }
 
+@media screen and (max-width: 1200px) {
+
+    .index-about {
+
+        .bg-title__right {
+            top: 0px;
+        }
+    }
+
+    .index-about__wrapper-left {
+        width: 70%;
+        padding-left: 60px;
+    }
+
+    .index-about__info-first {
+        width: 200px;
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .index-about__info-second {
+        right: 15%;
+        width: 230px;
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .index-about__wrapper-right {
+        width: 30%;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .index-about__wrapper {
+        padding-bottom: 120px;
+    }
+
+    .index-about__wrapper-left {
+        padding-left: 0;
+    }
+
+    .index-about__info-second {
+        top: 60px;
+        right: 5%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .index-about {
+
+        .bg-title__right {
+            right: 20px;
+        }
+    }
+
+    .index-about__wrapper {
+        padding-bottom: 0;
+    }
+
+    .index-about__wrapper-left {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .index-about__info-first {
+        width: 300px;
+    }
+
+    .index-about__info-second {
+        top: 160px;
+        right: 5%;
+    }
+
+    .index-about__wrapper-right {
+        width: 45%;
+        padding-top: 40px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .index-about {
+        padding-bottom: 0;
+
+        .bg-title__right {
+            display: none;
+        }
+    }
+
+    .index-about__wrapper-left {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .index-about__info-first {
+        width: 100%;
+    }
+
+    .index-about__info-link {
+        position: relative;
+        width: 100%;
+        padding-top: 20px;
+        order: 2;
+    }
+
+    .index-about__info-second {
+        position: relative;
+        width: 100%;
+        top: 0;
+        right: 0;
+    }
+
+    .index-about__wrapper-right {
+        display: none;
+    }
+
+}
+
 //ПРЕИМУЩЕСТВА НА ГЛАВНОЙ СТРАНИЦЕ
 .advantage-list {
     display: flex;
@@ -93,4 +220,78 @@
     p {
         margin: 0;
     }
+}
+
+@media screen and (max-width: 1350px) {
+
+    .index-about {
+
+        .bg-title__right {
+            top: 0;
+        }
+    }
+
+    .advantage-list {
+        margin-top: 80px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    .advantage-list {
+        margin-top: 120px;
+    }
+
+    .advantage-item__desc {
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .advantage-list {
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
+    .advantage-item {
+        max-width: none;
+        width: 50%;
+        margin-bottom: 60px;
+        padding: 0 60px;
+    }
+
+    .advantage-item__desc {
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .advantage-list {
+        padding: 40px 0;
+    }
+
+    .advantage-item {
+        padding: 0 30px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .advantage-item {
+        width: 100%;
+        padding: 0px 40px;
+    }
+
 }

@@ -37,6 +37,14 @@ p {
   margin: 15px 0;
 }
 
+@media screen and (max-width: 576px) {
+
+  p {
+    font-size: 14px;
+  }
+
+}
+
 a {
   letter-spacing: 0.01em;
 }
@@ -63,17 +71,13 @@ h2.title-line {
 @media screen and (max-width: 576px) {
   
     h2.title-line {
-      position: relative;
-      font-size: 21px;
-      padding-left: 100px;
+      font-size: 18px;
+      padding-left: 80px;
   
       &::before {
-        content: '';
-        position: absolute;
-        width: 80px;
-        top: 12px;
+        width: 60px;
+        top: 10px;
         left: 0;
-        border-bottom: 1px solid #0E0900;
       }
     }
   
@@ -138,7 +142,7 @@ h2.title-line {
 @media screen and (max-width: 768px) {
   
     .bg-title__right, .bg-title__left {
-      font-size: 100px;
+      font-size: 80px;
     }
   
 }
@@ -146,7 +150,7 @@ h2.title-line {
 @media screen and (max-width: 576px) {
   
     .bg-title__right, .bg-title__left {
-      font-size: 80px;
+      font-size: 60px;
     }
   
 }
@@ -157,9 +161,41 @@ h1.page-title {
     padding: 12px 0 16px 0;
     margin: 32px 0 80px 0;
 }
-  
-h1.page-title__post {
-    font-size: 46px;
+
+@media screen and (max-width: 1200px) {
+
+  h1.page-title {
+    font-size: 56px;
+    margin: 50px 0;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+
+  h1.page-title {
+    font-size: 48px;
+    margin: 40px 0;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  h1.page-title {
+    font-size: 38px;
+    margin: 30px 0;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+
+  h1.page-title {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+
 }
   
   
@@ -171,4 +207,37 @@ h1.page-title__post {
       font-weight: 500;
       margin: 0;
     }
+}
+
+@media screen and (max-width: 1200px) {
+
+  .page-additional {
+    width: 50%;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+
+  .page-additional {
+    width: 100%;
+    margin: 0px auto 60px auto;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .page-additional {
+    margin: 0px auto 40px auto;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+
+  .page-additional {
+    margin: 0 0 15px 0;
+  }
+
 }

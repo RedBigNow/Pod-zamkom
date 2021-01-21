@@ -1,4 +1,4 @@
-.container.page-container
+.container.container--page
     ul.breadcrumbs
         li.breadcrumbs-item
             a.breadcrumbs-item__link(href="/") Главная /
@@ -6,13 +6,15 @@
             a.breadcrumbs-item__link(href="/") Каталог /
         li.breadcrumbs-item
             a.breadcrumbs-item__link(href="/") Входные двери /
-        li.breadcrumbs-item.breadcrumbs__item--active Стальная дверь «Next 1»
+        li.breadcrumbs__item.breadcrumbs__item--active Стальная дверь «Next 1»
     .product-wrapper
         .product-wrapper__left
             .product-image__wrapper
+
                 .product-image__front
                     a(href="/static/images/general/door-front.jpg" data-fancybox="productFront")
                         img(src="/static/images/general/door-front.jpg", alt="")
+
                 .product-image__list-back
                     .product-image__item-back
                         a(href="/static/images/general/door-back.jpg" data-fancybox="productBack")
@@ -23,8 +25,9 @@
                     .product-image__item-back
                         a(href="/static/images/general/door-back.jpg" data-fancybox="productBack")
                             img(src="/static/images/general/door-back.jpg", alt="")
+
                 .preview-back__list
-                    .preview-back__item.preview-back__item-active
+                    .preview-back__item
                         img(src="/static/images/general/door-back.jpg", alt="")
                     .preview-back__item
                         img(src="/static/images/general/product-back2.png", alt="")
@@ -57,6 +60,7 @@
                             img(src="/static/images/general/arrow-right-brown.svg", alt="")
                         .arrow-prev#productImage-prev
                             img(src="/static/images/general/arrow-left-brown.svg", alt="")
+
             .accordion-list
                 .accordion-item.accordion-item--active
                     .accordion-item__title
@@ -122,7 +126,7 @@
             .product-preview
                 p В двери Гардиан ДС 2 толщина металла 1.5 мм(без покраски, чистый металл), которой достаточно для жесткости конструкции. А вот для максимальной защиты мы усиливаем карман замка, где суммарная толщина листов металла составляет 16,5 мм(с опцией бронепакет).
             .product-manufacturer
-                p.product-manufacturer__title Производитель: <span class="product-manufacturer__name">АСД</span>
+                p.product-manufacturer__title Производитель: <span class="product-manufacturer__name"><a class="product-manufacturer__link" href="/brand-detail.html">АСД</a></span>
                     
             .product-price__wrapper
                 .product-price__wrapper-left
@@ -132,7 +136,7 @@
                     .btn-wrapper.btn-wrapper__cart
                         a.btn.btn__brown(href="#" data-fancybox data-src="#order") Купить
 
-    .catalog-slider__wrapper.catalog-slider__wrapper-product
+    .catalog-slider__wrapper.catalog-slider__wrapper--product
         .catalog-slider__wrapper-left
             h3 Похожие товары
             .catalog-slider__nav

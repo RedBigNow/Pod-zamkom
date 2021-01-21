@@ -1,54 +1,63 @@
 section.catalog
     .container
         .catalog-container
-            .catalog-sidebar
-                .catalog-sidebar__filter
-                    .filter-list
-                        .filter-item
-                            p.filter-title Цена
-                            .filter-item-price__wrapper
-                                input(class="filter-item__price-input" type="number" min="5000" max="100000" name="price-from" placeholder="От")
-                                input(class="filter-item__price-input" type="number" min="5000" max="100000" name="price-to" placeholder="До")
-                            .btn-wrapper.btn-wrapper__reset
-                                a.reset-filter#resetPrice(href="#" onclick="$('.filter-item__price-input').val('')" ) Сбросить цену
-                        .filter-item
-                            p.filter-title Производитель
-                            .filter-item__checkbox
-                                input(class="filter-item__checkbox-input" type="checkbox" id="AS-Doors" name="AS-Doors")
-                                label(for="AS-Doors") AS-Doors
-                            .filter-item__checkbox
-                                input(class="filter-item__checkbox-input" type="checkbox" id="AS-Doors2" name="AS-Doors2")
-                                label(for="AS-Doors2") AS-Doors 2
-                            .filter-item__checkbox
-                                input(class="filter-item__checkbox-input" type="checkbox" id="AS-Doors3" name="AS-Doors3")
-                                label(for="AS-Doors3") AS-Doors 3
-                            .filter-item__checkbox
-                                input(class="filter-item__checkbox-input" type="checkbox" id="AS-Doors4" name="AS-Doors4")
-                                label(for="AS-Doors4") AS-Doors 4
-                        .filter-item
-                            p.filter-title Материал
-                            .filter-item__radio
-                                input(class="filter-item__radio-input" name="material" id="Металл" value="Металл" type="radio")
-                                label(for="Металл") Металл
-                            .filter-item__radio
-                                input(class="filter-item__radio-input" name="material" id="Дерево" value="Дерево" type="radio")
-                                label(for="Дерево") Дерево
-                            .filter-item__radio
-                                input(class="filter-item__radio-input" name="material" id="Пластик" value="Пластик" type="radio")
-                                label(for="Пластик") Пластик
-                    .filter-bottom
-                        .btn-wrapper
-                            a.btn.btn__brown(href="#") Подобрать
+            .catalog-filter
+                .catalog-filter__close
+                    img(src="/static/images/general/close.svg", alt="")
+                .filter-list
+                    .filter-item#filterItemPrice
+                        p.filter-title Цена
+                        .filter-item-price__wrapper
+                            input(class="filter-item__price-input" type="number" min="5000" max="100000" name="price-from" placeholder="От")
+                            input(class="filter-item__price-input" type="number" min="5000" max="100000" name="price-to" placeholder="До")
                         .btn-wrapper.btn-wrapper__reset
-                            a.reset-filter#resetAllFilter(href="#") Очистить фильтр
+                            a.reset-filter#resetPrice(href="#" onclick="$('.filter-item__price-input').val('')" ) Сбросить цену
+                    .filter-item
+                        p.filter-title Производитель
+                        .filter-item__checkbox
+                            input(class="filter-item__checkbox-input" type="checkbox" id="AS-Doors" name="AS-Doors")
+                            label(for="AS-Doors") AS-Doors
+                        .filter-item__checkbox
+                            input(class="filter-item__checkbox-input" type="checkbox" id="AS-Doors2" name="AS-Doors2")
+                            label(for="AS-Doors2") AS-Doors 2
+                        .filter-item__checkbox
+                            input(class="filter-item__checkbox-input" type="checkbox" id="AS-Doors3" name="AS-Doors3")
+                            label(for="AS-Doors3") AS-Doors 3
+                        .filter-item__checkbox
+                            input(class="filter-item__checkbox-input" type="checkbox" id="AS-Doors4" name="AS-Doors4")
+                            label(for="AS-Doors4") AS-Doors 4
+                    .filter-item
+                        p.filter-title Материал
+                        .filter-item__radio
+                            input(class="filter-item__radio-input" name="material" id="Металл" value="Металл" type="radio")
+                            label(for="Металл") Металл
+                        .filter-item__radio
+                            input(class="filter-item__radio-input" name="material" id="Дерево" value="Дерево" type="radio")
+                            label(for="Дерево") Дерево
+                        .filter-item__radio
+                            input(class="filter-item__radio-input" name="material" id="Пластик" value="Пластик" type="radio")
+                            label(for="Пластик") Пластик
+                .filter-bottom
+                    .btn-wrapper
+                        a.btn.btn__brown#applyFiltering(href="#") Подобрать
+                    .btn-wrapper.btn-wrapper__reset
+                        a.reset-filter#resetAllFilter(href="#") Очистить фильтр
             .catalog-content
+
                 ul.breadcrumbs
                     li.breadcrumbs-item
                         a.breadcrumbs-item__link(href="/") Главная /
                     li.breadcrumbs-item
                         a.breadcrumbs-item__link(href="/") Каталог /
-                    li.breadcrumbs-item.breadcrumbs__item--active Входные двери
+                    li.breadcrumbs__item.breadcrumbs__item--active Входные двери
+
                 h1.category-title Входные двери
+                
+                .catalog-toolbar
+                    .mobile-filter__btn
+                        .mobile-filter__icon
+                            img(src="/static/images/general/filter.svg")
+
                 .product-list
                     .product-item
                         .product-item__overlay
@@ -201,22 +210,7 @@ section.catalog
                             p.actual-price 10 000 руб.
                             p.old-price 16 000 руб.
 
-                ul.pagination
-                    li.page-item.disabled
-                        a.page-link(href="#") Первая
-                    li.pagination-prev.disabled
-                        a(href="")
-                            i.fa.fa-angle-double-left(aria-hidden="true")
-                        a.pagination-item.pagination-item__current(href="#") 1
-                        a.pagination-item(href="#") 2
-                        a.pagination-item(href="#") 3
-                        a.pagination-item(href="#") 4
-                        a.pagination-item(href="#") 5
-                    li.pagination-next
-                        a(href="#")
-                            i.fa.fa-angle-double-right(aria-hidden="true")
-                    li.page-item
-                        a.page-link(href="#") Последняя
+                include ../blocks/common/pagination
                 
                 section.seo.seo-page
                     h2.title-line Блок с SEO текстом

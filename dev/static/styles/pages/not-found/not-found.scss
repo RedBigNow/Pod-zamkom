@@ -38,3 +38,24 @@ a.not-found__back {
         color: $black;
     }
 }
+
+@media screen and (max-width: 768px) {
+
+    p.not-found__404 {
+        font-size: 160px;
+    }
+
+
+}
+
+@media screen and (max-width: 576px) {
+
+    p.not-found__title {
+        font-size: 21px;
+    }
+
+    p.not-found__404 {
+        font-size: 120px;
+    }
+
+}

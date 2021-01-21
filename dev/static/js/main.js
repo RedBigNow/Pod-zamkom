@@ -55,7 +55,7 @@ $(document).ready(function () {
 //Мобильное меню
 if (window.matchMedia("(max-width: 770px)").matches) {
     $(function() {
-      $(document).on("click", ".menu-container .nav-menu__item-parent a", function(e) {
+      $(document).on("click", ".menu-container .nav-menu__item--parent a", function(e) {
           e.preventDefault();
           $(".menu-container .activity").removeClass("activity");
           $(this).siblings("ul").addClass("loaded").addClass("activity");
@@ -81,49 +81,76 @@ if (window.matchMedia("(max-width: 770px)").matches) {
   });
 }
 */
-(function(){
 
-  var burger = document.querySelector('.header-burger');
-  var header = document.querySelector('.header-container');
-  var body = document.body;
+var body = document.body;
 
-  burger.onclick = function() {
-      header.classList.toggle('header-container--open');
-      burger.classList.toggle('header-burger__close');
-      body.classList.toggle('no-scroll');
+//Мобильное меню
+var burger = $('.header-burger');
+var header = $('.header-container');
+
+$(burger).click(function() {
+  $(header).toggleClass('header-container--open');
+  $(this).toggleClass('header-burger__close');
+  $(body).toggleClass('no-scroll');
+});
+
+$('.header-mobile__bottom .callback').click(function() {
+  $(header).toggleClass('header-container--open');
+  $(burger).toggleClass('header-burger__close');
+  $(body).toggleClass('no-scroll');
+});
+
+$('.header-mobile__bottom .header-toolbar__search').click(function() {
+  $(header).toggleClass('header-container--open');
+  $(burger).toggleClass('header-burger__close');
+  $(body).toggleClass('no-scroll');
+});
+
+var menuItemParent = $('.nav-menu__item--parent');
+
+menuItemParent.on( 'click', function(e) {
+  
+  var mobileMenu = $(e.target).parent().find( '> ul.nav-submenu' );
+
+  if( mobileMenu.css('display') == 'none' ) {
+
+      e.preventDefault();
+      mobileMenu.slideDown();
+      e.stopPropagation();
+
+  } else if( mobileMenu.css('display') == 'block' ) {
+
+      e.preventDefault();
+      mobileMenu.slideUp();
+      e.stopPropagation();
+
   }
 
-  $(document).on("click", ".header-mobile__bottom .callback", function() {
-    header.classList.toggle('header-container--open');
-    burger.classList.toggle('header-burger__close');
-    body.classList.toggle('no-scroll');
+});
+
+//Фильтр в каталоге (Мобила)
+var filterIcon = $('.mobile-filter__btn');
+var filter = $('.catalog-filter');
+var closeFilter = $('.catalog-filter__close');
+
+if ($(window).width() < 1000) {
+
+  $(filterIcon).click(function() {
+    $(filter).toggleClass('catalog-filter--open');
+    $(body).toggleClass('no-scroll');
+  });
+  
+  $(closeFilter).click(function() {
+    $(filter).toggleClass('catalog-filter--open');
+    $(body).toggleClass('no-scroll');
+  });
+  
+  $(".filter-bottom #applyFiltering").click(function() {
+    $(filter).toggleClass('catalog-filter--open');
+    $(body).toggleClass('no-scroll');
   });
 
-  $(document).on("click", ".header-mobile__bottom .header-toolbar__search", function() {
-    header.classList.toggle('header-container--open');
-    burger.classList.toggle('header-burger__close');
-    body.classList.toggle('no-scroll');
-  });
-
-}());
-
-
-
-
-var menuItemParent = $( '.nav-menu__item-parent' );
-    menuItemParent.on( 'click', function(e) {
-        
-        var mobileMenu = $(e.target).parent().find( '> ul.nav-submenu' );
-        if( mobileMenu.css('display') == 'none' ) {
-            e.preventDefault();
-            mobileMenu.slideDown();
-            e.stopPropagation();
-        } else if( mobileMenu.css('display') == 'block' ) {
-            e.preventDefault();
-            mobileMenu.slideUp();
-            e.stopPropagation();
-        }
-    });
+}
 
 //Слайдер на первом экране главной страницы
 $('.hero-slider').slick({
@@ -224,8 +251,8 @@ $('.review-slider___list').slick({
     cssEase: 'linear',
     dots: true,
     appendDots: $('.reviews-slider__dots'),
-    //autoplay: true,
-    //autoplaySpeed: 3000,
+    autoplay: true,
+    autoplaySpeed: 5000,
     nextArrow: document.querySelector('#reviews-next'),
     prevArrow: document.querySelector('#reviews-prev')
   });
@@ -329,13 +356,66 @@ setInterval(autoplayBlobSlider, 10000);
     slidesToShow: 4,
     slidesToScroll: 1,
     rows: 0,
-    //autoplay: true,
-    //autoplaySpeed: 3000,
+    autoplay: true,
+    autoplaySpeed: 3000,
     nextArrow: document.querySelector('#catalog-next'),
-    prevArrow: document.querySelector('#catalog-prev')
+    prevArrow: document.querySelector('#catalog-prev'),
+    responsive: [{
+      breakpoint: 1355,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    }, {
+      breakpoint: 1000,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    }, {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }]
   });  
   
   setProgressProduct(0);
+
+//Слайдер с брендами
+$('.brand-slider__list').slick({
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  rows: 1,
+  //dots: true,
+  //dotsClass: "hero-dots",
+  autoplay: true,
+  autoplaySpeed: 3000,
+  speed: 500,
+  nextArrow: document.querySelector('#brend-next'),
+  prevArrow: document.querySelector('#brend-prev'),
+  responsive: [{
+    breakpoint: 1000,
+    settings: {
+      slidesToShow: 3,
+      slidesToScroll: 1
+    }
+  }, {
+    breakpoint: 580,
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 1
+    }
+  }, {
+      breakpoint: 380,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+  }]
+});
 
 //Слайдер с постами из инсты + прогресс бар
 function setProgressInstagram(index) {
@@ -359,10 +439,29 @@ function setProgressInstagram(index) {
     slidesToShow: 4,
     slidesToScroll: 1,
     rows: 0,
-    //autoplay: true,
-    //autoplaySpeed: 3000,
+    autoplay: true,
+    autoplaySpeed: 3000,
     nextArrow: document.querySelector('#inst-next'),
-    prevArrow: document.querySelector('#inst-prev')
+    prevArrow: document.querySelector('#inst-prev'),
+    responsive: [{
+      breakpoint: 1000,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    }, {
+      breakpoint: 770,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    }, {
+      breakpoint: 460,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }]
   });  
   
   setProgressInstagram(0);
@@ -390,7 +489,13 @@ backPrevSlider.slick({
   focusOnSelect: true,
   vertical: true,
   verticalSwiping: true,
-  asNavFor: '.product-image__list-back'
+  asNavFor: '.product-image__list-back',
+  responsive: [{
+    breakpoint: 770,
+    settings: {
+      vertical: false
+    }
+  }]
 });
 
 //Кастомный autoplay для слайдера с фотографиями дверей(Внутренняя отделка)
@@ -405,11 +510,26 @@ $('.product-image__list').slick({
   slidesToShow: 2,
   slidesToScroll: 1,
   rows: 1,
-  //autoplay: true,
-  //autoplaySpeed: 3000,
+  autoplay: true,
+  autoplaySpeed: 3000,
   nextArrow: document.querySelector('#productImage-next'),
-  prevArrow: document.querySelector('#productImage-prev')
+  prevArrow: document.querySelector('#productImage-prev'),
+  responsive: [{
+    breakpoint: 770,
+    settings: {
+      slidesToShow: 1
+    }
+  }]
 });
+
+//Маска для input phone
+(function () {
+  $('.mask__input_phone').inputmask({
+    mask: '+7(999)999-99-99',
+    showMaskOnFocus: true,
+    showMaskOnHover: false
+  });
+})();
 
 //Открытие модального окна для товаров из каталогов
 $(".buy1click").click(function(){	  
@@ -433,8 +553,10 @@ $(".buy1click-slider").click(function(){
 
 });
 
+
 //Прикрутить к ajax обработчику формы "Консультация"
 $("#ConsultSubmit").click(function() {
+  
   $.fancybox.close($('#consult'));
   $.fancybox.open($('#success'));
 
@@ -444,8 +566,9 @@ $("#ConsultSubmit").click(function() {
 
 }); 
 
+
 //Прикрутить к ajax обработчику формы "Обратная связь"
-$("#actionSubmit").click(function() {
+$(".btn-form__action button").click(function() {
   $('.action-form__success').addClass('action-form__success--show');
   setTimeout(function() {
     $('.action-form__success').removeClass('action-form__success--show');
@@ -521,6 +644,25 @@ $('.accordion-item__title').click(function () {
 
 });
 
+//Хлебные крошки на мобиле
+if ($(window).width() < 580) {
+
+$("ul.breadcrumbs").ready(function () {
+  var maxNum = 3;
+  var i = 0;
+  $("ul.breadcrumbs li.breadcrumbs-item").each(function() {
+      i += 1;
+      if(i > maxNum) {
+          $(this).addClass("hide");
+      }
+      if(i >= maxNum) {
+        $('.breadcrumbs__item--active').addClass("hide");
+    }
+  })
+});
+
+}
+
 //Кнопка "Наверх"
 (function () {
   $(document).on('scroll', function () {
@@ -539,10 +681,14 @@ $('.accordion-item__title').click(function () {
 })();
 
 //Инициализация библиотеки с анимациями (AOS)
-AOS.init();
+AOS.init({
+  disable: 'mobile',
+});
 
 //Инициализация библиотеки с анимациями (Enllax)
-$(window).enllax();
+if(window.screen.width>=992){
+  $(window).enllax();
+}
 
 });
 

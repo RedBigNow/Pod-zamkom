@@ -1,0 +1,58 @@
+footer.footer
+    .container
+        .footer-wrapper
+            .footer-wrapper__col
+                a(href="#")
+                    img.footer-logo(src="/static/images/general/logo.svg", alt="Дом под замком")
+                .phone-footer
+                    a(href="tel:+79991233223") +7 (999) 123-32-23
+                .mail-footer
+                    a(href="mailto:dom_pod_zamkom@mail.ru") info@pod-zamkom.ru
+                a.politic-footer(href="#") Политика конфиденциальности
+            .footer-wrapper__col
+                h3 Инфо
+                ul.footer-menu
+                    li.footer-menu__item
+                        a(href="/about.html") О нас
+                    li.footer-menu__item
+                        a(href="/reviews.html") Отзывы
+                    li.footer-menu__item
+                        a(href="/blog.html") Блог
+                    li.footer-menu__item
+                        a(href="/contacts.html") Контакты
+            .footer-wrapper__col
+                h3 Услуги
+                ul.footer-menu
+                    li.footer-menu__item
+                        a(href="/service-detail.html") Замер
+                    li.footer-menu__item
+                        a(href="/service-detail.html") Доставка
+                    li.footer-menu__item
+                        a(href="/service-detail.html") Установка
+            .footer-wrapper__col
+                h3 Каталог
+                ul.footer-menu
+                    li.footer-menu__item
+                        a(href="/catalog-list.html") Входные двери
+                    li.footer-menu__item
+                        a(href="/catalog-list.html") Тамбурные двери
+                    li.footer-menu__item
+                        a(href="/catalog-list.html") Противопожарные двери
+                    li.footer-menu__item
+                        a(href="/brands.html") Бренды
+            .footer-wrapper__col
+                .search-wrapper
+                    form(class="search-footer" action="/search" method="get")
+                        input(class="search-input form-control" type="text" name="search" id="search" placeholder="Поиск")
+                        input(type="hidden" name="id" value="1")
+                        input(type="submit" class="search-submit" value="")
+                .inst-footer
+                    p Наш Instagram:
+                    a.inst-footer__link(href="#") @dom_pod_zamkom
+    .developed
+        p Разработано <a href="https://meduza-web.ru/" target="_blank">Meduza</a>
+
+.back-top
+    p(class="top-btn") Наверх
+
+include ../common/popups

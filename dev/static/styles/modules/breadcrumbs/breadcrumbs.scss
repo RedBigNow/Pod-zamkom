@@ -5,21 +5,35 @@ ul.breadcrumbs {
   
 li.breadcrumbs-item {
     margin-right: 5px;
+    color: #a5a5a5;
 }
 
 a.breadcrumbs-item__link {
     font-size: 14px;
-    color: $black;
+    color: #a5a5a5;
     text-decoration: none;
-    opacity: 0.5;
     transition: .3s;
 
     &:hover {
-        opacity: 1;
+        color: $black;
     }
 
 }
 
 li.breadcrumbs__item--active {
-    font-size: 14px;
+    font-size: 14px;    
+}
+
+
+@media screen and (max-width: 576px) {
+
+    li.breadcrumbs-item, li.breadcrumbs__item--active {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        max-width: 80px;
+    }
+
 }

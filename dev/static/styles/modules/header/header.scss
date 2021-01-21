@@ -74,7 +74,7 @@ body.compensate-for-scrollbar {
     }
 }
 
-.header-contacts:hover.phone-svg path {
+.header-contacts:hover .phone-svg path {
     stroke: $brown;
 }
 
@@ -127,7 +127,7 @@ body.compensate-for-scrollbar {
     -webkit-transition: all 300ms;
     transition: all 300ms;
 
-    &:before, &:after {
+    &::before, &::after {
         content: "";
         height: 2px;
         display: block;
@@ -139,11 +139,11 @@ body.compensate-for-scrollbar {
         transition: all 300ms;
     }
 
-    &:before {
+    &::before {
         top: -9px;
     }
 
-    &:after {
+    &::after {
         bottom: -9px;
     }
 }
@@ -153,12 +153,12 @@ body.compensate-for-scrollbar {
     .burger__icon {
         background: transparent;
 
-        &:before {
+        &::before {
             top: 0px;
             transform: rotate(-45deg);
         }
 
-        &:after {
+        &::after {
             bottom: 0px;
             transform: rotate(45deg);
         }
@@ -248,13 +248,13 @@ li.nav-menu__item.active > a {
     transition: .3s;
 }
 
-li.nav-menu__item-parent > a {
+li.nav-menu__item--parent > a {
     display: block;
     padding: 30px 10px 30px 10px;
     transition: .3s;
 }
 
-li.nav-menu__item-parent > a::after {
+li.nav-menu__item--parent > a::after {
     content: "\f107";
     font-family: FontAwesome;
     font-weight: normal;
@@ -331,7 +331,7 @@ nav.nav-menu li:hover > .nav-submenu {
     opacity: 1;
 }
 
-li.nav-submenu__item.nav-menu__item-parent::after {
+li.nav-submenu__item.nav-menu__item--parent::after {
     right: -5%;
     top: 0;
 }
@@ -342,7 +342,7 @@ li.nav-submenu__item.nav-menu__item-parent::after {
 }
 */
 
-li.nav-menu__item-parent:hover ul.nav-submenu {
+li.nav-menu__item--parent:hover ul.nav-submenu {
     position: absolute;
     opacity: 1;
     margin-left: 0;
@@ -378,6 +378,16 @@ li.nav-submenu__item:hover ul.nav-submenu {
 
 
 @media screen and (max-width: 1200px) {
+
+    ul.nav-submenu {
+
+        li {
+
+            a {
+                font-size: 14px;
+            }
+        }
+    }
 
     .header-callback {
         display: none;
@@ -513,8 +523,8 @@ li.nav-submenu__item:hover ul.nav-submenu {
     .header-burger {
         display: block;
         position: fixed;
-        top: 30px;
-        right: 20px;
+        top: 15px;
+        right: 0;
         z-index: 9;
     }
 
@@ -556,6 +566,11 @@ li.nav-submenu__item:hover ul.nav-submenu {
             width: 100%;
         }
     }
+
+    .header-burger {
+        top: 20px;
+        right: 10px;
+    }
     
 }
 
@@ -571,6 +586,11 @@ li.nav-submenu__item:hover ul.nav-submenu {
 
     ul.nav-submenu li a {
         font-size: 14px;
+    }
+
+    .header-burger {
+        top: 15px;
+        right: 5px;
     }
 
 }
@@ -652,12 +672,12 @@ li.nav-submenu__item:hover ul.nav-submenu {
         font-weight: bold;
         letter-spacing: 0.5px;
     }
-    .menu-container ul li.nav-menu__item-parent{
+    .menu-container ul li.nav-menu__item--parent{
         padding-right: 50px;
         background: $brown url("/static/images/general/next.svg") right 20px center no-repeat;
         background-size: 40px;
     }
-    .menu-container ul li.nav-menu__item-parent:hover{
+    .menu-container ul li.nav-menu__item--parent:hover{
         background: $brown url("/static/images/general/next.svg") right 20px center no-repeat;
         background-size: 40px;
     }

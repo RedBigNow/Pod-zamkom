@@ -1,7 +1,7 @@
 .contacts {
     position: relative;
     background: url(/static/images/general/contacts-bg.jpg) 100% 100% no-repeat;
-    background-size: 50% 550px;
+    background-size: 40%;
     background-position-x: left;
     background-position-y: top;
     padding: 120px 0;
@@ -154,6 +154,7 @@ a.contacts-item__link--inst {
     z-index: -1;
     opacity: 0;
     background: $beige;
+    border-radius: 8px;
     padding: 50px 0;
     transition: .3s;
 }
@@ -167,4 +168,107 @@ a.contacts-item__link--inst {
     font-weight: 500;
     font-size: 24px;
     margin: 0;
+}
+
+@media screen and (max-width: 1350px) {
+
+    .contacts {
+        background-size: 50%;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    .contacts {
+        padding: 70px 0;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .contacts {
+        background: none;
+        padding: 40px 0;
+    }
+
+    .contacts-form__container {
+        margin-right: -50px;
+        padding: 75px 25px;
+    }
+
+    .contacts-list {
+        width: 100%;
+        padding: 150px 0 0 85px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .contacts {
+
+        .bg-title__right {
+            top: 60%;
+            width: 100%;
+            text-align: center;
+            font-size: 52px;
+        }
+    }
+
+    .contacts-wrapper__left {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .contacts-form__container {
+        margin-right: 0;
+        padding: 75px 25px;
+    }
+
+    .contacts-wrapper__right {
+        width: 100%;
+    }
+
+    .contacts-list {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        text-align: center;
+        padding: 100px 0 0 0;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .contacts {
+        padding: 0 0 40px 0;
+        
+        .bg-title__right {
+            top: 57%;
+            width: 100%;
+            text-align: center;
+            font-size: 32px;
+        }
+    }
+
+    .contacts-form__container {
+        padding: 40px 20px;
+
+        h3 {
+            font-size: 14px;
+        }
+    }
+
+    .contacts-form__input::placeholder {
+        font-size: 14px;
+    }
+
+    .contacts-form__checkbox + label {
+        font-size: 12px;
+    }
+
 }

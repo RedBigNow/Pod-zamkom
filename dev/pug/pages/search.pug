@@ -1,8 +1,8 @@
-.container.page-container
+.container.container--page
     section.page-content
         .page-content__search-wrapper
-            form(class="search-popup" action="/search" method="get")
-                input(class="search-popup__input form-control" type="text" name="search" id="search" placeholder="Поиск")
+            form(class="search-page" action="/search" method="get")
+                input(class="search-page__input form-control" type="text" name="search" id="search" placeholder="Поиск")
                 input(type="hidden" name="id" value="1")
                 .btn-wrapper
                     input(type="submit" class="btn btn__brown search-popup__submit" value="Найти")
@@ -11,7 +11,7 @@
             
             p.search-result__null По вашему запросу ничего не найдено. Но нам есть что вам предложить.
         
-        .product-list.product-list__search
+        .product-list.product-list--search
             .product-item
                 .product-item__overlay
                     .btn-wrapper
@@ -163,7 +163,7 @@
                     p.actual-price 10 000 руб.
                     p.old-price 16 000 руб.
 
-        .catalog-slider__wrapper.catalog-slider__wrapper-search
+        .catalog-slider__wrapper.catalog-slider__wrapper--search
             .catalog-slider__wrapper-left
                 h3 Хиты продаж
                 .catalog-slider__nav

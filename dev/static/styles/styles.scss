@@ -109,13 +109,9 @@ div {
 
 @import "modules/header/header"; // Шапка
 
-@import "modules/footer/footer"; // Подвал
-
-@import "modules/popups/popups"; // Попапы
+@import "modules/buttons/buttons"; // Кнопки
 
 @import "modules/texts/texts"; // Заголовки и текстовые блоки
-
-@import "modules/buttons/buttons"; // Кнопки
 
 @import "modules/breadcrumbs/breadcrumbs"; // Хлебные крошки
 
@@ -123,13 +119,14 @@ div {
 
 @import "modules/animations/animations"; // Анимации
 
-
 // Главная страница
 @import "pages/index/hero";
 
 @import "pages/index/services-index";
 
 @import "pages/index/index-category";
+
+@import "pages/index/index-brands";
 
 @import "pages/index/index-consult";
 
@@ -146,35 +143,32 @@ div {
 
 // Услуги
 @import "pages/services/services";
-
 @import "pages/services/service-detail";
-
 
 // Каталог
 @import "pages/catalog/catalog";
-
 @import "pages/catalog/catalog-list";
-
 @import "pages/catalog/product";
 
+// Бренды
+@import "pages/brands/brands";
+@import "pages/brands/brand-detail";
 
 // Отзывы
 @import "pages/reviews/reviews";
 
-
 // Блог
 @import "pages/blog/blog";
-
 @import "pages/blog/blog-post";
-
 
 // О нас
 @import "pages/about/about";
 
+// Контакты
+@import "pages/contacts/contacts";
 
 // Поиск
 @import "pages/search/search";
-
 
 // 404 страница
 @import "pages/not-found/not-found";
@@ -192,6 +186,11 @@ div {
 @import "pages/common/instagram";
 
 @import "pages/common/contacts";
+
+
+@import "modules/footer/footer"; // Подвал
+
+@import "modules/popups/popups"; // Попапы
 
 
 

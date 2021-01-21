@@ -136,14 +136,17 @@ h2.service-slider__item-title {
 @media screen and (max-width: 992px) {
 
     .services-index {
-        padding: 80px 0;
+        padding: 80px 0 0 0;
+
+        .bg-title__right {
+            display: none;
+        }
     }
 
     .service-slider__item {
         width: 100%;
         height: auto;
-        margin-left: 0;
-        margin-right: 0;
+        margin: 30px 0;
         padding: 60px;
     }
 
@@ -157,14 +160,38 @@ h2.service-slider__item-title {
 
 }
 
+@media screen and (max-width: 768px) {
+
+    .services-index {
+        padding: 60px 0 0 0;
+    }
+
+    .service-slider__list {
+        padding-top: 20px;
+    }
+
+}
+
 @media screen and (max-width: 576px) {
 
+    .service-slider__item {
+        padding: 40px;
+    }
+
     h2.service-slider__item-title {
-        font-size: 38px;
+        font-size: 32px;
     }
 
     .service-slider__item-subtitle {
-        font-size: 28px;
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+
+    .service-slider__item {
+        padding: 25px;
     }
 
 }

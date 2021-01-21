@@ -1,6 +1,6 @@
 //Страница с отзывами
 
-.btn-wrapper__reviews {
+.btn-wrapper--reviews {
     position: absolute;
     right: 0;
 }
@@ -48,4 +48,67 @@ p.review-item__author {
     font-weight: 600;
     font-size: 18px;
     margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+
+    .btn-wrapper--reviews {
+        margin-top: -105px;
+    }
+
+    .review-item {
+
+        &:nth-child(2n+1) {
+            margin-right: 20%;
+        }
+
+        &:nth-child(2n) {
+            margin-left: 20%;
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .btn-wrapper--reviews {
+        margin-top: -90px;
+    }
+
+    .review-item {
+
+        &:nth-child(2n+1) {
+            margin-right: 0;
+        }
+
+        &:nth-child(2n) {
+            margin-left: 0;
+        }
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .btn-wrapper--reviews {
+        margin-top: -71px;
+    }
+
+    .review-item {
+        padding: 40px 0;
+
+        &:nth-child(2n+1) {
+            margin-right: 0;
+        }
+
+        &:nth-child(2n) {
+            margin-left: 0;
+        }
+    }
+
+    span.review-item__btn {
+        left: 0%;
+        bottom: 0px;
+    }
+
 }

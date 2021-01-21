@@ -1,5 +1,5 @@
 .instagram {
-    padding: 20px 0 80px 0;
+    padding: 20px 0;
 }
 
 .instagram-top {
@@ -87,4 +87,148 @@
     .instagram-slider__item-overlay {
         opacity: 1;
     }
+}
+
+@media screen and (max-width: 1350px) {
+
+    .instagram-slider__item-img {
+        height: 260px;
+    }
+
+    .instagram-slider__item-desc {
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    .instagram-link {
+        margin-left: -10%;
+
+        a {
+            font-size: 21px;
+
+            &::before {
+                left: 60px;
+                width: 240px;
+            }
+        }
+    }
+
+    .instagram-slider__item-img {
+        height: 220px;
+    }
+
+    .instagram-slider__item-desc {
+
+        p {
+            font-size: 12px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .instagram-link {
+        margin-left: -35%;
+    margin-top: 10%;
+
+        a {
+            font-size: 18px;
+
+            &::before {
+                left: 40px;
+                width: 200px;
+            }
+        }
+    }
+
+    .instagram-slider__item-img {
+        height: 220px;
+    }
+
+    .instagram-slider__item-desc {
+
+        p {
+            font-size: 12px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .instagram-top {
+        flex-wrap: wrap;
+
+        h2.title-line {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+
+    .instagram-link {
+        width: 50%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .instagram-slider__nav {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .instagram-slider__item-img {
+        height: 280px;
+    }
+
+    .instagram-slider__item-desc p {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .instagram-slider__item-img {
+        height: 230px;
+    }
+
+    .instagram-slider__item-desc {
+
+        p {
+            font-size: 12px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 460px) {
+
+    .instagram-link {
+
+        a {
+            font-size: 16px;
+
+            &::before {
+                left: 0px;
+                width: 180px;
+            }
+        }
+    }
+
+    .instagram-slider__item-img {
+        height: 350px;
+    }
+
+    .instagram-slider__item-desc p {
+        font-size: 14px;
+    }
+
 }
