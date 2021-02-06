@@ -1,0 +1,61 @@
+.container.container--page
+    ul.breadcrumbs
+        li.breadcrumbs-item
+            a.breadcrumbs-item__link(href="/") Главная /
+            a.breadcrumbs-item__link(href="/") Каталог /
+        li.breadcrumbs__item.breadcrumbs__item--active Индивидуальный подбор
+    h1.page-title Индивидуальный подбор
+    section.selection
+        .selection-wrapper
+            .selection-wrapper__left
+                form(class="selection-form" id="selection")
+                    
+                    .selection-form__item
+                        label.selection-form__label Тип двери
+                        select(class="selection-form__select" name="door-type")
+                            option(value="Входная дверь") Входная дверь
+                            option(value="Тамбурная дверь") Тамбурная дверь
+                            option(value="Противопожарная дверь") Противопожарная дверь
+                            option(value="Другой тип двери") Другой тип двери
+                    
+                    .selection-form__item
+                        label.selection-form__label Цвет внешней отделки
+                        select(class="selection-form__select" name="color-front")
+                            option(value="Белый") Белый
+                            option(value="Светлый") Светлый
+                            option(value="Темный") Темный
+                            option(value="Черный") Черный
+                    
+                    .selection-form__item
+                        label.selection-form__label Назначение
+                        select(class="selection-form__select" name="appointment")
+                            option(value="Для квартиры") Для квартиры
+                            option(value="Для дома") Для дома
+                            option(value="Для офиса") Для офиса
+                    
+                    .selection-form__item.selection-form__item--checkbox
+                        input(class="selection-form__checkbox" type="checkbox" name="mirror" id="mirror" value="Да")
+                        label.selection-form__label.selection-form__label--checkbox(for="mirror") С зеркалом
+                    
+                    .selection-form__item
+                        label.selection-form__label Цена
+                        input(class="selection-form__input selection-form__input--price" type="number" name="price" placeholder="От")
+                    
+                    .selection-form__item
+                        label.selection-form__label Цена
+                        input(class="selection-form__input selection-form__input--price" type="number" name="price" placeholder="До")
+                    
+                    .selection-form__item
+                        input(class="selection-form__input" type="text" name="name" placeholder="Имя")
+                    
+                    .selection-form__item
+                        input(class="selection-form__input mask__input_phone" type="tel" name="phone" placeholder="Телефон*")
+                    
+                    .selection-form__bottom
+                        .btn-wrapper
+                            button(class="btn btn__brown" id="selectionSubmit") Оставить заявку
+                        .selection-form__privacy
+                            input(class="selection-form__checkbox" type="checkbox" id="privacy_selection" name="privacy_selection" value="yes" checked onchange="document.getElementById('selectionSubmit').disabled = !this.checked;")
+                            label(for="privacy_selection") Соглашаюсь с политикой конфидециальности
+            .selection-wrapper__right 
+                img(src="/static/images/general/consult.png", alt="")

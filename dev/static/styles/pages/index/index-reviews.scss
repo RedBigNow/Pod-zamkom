@@ -64,6 +64,36 @@
     box-shadow: 16px 16px 16px rgba(14, 9, 0, 0.1);
 }
 
+a.reviews-link {
+    position: absolute;
+    top: 25px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    transition: .3s;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 40px;
+        width: 156px;
+        border-bottom: 1px solid #fff;
+        transition: .3s;
+    }
+
+    &:hover {
+        color: $black;
+
+        &::before {
+            left: 0;
+            border-bottom: 1px solid $black;
+        }
+
+    }
+
+}
+
 .review-slider___list {
     width: 100%;
 
