@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css">
+    <link rel="icon" href="/static/images/general/favicon.ico" type="image/ico"><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container header-container">
+          <div class="header-logo"><a href="/"><img src="/static/images/general/logo.svg" alt="Дом под замком"></a></div>
+          <div class="menu-container">
+            <nav class="nav-menu">
+              <ul class="nav-menu__list">
+                <li class="nav-menu__item nav-menu__item--parent"><a href="/services.html">Услуги</a>
+                  <ul class="nav-submenu">
+                    <li class="nav-submenu__item"><a href="/service-detail.html">Замер</a></li>
+                    <li class="nav-submenu__item"><a href="/service-detail.html">Доставка</a></li>
+                    <li class="nav-submenu__item"><a href="/service-detail.html">Установка</a></li>
+                  </ul>
+                </li>
+                <li class="nav-menu__item nav-menu__item--parent active"><a href="/catalog.html">Каталог</a>
+                  <ul class="nav-submenu">
+                    <li class="nav-submenu__item"><a href="/catalog-list.html">Входные двери</a>
+                      <!--ul.nav-submenu
+                      li.nav-submenu__item
+                      	a(href="/product.html") As-doors
+                      li.nav-submenu__item
+                      	a(href="/product.html") As-doors 2
+                      li.nav-submenu__item
+                      	a(href="/product.html") As-doors 3
+                      li.nav-submenu__item
+                      	a(href="/product.html") As-doors 4
+                      -->
+                    </li>
+                    <li class="nav-submenu__item"><a href="/catalog-list.html">Тамбурные двери</a>
+                      <!--ul.nav-submenu
+                      li.nav-submenu__item
+                      	a(href="/product.html") As-doors
+                      li.nav-submenu__item
+                      	a(href="/product.html") As-doors 2
+                      li.nav-submenu__item
+                      	a(href="/product.html") As-doors 3
+                      li.nav-submenu__item
+                      	a(href="/product.html") As-doors 4
+                      -->
+                    </li>
+                    <li class="nav-submenu__item"><a href="/catalog-list.html">Противопожарные двери</a>
+                      <!--ul.nav-submenu
+                      li.nav-submenu__item
+                      	a(href="/product.html") As-doors
+                      li.nav-submenu__item
+                      	a(href="/product.html") As-doors 2
+                      li.nav-submenu__item
+                      	a(href="/product.html") As-doors 3
+                      li.nav-submenu__item
+                      	a(href="/product.html") As-doors 4
+                      -->
+                    </li>
+                    <!--li.nav-submenu__itema(href="/selection.html") Индивидуальный подбор
+                    -->
+                    <li class="nav-submenu__item"><a href="/brands.html">Бренды</a></li>
+                  </ul>
+                </li>
+                <li class="nav-menu__item"><a href="/about.html">О нас</a></li>
+                <li class="nav-menu__item"><a href="/reviews.html">Отзывы</a></li>
+                <li class="nav-menu__item"><a href="/blog.html">Блог</a></li>
+                <li class="nav-menu__item"><a href="/contacts.html">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-contacts">
+            <svg class="phone-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.55081 0.799805H4.00005C2.23274 0.799805 0.800049 2.23249 0.800049 3.9998V7.1998C0.800049 16.0364 7.96349 23.1998 16.8 23.1998H20C21.7674 23.1998 23.2 21.7671 23.2 19.9998V17.7887C23.2 17.1826 22.8576 16.6286 22.3156 16.3576L18.4501 14.4248C17.5792 13.9894 16.5246 14.4262 16.2167 15.35L15.7402 16.7792C15.4316 17.705 14.4819 18.2562 13.525 18.0648C9.69491 17.2988 6.70108 14.3049 5.93506 10.4749C5.74367 9.51792 6.29481 8.56822 7.22062 8.25961L8.99443 7.66834C9.78759 7.40396 10.2435 6.57349 10.0407 5.76239L9.10303 2.01175C8.92497 1.29948 8.28499 0.799805 7.55081 0.799805Z" stroke="black"></path>
+            </svg><a class="phone" href="tel:+79262625289">+7 (926) 262-52-89</a>
+          </div>
+          <div class="header-callback"><span class="callback" data-fancybox data-src="#consult">Заказать звонок</span></div>
+          <div class="header-toolbar">
+            <div class="header-toolbar__social">
+              <ul class="social-list">
+                <li class="social-item"><a href="#">
+                    <svg class="inst-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17.6 5.5998H19.2M7.20005 0.799805H16.8C20.3347 0.799805 23.2 3.66518 23.2 7.1998V16.7998C23.2 20.3344 20.3347 23.1998 16.8 23.1998H7.20005C3.66543 23.1998 0.800049 20.3344 0.800049 16.7998V7.1998C0.800049 3.66518 3.66543 0.799805 7.20005 0.799805ZM12 16.7998C9.34908 16.7998 7.20005 14.6508 7.20005 11.9998C7.20005 9.34884 9.34908 7.1998 12 7.1998C14.651 7.1998 16.8 9.34884 16.8 11.9998C16.8 14.6508 14.651 16.7998 12 16.7998Z" stroke="black"></path>
+                    </svg></a></li>
+              </ul>
+            </div>
+            <div class="header-toolbar__search"><span data-fancybox data-src="#searchPopup">
+                <svg class="search-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M23.2 23.1998L16.8 16.7998M10.4 19.9998C5.09812 19.9998 0.800049 15.7017 0.800049 10.3998C0.800049 5.09787 5.09812 0.799805 10.4 0.799805C15.702 0.799805 20 5.09787 20 10.3998C20 15.7017 15.702 19.9998 10.4 19.9998Z" stroke="black"></path>
+                </svg></span></div>
+          </div>
+          <div class="header-mobile__bottom">
+            <div class="header-contacts">
+              <svg class="phone-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.55081 0.799805H4.00005C2.23274 0.799805 0.800049 2.23249 0.800049 3.9998V7.1998C0.800049 16.0364 7.96349 23.1998 16.8 23.1998H20C21.7674 23.1998 23.2 21.7671 23.2 19.9998V17.7887C23.2 17.1826 22.8576 16.6286 22.3156 16.3576L18.4501 14.4248C17.5792 13.9894 16.5246 14.4262 16.2167 15.35L15.7402 16.7792C15.4316 17.705 14.4819 18.2562 13.525 18.0648C9.69491 17.2988 6.70108 14.3049 5.93506 10.4749C5.74367 9.51792 6.29481 8.56822 7.22062 8.25961L8.99443 7.66834C9.78759 7.40396 10.2435 6.57349 10.0407 5.76239L9.10303 2.01175C8.92497 1.29948 8.28499 0.799805 7.55081 0.799805Z" stroke="black"></path>
+              </svg><a class="phone" href="tel:+79262625289">+7 (926) 262-52-89</a>
+            </div>
+            <div class="header-callback"><span class="callback" data-fancybox data-src="#consult">Заказать звонок</span></div>
+            <div class="header-toolbar">
+              <div class="header-toolbar__social">
+                <ul class="social-list">
+                  <li class="social-item"><a href="#">
+                      <svg class="inst-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.6 5.5998H19.2M7.20005 0.799805H16.8C20.3347 0.799805 23.2 3.66518 23.2 7.1998V16.7998C23.2 20.3344 20.3347 23.1998 16.8 23.1998H7.20005C3.66543 23.1998 0.800049 20.3344 0.800049 16.7998V7.1998C0.800049 3.66518 3.66543 0.799805 7.20005 0.799805ZM12 16.7998C9.34908 16.7998 7.20005 14.6508 7.20005 11.9998C7.20005 9.34884 9.34908 7.1998 12 7.1998C14.651 7.1998 16.8 9.34884 16.8 11.9998C16.8 14.6508 14.651 16.7998 12 16.7998Z" stroke="black"></path>
+                      </svg></a></li>
+                </ul>
+              </div>
+              <div class="header-toolbar__search"><span data-fancybox data-src="#searchPopup">
+                  <svg class="search-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.2 23.1998L16.8 16.7998M10.4 19.9998C5.09812 19.9998 0.800049 15.7017 0.800049 10.3998C0.800049 5.09787 5.09812 0.799805 10.4 0.799805C15.702 0.799805 20 5.09787 20 10.3998C20 15.7017 15.702 19.9998 10.4 19.9998Z" stroke="black"></path>
+                  </svg></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="header-burger">
+          <button class="burger" type="button" id="burger"><span class="burger__icon"></span><span class="burger__text"></span><span class="burger__hidden-text"></span></button>
+        </div>
+      </header>
+      <div class="content">
+        <section class="hero">
+          <div class="container">
+            <div class="hero-slider">
+              <div class="hero-slider__item">
+                <div class="hero-slider__item-left">
+                  <h2 class="hero-title">Монтаж входной двери</h2>
+                  <div class="hero-description">
+                    <p>От качества установки напрямую зависит то, как будет служить дверь, мы уделяем вопросу установки дверных конструкций самое пристальное внимание.</p>
+                  </div>
+                  <div class="btn-wrapper"><a class="btn btn__beige" href="#">Подробнее</a></div>
+                </div>
+                <div class="hero-slider__item-right">
+                  <div class="circle-bg">
+                    <div class="circle-big"><img src="/static/images/general/circle-big.png" alt=""></div>
+                    <div class="circle-small"><img src="/static/images/general/circle-small.png" alt=""></div>
+                  </div>
+                  <div class="hero-img"><img src="/static/images/general/slider-img.png" alt="Монтаж входной двери"></div>
+                </div>
+              </div>
+              <div class="hero-slider__item">
+                <div class="hero-slider__item-left">
+                  <h2 class="hero-title">Монтаж входной двери 2</h2>
+                  <div class="hero-description">
+                    <p>От качества установки напрямую зависит то, как будет служить дверь, мы уделяем вопросу установки дверных конструкций самое пристальное внимание.</p>
+                  </div>
+                  <div class="btn-wrapper"><a class="btn btn__beige" href="#">Подробнее</a></div>
+                </div>
+                <div class="hero-slider__item-right">
+                  <div class="circle-bg">
+                    <div class="circle-big"><img src="/static/images/general/circle-big.png" alt=""></div>
+                    <div class="circle-small"><img src="/static/images/general/circle-small.png" alt=""></div>
+                  </div>
+                  <div class="hero-img"><img src="/static/images/general/slider-img.png" alt="Монтаж входной двери"></div>
+                </div>
+              </div>
+              <div class="hero-slider__item">
+                <div class="hero-slider__item-left">
+                  <h2 class="hero-title">Монтаж входной двери 3</h2>
+                  <div class="hero-description">
+                    <p>От качества установки напрямую зависит то, как будет служить дверь, мы уделяем вопросу установки дверных конструкций самое пристальное внимание.</p>
+                  </div>
+                  <div class="btn-wrapper"><a class="btn btn__beige" href="#">Подробнее</a></div>
+                </div>
+                <div class="hero-slider__item-right">
+                  <div class="circle-bg">
+                    <div class="circle-big"><img src="/static/images/general/circle-big.png" alt=""></div>
+                    <div class="circle-small"><img src="/static/images/general/circle-small.png" alt=""></div>
+                  </div>
+                  <div class="hero-img"><img src="/static/images/general/slider-img.png" alt="Монтаж входной двери"></div>
+                </div>
+              </div>
+            </div>
+            <div class="hero-slider__nav">
+              <div class="slider__nav">
+                <div class="arrow-prev" id="hero-prev"><img src="/static/images/general/arrow-left.svg" alt=""></div>
+                <div class="arrow-next" id="hero-next"><img src="/static/images/general/arrow-right.svg" alt=""></div>
+              </div>
+            </div>
+            <div class="hero-progress__bar">
+              <div class="hero-progress__bar-item"><span data-slick-index="0" class="progressBar"></span></div>
+              <div class="hero-progress__bar-item"><span data-slick-index="1" class="progressBar"></span></div>
+              <div class="hero-progress__bar-item"><span data-slick-index="2" class="progressBar"></span></div>
+            </div>
+          </div>
+        </section>
+        <section class="services-index">
+          <div class="bg-title__right" data-enllax-ratio="1" data-enllax-type="foreground" data-enllax-direction="horizontal">Услуги</div>
+          <div class="container">
+            <h2 class="title-line">Что мы предлагаем</h2>
+            <div class="service-slider__list">
+              <div class="service-slider__item" data-enllax-ratio=".1" data-enllax-type="foreground">
+                <div class="service-slider__item-bg"><img src="/static/images/general/plug.jpg" alt=""></div>
+                <h2 class="service-slider__item-title">Монтаж</h2>
+                <p class="service-slider__item-subtitle">Входной двери</p>
+                <div class="btn-wrapper"><a class="btn btn__brown" href="/service-detail.html">Подробнее</a></div>
+                <div class="service-slider__item-descr">
+                  <p>Двери устанавливаются высококвалифицированными специалистами нашей компании. </p>
+                  <p>Таким образом вы можете гарантировать высокое качество установки и долгую безотказную службу дверной конструкции.</p>
+                </div>
+              </div>
+              <div class="service-slider__item" data-enllax-ratio=".2" data-enllax-type="foreground">
+                <div class="service-slider__item-bg"><img src="/static/images/general/plug.jpg" alt=""></div>
+                <h2 class="service-slider__item-title">Замер</h2>
+                <p class="service-slider__item-subtitle">На выезд</p>
+                <div class="btn-wrapper"><a class="btn btn__brown" href="/service-detail.html">Подробнее</a></div>
+                <div class="service-slider__item-descr">
+                  <p>Именно замер – наиболее ответственный этап установки дверей.</p>
+                  <p>Точность замера – гарантия безошибочной проектировки входной конструкции и последующей безупречной службы Ваших дверей!</p>
+                </div>
+              </div>
+              <div class="service-slider__item" data-enllax-ratio=".3" data-enllax-type="foreground">
+                <div class="service-slider__item-bg"><img src="/static/images/general/plug.jpg" alt=""></div>
+                <h2 class="service-slider__item-title">Доставка</h2>
+                <p class="service-slider__item-subtitle">На дом</p>
+                <div class="btn-wrapper"><a class="btn btn__brown" href="/service-detail.html">Подробнее</a></div>
+                <div class="service-slider__item-descr">
+                  <p>Доставка выбранной дверной конструкции производится на собственном транспорте компании на следующий день после оформления заказа.</p>
+                  <p>При необходимости наши сотрудники поднимут дверь на нужный этаж. Время доставки выбирает заказчик.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="action">
+          <div class="container">
+            <h3 class="action-title">Оставьте Ваши данные и мы свяжемся с Вами в течении 5 минут.</h3>
+            <form class="action-form" id="action-form">
+              <input class="action-form__input" type="text" name="name" placeholder="Ваше имя">
+              <input class="action-form__input mask__input_phone" type="tel" name="phone" placeholder="Телефон*" required>
+              <div class="btn-wrapper btn-form__action">
+                <button class="btn btn__light-brown" id="actionSubmit">Оставить заявку</button>
+              </div>
+              <div class="action-form_privacy">
+                <input class="action-form__checkbox" type="checkbox" id="privacy" name="privacy" value="yes" checked onchange="document.getElementById('actionSubmit').disabled = !this.checked;">
+                <label for="privacy">Соглашаюсь с политикой конфидециальности</label>
+              </div>
+            </form>
+          </div>
+          <div class="action-form__success"><img src="/static/images/general/success.svg" alt="">
+            <p class="action-form__success-title">Заявка отправлена</p>
+            <p class="action-form__success-subtitle">Ожидайте звонка от нашего менеджера в ближайшее время</p>
+          </div>
+        </section>
+        <section class="index-category">
+          <div class="bg-title__left" data-enllax-ratio="-1" data-enllax-type="foreground" data-enllax-direction="horizontal">Товары</div>
+          <div class="container">
+            <h2 class="title-line">Какие двери бывают?</h2>
+            <div class="index-category__wrap">
+              <div class="index-category__wrap-left">
+                <div class="index-category__list">
+                  <div class="index-category__item index-category__item--active">
+                    <h3>Входные</h3>
+                  </div>
+                  <div class="index-category__item">
+                    <h3>Тамбурные</h3>
+                  </div>
+                  <div class="index-category__item">
+                    <h3>Противопожарные</h3>
+                  </div>
+                </div>
+                <div class="index-category__list-desc" data-slider="category">
+                  <div class="index-category__item-desc">
+                    <p>Это одна из визитных карточек любого дома, будь то обычная квартира, или коттедж, или даже промышленное предприятие.</p>
+                    <div class="btn-wrapper"><a class="btn btn__light-brown" href="/catalog-list.html">Подробнее</a></div>
+                  </div>
+                  <div class="index-category__item-desc">
+                    <p>2 Это одна из визитных карточек любого дома, будь то обычная квартира, или коттедж, или даже промышленное предприятие.</p>
+                    <div class="btn-wrapper"><a class="btn btn__light-brown" href="/catalog-list.html">Подробнее</a></div>
+                  </div>
+                  <div class="index-category__item-desc">
+                    <p>3 Это одна из визитных карточек любого дома, будь то обычная квартира, или коттедж, или даже промышленное предприятие.</p>
+                    <div class="btn-wrapper"><a class="btn btn__light-brown" href="/catalog-list.html">Подробнее</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="index-category__wrap-right">
+                <div class="index-category__list-img" data-slider="category">
+                  <div class="index-category__item-img">
+                    <div class="index-category__img-small"><img src="/static/images/general/category-small.jpg" alt=""></div>
+                    <div class="index-category__img-big"><img src="/static/images/general/category-big.jpg" alt=""></div>
+                  </div>
+                  <div class="index-category__item-img">
+                    <div class="index-category__img-small"><img src="/static/images/general/category-big.jpg" alt=""></div>
+                    <div class="index-category__img-big"><img src="/static/images/general/category-small.jpg" alt=""></div>
+                  </div>
+                  <div class="index-category__item-img">
+                    <div class="index-category__img-small"><img src="/static/images/general/category-small.jpg" alt=""></div>
+                    <div class="index-category__img-big"><img src="/static/images/general/category-big.jpg" alt=""></div>
+                  </div>
+                </div>
+                <div class="index-category__wrap-nav">
+                  <div class="index-category__wrap-nav__current"> 0<span id="current">1</span></div>
+                  <div class="index-category__wrap-nav__separator"></div>
+                  <div class="index-category__wrap-nav__total">0<span id="total">0</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="index-catalog">
+          <div class="container">
+            <div class="catalog-slider__wrapper">
+              <div class="catalog-slider__wrapper-left">
+                <h3>Успейте купить</h3>
+                <div class="catalog-slider__nav">
+                  <div class="slider__nav">
+                    <div class="arrow-prev" id="catalog-prev"><img src="/static/images/general/arrow-left-brown.svg" alt=""></div>
+                    <div class="arrow-next" id="catalog-next"><img src="/static/images/general/arrow-right-brown.svg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-slider__wrapper-right">
+                <div class="product-slider__list">
+                  <div class="product-slider__item">
+                    <div class="product-slider__item-overlay">
+                      <div class="btn-wrapper"><a class="btn btn__light-brown buy1click-slider" href="#" data-fancybox data-src="#buy1click">Купить</a></div>
+                      <div class="btn-wrapper"><a class="btn btn__brown--outline" href="/product.html">Подробнее</a></div>
+                    </div>
+                    <div class="product-slider__item-img"><img src="/static/images/general/slider-img.png" alt=""></div>
+                    <div class="product-slider__item-title">
+                      <h4>Гардиан ДС 2</h4>
+                    </div>
+                    <div class="product-slider__item-category">
+                      <p>Входные двери</p>
+                    </div>
+                    <div class="product-slider__item-price">
+                      <p class="actual-price">10 000 руб.</p>
+                      <p class="old-price">16 000 руб.</p>
+                    </div>
+                  </div>
+                  <div class="product-slider__item">
+                    <div class="product-slider__item-overlay">
+                      <div class="btn-wrapper"><a class="btn btn__light-brown buy1click-slider" href="#" data-fancybox data-src="#buy1click">Купить</a></div>
+                      <div class="btn-wrapper"><a class="btn btn__brown--outline" href="/product.html">Подробнее</a></div>
+                    </div>
+                    <div class="product-slider__item-img"><img src="/static/images/general/door-front.jpg" alt=""></div>
+                    <div class="product-slider__item-title">
+                      <h4>Гардиан ДС 2</h4>
+                    </div>
+                    <div class="product-slider__item-category">
+                      <p>Входные двери</p>
+                    </div>
+                    <div class="product-slider__item-price">
+                      <p class="actual-price">10 000 руб.</p>
+                      <p class="old-price">16 000 руб.</p>
+                    </div>
+                  </div>
+                  <div class="product-slider__item">
+                    <div class="product-slider__item-overlay">
+                      <div class="btn-wrapper"><a class="btn btn__light-brown buy1click-slider" href="#" data-fancybox data-src="#buy1click">Купить</a></div>
+                      <div class="btn-wrapper"><a class="btn btn__brown--outline" href="/product.html">Подробнее</a></div>
+                    </div>
+                    <div class="product-slider__item-img"><img src="/static/images/general/slider-img.png" alt=""></div>
+                    <div class="product-slider__item-title">
+                      <h4>Гардиан ДС 2</h4>
+                    </div>
+                    <div class="product-slider__item-category">
+                      <p>Входные двери</p>
+                    </div>
+                    <div class="product-slider__item-price">
+                      <p class="actual-price">10 000 руб.</p>
+                      <p class="old-price">16 000 руб.</p>
+                    </div>
+                  </div>
+                  <div class="product-slider__item">
+                    <div class="product-slider__item-overlay">
+                      <div class="btn-wrapper"><a class="btn btn__light-brown buy1click-slider" href="#" data-fancybox data-src="#buy1click">Купить</a></div>
+                      <div class="btn-wrapper"><a class="btn btn__brown--outline" href="/product.html">Подробнее</a></div>
+                    </div>
+                    <div class="product-slider__item-img"><img src="/static/images/general/slider-img.png" alt=""></div>
+                    <div class="product-slider__item-title">
+                      <h4>Гардиан ДС 2</h4>
+                    </div>
+                    <div class="product-slider__item-category">
+                      <p>Входные двери</p>
+                    </div>
+                    <div class="product-slider__item-price">
+                      <p class="actual-price">10 000 руб.</p>
+                      <p class="old-price">16 000 руб.</p>
+                    </div>
+                  </div>
+                  <div class="product-slider__item">
+                    <div class="product-slider__item-overlay">
+                      <div class="btn-wrapper"><a class="btn btn__light-brown buy1click-slider" href="#" data-fancybox data-src="#buy1click">Купить</a></div>
+                      <div class="btn-wrapper"><a class="btn btn__brown--outline" href="/product.html">Подробнее</a></div>
+                    </div>
+                    <div class="product-slider__item-img"><img src="/static/images/general/slider-img.png" alt=""></div>
+                    <div class="product-slider__item-title">
+                      <h4>Гардиан ДС 2</h4>
+                    </div>
+                    <div class="product-slider__item-category">
+                      <p>Входные двери</p>
+                    </div>
+                    <div class="product-slider__item-price">
+                      <p class="actual-price">10 000 руб.</p>
+                      <p class="old-price">16 000 руб.</p>
+                    </div>
+                  </div>
+                  <div class="product-slider__item">
+                    <div class="product-slider__item-overlay">
+                      <div class="btn-wrapper"><a class="btn btn__light-brown buy1click-slider" href="#" data-fancybox data-src="#buy1click">Купить</a></div>
+                      <div class="btn-wrapper"><a class="btn btn__brown--outline" href="/product.html">Подробнее</a></div>
+                    </div>
+                    <div class="product-slider__item-img"><img src="/static/images/general/slider-img.png" alt=""></div>
+                    <div class="product-slider__item-title">
+                      <h4>Гардиан ДС 2</h4>
+                    </div>
+                    <div class="product-slider__item-category">
+                      <p>Входные двери</p>
+                    </div>
+                    <div class="product-slider__item-price">
+                      <p class="actual-price">10 000 руб.</p>
+                      <p class="old-price">16 000 руб.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-progress_bar" id="progressBarProduct" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="index-brands">
+          <div class="container">
+            <h2 class="title-line">Бренды</h2>
+            <!--.brands-slider__nav
+            .slider__nav
+                .arrow-prev#brend-prev
+                    img(src="/static/images/general/arrow-left-brown.svg", alt="")
+                .arrow-next#brend-next
+                    img(src="/static/images/general/arrow-right-brown.svg", alt="")
+            -->
+            <div class="brand-slider__list">
+              <div class="brand-slider__item"><a class="brand-slider__item-link" href="/brand-detail.html"><img class="brand-slider__item-img" src="/static/images/general/logo-manuf.png" alt=""></a></div>
+              <div class="brand-slider__item"><a class="brand-slider__item-link" href="/brand-detail.html"><img class="brand-slider__item-img" src="/static/images/general/logo-manuf.png" alt=""></a></div>
+              <div class="brand-slider__item"><a class="brand-slider__item-link" href="/brand-detail.html"><img class="brand-slider__item-img" src="/static/images/general/logo-manuf.png" alt=""></a></div>
+              <div class="brand-slider__item"><a class="brand-slider__item-link" href="/brand-detail.html"><img class="brand-slider__item-img" src="/static/images/general/logo-manuf.png" alt=""></a></div>
+              <div class="brand-slider__item"><a class="brand-slider__item-link" href="/brand-detail.html"><img class="brand-slider__item-img" src="/static/images/general/logo-manuf.png" alt=""></a></div>
+            </div>
+          </div>
+        </section>
+        <section class="index-consult">
+          <div class="container">
+            <div class="index-consult__wrapper">
+              <div class="consult-info">
+                <h2 class="title-line">Не знаете что выбрать?</h2>
+                <div class="consult-info__subtitle" data-aos="fade-up">
+                  <p>Мы готовы предложить клиентам более 2 000 металлических дверей различных стилей и ценовых категорий: от эконом-класса до элитных моделей.</p>
+                </div>
+              </div>
+              <h3 data-aos="fade-up">Наши опытные консультанты помогут с выбором.</h3>
+              <div class="btn-wrapper"><a class="btn btn__brown" href="#" data-fancybox data-src="#consult" data-aos="fade-up">Оставить заявку</a></div>
+            </div>
+          </div>
+        </section>
+        <section class="index-about">
+          <div class="bg-title__right" data-enllax-ratio="1" data-enllax-type="foreground" data-enllax-direction="horizontal">О нас</div>
+          <div class="container">
+            <div class="index-about__wrapper">
+              <div class="index-about__wrapper-left">
+                <div class="index-about__info-first" data-enllax-ratio=".1" data-enllax-type="foreground">
+                  <p>Мы успешно работаем уже более десяти лет и гордимся заслуженными добрыми отзывами наших клиентов!</p>
+                  <p>Мы гарантируем своим покупателям качество нашей продукции и услуг.</p>
+                </div>
+                <div class="index-about__info-link" data-enllax-ratio=".1" data-enllax-type="foreground"><a href="/about.html">Подробнее</a></div>
+                <div class="index-about__info-second" data-enllax-ratio="-.1" data-enllax-type="foreground">
+                  <p>Мы гордимся тем, что наши двери производятся в соответствии с отечественными и европейскими стандартами безопасности и качества.</p>
+                  <p>Это значит, что вы приобретаете у нас не просто стильные и привлекательные внешне, но качественные и надёжные дверные конструкции, которые защитят вашу квартиру от холода и шума, огня и действий грабителей.</p>
+                </div>
+              </div>
+              <div class="index-about__wrapper-right">
+                <div class="index-about__img"><img src="/static/images/general/index-about.jpg" alt=""></div>
+              </div>
+            </div>
+            <div class="advantage-list">
+              <div class="advantage-item" data-aos="zoom-in" data-aos-duration="300">
+                <div class="advantage-item__img"><img src="/static/images/general/advantage-1.svg" alt=""></div>
+                <div class="advantage-item__title">
+                  <h5>Опыт</h5>
+                </div>
+                <div class="advantage-item__desc">
+                  <p>Мы успешно работаем уже более десяти лет</p>
+                </div>
+              </div>
+              <div class="advantage-item" data-aos="zoom-in" data-aos-duration="600">
+                <div class="advantage-item__img"><img src="/static/images/general/advantage-2.svg" alt=""></div>
+                <div class="advantage-item__title">
+                  <h5>Качество</h5>
+                </div>
+                <div class="advantage-item__desc">
+                  <p>Даем гарантию на все виды исполняемых работ</p>
+                </div>
+              </div>
+              <div class="advantage-item" data-aos="zoom-in" data-aos-duration="900">
+                <div class="advantage-item__img"><img src="/static/images/general/advantage-3.svg" alt=""></div>
+                <div class="advantage-item__title">
+                  <h5>Ассортимент</h5>
+                </div>
+                <div class="advantage-item__desc">
+                  <p>Мы готовы предложить  более 2 000  дверей </p>
+                </div>
+              </div>
+              <div class="advantage-item" data-aos="zoom-in" data-aos-duration="1200">
+                <div class="advantage-item__img"><img src="/static/images/general/advantage-4.svg" alt=""></div>
+                <div class="advantage-item__title">
+                  <h5>Консультация</h5>
+                </div>
+                <div class="advantage-item__desc">
+                  <p>Большой опыт и высокое качество обслуживания</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="steps">
+          <div class="container">
+            <h2 class="title-line">Как мы работаем?</h2>
+            <div class="step-list">
+              <div class="step-item">
+                <p class="step-item__number" data-aos="fade-right" data-aos-offset="100">1</p>
+                <h3 class="step-item__title" data-aos="fade-right" data-aos-offset="200">Вы оставляете заявку<br>и наш менеджер с вами связывается</h3>
+                <div class="step-item__info" data-aos="fade-right" data-aos-offset="300">
+                  <p>Небольшой пример к чему может привести ошибка при самостоятельном выборе двери — в частных домах из бруса или бревна, если при монтаже дверного блока не предусмотреть необходимость установки плавающего бруса.</p>
+                </div>
+              </div>
+              <div class="step-item">
+                <p class="step-item__number" data-aos="fade-left" data-aos-offset="100">2</p>
+                <h3 class="step-item__title" data-aos="fade-left" data-aos-offset="200">Согласовываем товар и виды услуг,<br>выбираем удобное для вас время</h3>
+                <div class="step-item__info" data-aos="fade-left" data-aos-offset="300">
+                  <p>Замерщик всегда с собой имеет иллюстрированный каталог дверей и панелей, а также образцы материалов и палитру цветов, с которым вы сможете ознакомиться и определиться в вашем выборе.</p>
+                  <p>Так же и с панелями – на некоторые модели дверей могут устанавливаться только определенные панели.</p>
+                </div>
+              </div>
+              <div class="step-item">
+                <p class="step-item__number" data-aos="fade-right" data-aos-offset="100">3</p>
+                <h3 class="step-item__title" data-aos="fade-right" data-aos-offset="200">Привозим, и устанавливаем<br>вашу новую дверь</h3>
+                <div class="step-item__info" data-aos="fade-right" data-aos-offset="300">
+                  <p>Все дверные блоки, установленные нашей компанией находятся на гарантийном обслуживании. Срок гарантийного обслуживания на дверной блок(конструкцию) и замки — 5 лет, срок гарантии на фурнитуру и декоративные отделочные панели — 1 год.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="action">
+          <div class="container">
+            <h3 class="action-title">Оставьте Ваши данные и мы свяжемся с Вами в течении 5 минут.</h3>
+            <form class="action-form" id="action-form">
+              <input class="action-form__input" type="text" name="name" placeholder="Ваше имя">
+              <input class="action-form__input mask__input_phone" type="tel" name="phone" placeholder="Телефон*" required>
+              <div class="btn-wrapper btn-form__action">
+                <button class="btn btn__light-brown" id="actionSubmit">Оставить заявку</button>
+              </div>
+              <div class="action-form_privacy">
+                <input class="action-form__checkbox" type="checkbox" id="privacy" name="privacy" value="yes" checked onchange="document.getElementById('actionSubmit').disabled = !this.checked;">
+                <label for="privacy">Соглашаюсь с политикой конфидециальности</label>
+              </div>
+            </form>
+          </div>
+          <div class="action-form__success"><img src="/static/images/general/success.svg" alt="">
+            <p class="action-form__success-title">Заявка отправлена</p>
+            <p class="action-form__success-subtitle">Ожидайте звонка от нашего менеджера в ближайшее время</p>
+          </div>
+        </section>
+        <section class="instagram">
+          <div class="container">
+            <div class="instagram-top">
+              <h2 class="title-line">Наши работы в Instagram</h2>
+              <div class="instagram-link"><a href="#">@dom_pod_zamkom</a></div>
+              <div class="instagram-slider__nav">
+                <div class="slider__nav">
+                  <div class="arrow-prev" id="inst-prev"><img src="/static/images/general/arrow-left-brown.svg" alt=""></div>
+                  <div class="arrow-next" id="inst-next"><img src="/static/images/general/arrow-right-brown.svg" alt=""></div>
+                </div>
+              </div>
+            </div>
+            <div class="instagram-slider__list">
+              <div class="instagram-slider__item">
+                <div class="instagram-slider__item-img"><img src="/static/images/general/inst-slide.jpg" alt="Название поста">
+                  <div class="instagram-slider__item-overlay">
+                    <div class="btn-wrapper"><a class="btn btn__light-brown" href="#">Посмотреть</a></div>
+                  </div>
+                </div>
+                <div class="instagram-slider__item-desc">
+                  <p>Абсолютно чёрные двери из Италии  с чёрными коробами ...</p>
+                </div>
+              </div>
+              <div class="instagram-slider__item">
+                <div class="instagram-slider__item-img"><img src="/static/images/general/inst-slide.jpg" alt="Название поста">
+                  <div class="instagram-slider__item-overlay">
+                    <div class="btn-wrapper"><a class="btn btn__light-brown" href="#">Посмотреть</a></div>
+                  </div>
+                </div>
+                <div class="instagram-slider__item-desc">
+                  <p>Абсолютно чёрные двери из Италии  с чёрными коробами ...</p>
+                </div>
+              </div>
+              <div class="instagram-slider__item">
+                <div class="instagram-slider__item-img"><img src="/static/images/general/inst-slide.jpg" alt="Название поста">
+                  <div class="instagram-slider__item-overlay">
+                    <div class="btn-wrapper"><a class="btn btn__light-brown" href="#">Посмотреть</a></div>
+                  </div>
+                </div>
+                <div class="instagram-slider__item-desc">
+                  <p>Абсолютно чёрные двери из Италии  с чёрными коробами ...</p>
+                </div>
+              </div>
+              <div class="instagram-slider__item">
+                <div class="instagram-slider__item-img"><img src="/static/images/general/inst-slide.jpg" alt="Название поста">
+                  <div class="instagram-slider__item-overlay">
+                    <div class="btn-wrapper"><a class="btn btn__light-brown" href="#">Посмотреть</a></div>
+                  </div>
+                </div>
+                <div class="instagram-slider__item-desc">
+                  <p>Абсолютно чёрные двери из Италии  с чёрными коробами ...</p>
+                </div>
+              </div>
+              <div class="instagram-slider__item">
+                <div class="instagram-slider__item-img"><img src="/static/images/general/inst-slide.jpg" alt="Название поста">
+                  <div class="instagram-slider__item-overlay">
+                    <div class="btn-wrapper"><a class="btn btn__light-brown" href="#">Посмотреть</a></div>
+                  </div>
+                </div>
+                <div class="instagram-slider__item-desc">
+                  <p>Абсолютно чёрные двери из Италии  с чёрными коробами ...</p>
+                </div>
+              </div>
+              <div class="instagram-slider__item">
+                <div class="instagram-slider__item-img"><img src="/static/images/general/inst-slide.jpg" alt="Название поста">
+                  <div class="instagram-slider__item-overlay">
+                    <div class="btn-wrapper"><a class="btn btn__light-brown" href="#">Посмотреть</a></div>
+                  </div>
+                </div>
+                <div class="instagram-slider__item-desc">
+                  <p>Абсолютно чёрные двери из Италии  с чёрными коробами ...</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider-progress_bar" id="progressBarInstagram" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </section>
+        <section class="index-reviews">
+          <div class="bg-title__left" data-enllax-ratio="-1" data-enllax-type="foreground" data-enllax-direction="horizontal">Отзывы</div>
+          <div class="container">
+            <div class="index-reviews__wrapper">
+              <div class="index-reviews__wrapper-left">
+                <h2 data-aos="flip-down">Что о нас говорят</h2>
+              </div>
+              <div class="index-reviews__wrapper-right">
+                <div class="index-reviews__container"><a class="reviews-link" href="reviews.html">Смотреть все отзывы</a>
+                  <div class="reviews-slider__nav">
+                    <div class="slider__nav">
+                      <div class="arrow-prev" id="reviews-prev"><img src="/static/images/general/arrow-left.svg" alt=""></div>
+                      <div class="arrow-next" id="reviews-next"><img src="/static/images/general/arrow-right.svg" alt=""></div>
+                    </div>
+                  </div>
+                  <div class="review-slider___list">
+                    <div class="review-slider___item">
+                      <p class="review-author__name">Ольга Антипова</p>
+                      <div class="review-author__text">
+                        <p>Огромное спасибо за дверь. Она превзошла все наши ожидания. Отдельное спасибо Алексею, помог с выбором, проконсультировал по всем вопросам, постоянно был с нами на связи.</p>
+                      </div>
+                    </div>
+                    <div class="review-slider___item">
+                      <p class="review-author__name">Ольга Антипова 2</p>
+                      <div class="review-author__text">
+                        <p>Огромное спасибо за дверь. Она превзошла все наши ожидания. Отдельное спасибо Алексею, помог с выбором, проконсультировал по всем вопросам, постоянно был с нами на связи.</p>
+                      </div>
+                    </div>
+                    <div class="review-slider___item">
+                      <p class="review-author__name">Ольга Антипова 3</p>
+                      <div class="review-author__text">
+                        <p>Огромное спасибо за дверь. Она превзошла все наши ожидания. Отдельное спасибо Алексею, помог с выбором, проконсультировал по всем вопросам, постоянно был с нами на связи.</p>
+                      </div>
+                    </div>
+                    <div class="review-slider___item">
+                      <p class="review-author__name">Ольга Антипова 4</p>
+                      <div class="review-author__text">
+                        <p>Огромное спасибо за дверь. Она превзошла все наши ожидания. Отдельное спасибо Алексею, помог с выбором, проконсультировал по всем вопросам, постоянно был с нами на связи.  </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews-slider__dots"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="faq">
+          <div class="container">
+            <h2 class="title-line">Хотите узнать больше?</h2>
+            <div class="faq-wrapper">
+              <div class="accordion-list">
+                <div class="accordion-item accordion-item--active">
+                  <div class="accordion-item__title">
+                    <h3>Какова окончательная стоимость работ? <span class="accordion-item__icon accordion-item__icon--active"></span></h3>
+                  </div>
+                  <div class="accordion-item__content">
+                    <p>Итоговую сумму работ любой мастер может озвучить лишь после демонтажа старой двери, до начала работ можно лишь предполагать опираясь на опыт и знания а это примерно 90% вероятности попадания в точный перечень работ озвученный до и после завершения монтажа.</p>
+                    <p>Именно по этой причине мы советуем сначала вызвать замерщика и только после покупать дверь, будет меньше неприятных неожиданностей и зачастую даже сэкономит ваши деньги на дополнительных работах так как размеры двери которую посоветует мастер будет максимально подходящей для вашего проёма.</p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-item__title">
+                    <h3>Какова окончательная стоимость работ? <span class="accordion-item__icon"></span></h3>
+                  </div>
+                  <div class="accordion-item__content">
+                    <p>Итоговую сумму работ любой мастер может озвучить лишь после демонтажа старой двери, до начала работ можно лишь предполагать опираясь на опыт и знания а это примерно 90% вероятности попадания в точный перечень работ озвученный до и после завершения монтажа.</p>
+                    <p>Именно по этой причине мы советуем сначала вызвать замерщика и только после покупать дверь, будет меньше неприятных неожиданностей и зачастую даже сэкономит ваши деньги на дополнительных работах так как размеры двери которую посоветует мастер будет максимально подходящей для вашего проёма.</p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-item__title">
+                    <h3>Какова окончательная стоимость работ? <span class="accordion-item__icon"></span></h3>
+                  </div>
+                  <div class="accordion-item__content">
+                    <p>Итоговую сумму работ любой мастер может озвучить лишь после демонтажа старой двери, до начала работ можно лишь предполагать опираясь на опыт и знания а это примерно 90% вероятности попадания в точный перечень работ озвученный до и после завершения монтажа.</p>
+                    <p>Именно по этой причине мы советуем сначала вызвать замерщика и только после покупать дверь, будет меньше неприятных неожиданностей и зачастую даже сэкономит ваши деньги на дополнительных работах так как размеры двери которую посоветует мастер будет максимально подходящей для вашего проёма.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="seo">
+          <div class="container">
+            <h2 class="title-line">Доставим и установим все виды дверей</h2>
+            <div class="seo-wrapper">
+              <p>Мы гордимся тем, что наши двери производятся в соответствии с отечественными и европейскими стандартами безопасности и качества. Это значит, что вы приобретаете у нас не просто стильные и привлекательные внешне, но</p>
+              <div class="seo-wrapper__hidden">
+                <p>Мы гордимся тем, что наши двери производятся в соответствии с отечественными и европейскими стандартами безопасности и качества. Это значит, что вы приобретаете у нас не просто стильные и привлекательные внешне, но</p>
+                <p>Мы гордимся тем, что наши двери производятся в соответствии с отечественными и европейскими стандартами безопасности и качества. Это значит, что вы приобретаете у нас не просто стильные и привлекательные внешне, но</p>
+              </div>
+              <div class="btn-wrapper btn-wrapper__seo"><span class="seo-open"></span></div>
+            </div>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="bg-title__right" data-enllax-ratio="1" data-enllax-type="foreground" data-enllax-direction="horizontal">Контакты</div>
+          <div class="container">
+            <div class="contacts-wrapper">
+              <div class="contacts-wrapper__left">
+                <div class="contacts-form__container">
+                  <h3>Остались вопросы? Оставьте<br>заявку и мы с вами свяжемся.</h3>
+                  <form class="contacts-form" id="contacts-form">
+                    <input class="contacts-form__input" type="text" name="name" placeholder="Ваше имя">
+                    <input class="contacts-form__input mask__input_phone" type="tel" name="phone" placeholder="Телефон*" required>
+                    <div class="contacts-form_privacy">
+                      <input class="contacts-form__checkbox" type="checkbox" id="privacy-contacts" name="privacy-contacts" value="yes" checked onchange="document.getElementById('contactsSubmit').disabled = !this.checked;">
+                      <label for="privacy-contacts">Соглашаюсь с политикой конфидециальности</label>
+                    </div>
+                    <div class="btn-wrapper btn-form__contacts">
+                      <button class="btn btn__light-brown" id="contactsSubmit">Оставить заявку</button>
+                    </div>
+                  </form>
+                  <div class="contacts-form__success"><img src="/static/images/general/success.svg" alt="">
+                    <p class="contacts-form__success-title">Заявка отправлена</p>
+                    <p class="contacts-form__success-subtitle">Ожидайте звонка от нашего менеджера</p>
+                  </div>
+                </div>
+              </div>
+              <div class="contacts-wrapper__right">
+                <div class="contacts-list">
+                  <div class="contacts-item">
+                    <p class="contacts-item__title">Телефон:</p><a class="contacts-item__link" href="tel:+79991233223">+7 (999) 123-32-23</a>
+                  </div>
+                  <div class="contacts-item">
+                    <p class="contacts-item__title">E-mail:</p><a class="contacts-item__link" href="mailto:dom_pod_zamkom@mail.ru">dom_pod_zamkom@mail.ru</a>
+                  </div>
+                  <div class="contacts-item">
+                    <p class="contacts-item__title">Instagram:</p><a class="contacts-item__link contacts-item__link--inst" href="#">@dom_pod_zamkom</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="blog">
+          <div class="container">
+            <div class="blog-info__top">
+              <h2 class="title-line">Полезно знать</h2>
+              <div class="blog-info__top-subtitle" data-aos="fade-up">
+                <p>Металлические входные двери – не эмоциональная покупка. Для этого мы создали раздел который поможет вам, при возникновении трудностей выбора.</p>
+              </div>
+            </div>
+          </div>
+          <div class="blog-img__list" data-slider="blog">
+            <div class="blog-img__item"><img src="/static/images/general/blog-img.jpg" alt="Заголовок поста в блоге"></div>
+            <div class="blog-img__item"><img src="/static/images/general/action-bg.jpg" alt="Заголовок поста в блоге"></div>
+            <div class="blog-img__item"><img src="/static/images/general/contacts-bg.jpg" alt="Заголовок поста в блоге"></div>
+            <div class="blog-img__item"><img src="/static/images/general/plug.jpg" alt="Заголовок поста в блоге"></div>
+            <div class="blog-img__item"><img src="/static/images/general/reviews-bg.jpg" alt="Заголовок поста в блоге"></div>
+          </div>
+          <div class="container">
+            <div class="blog-bottom__wrapper">
+              <div class="blog-bottom__wrapper-left">
+                <div class="blog-preview__list">
+                  <div class="blog-preview__item blog-preview__item-active"><img class="blog-preview__item-img" src="/static/images/general/blog-img.jpg" alt="Заголовок поста в блоге"></div>
+                  <div class="blog-preview__item"><img class="blog-preview__item-img" src="/static/images/general/action-bg.jpg" alt="Заголовок поста в блоге"></div>
+                  <div class="blog-preview__item"><img class="blog-preview__item-img" src="/static/images/general/contacts-bg.jpg" alt="Заголовок поста в блоге"></div>
+                  <div class="blog-preview__item"><img class="blog-preview__item-img" src="/static/images/general/plug.jpg" alt="Заголовок поста в блоге"></div>
+                  <div class="blog-preview__item"><img class="blog-preview__item-img" src="/static/images/general/reviews-bg.jpg" alt="Заголовок поста в блоге"></div>
+                </div>
+              </div>
+              <div class="blog-bottom__wrapper-right">
+                <div class="blog-slider__nav">
+                  <div class="slider__nav">
+                    <div class="arrow-prev" id="blog-prev"><img src="/static/images/general/arrow-left.svg" alt=""></div>
+                    <div class="arrow-next" id="blog-next"><img src="/static/images/general/arrow-right.svg" alt=""></div>
+                  </div>
+                </div>
+                <div class="blog-info__list" data-slider="blog">
+                  <div class="blog-info__item">
+                    <h3 class="blog-info__item-title">Какие двери будут в доме будущего?</h3>
+                    <div class="blog-info__item-desc">
+                      <p>В будущем вы «всегда будете дома». Входные двери обзаведутся видеокамерой в дверном глазке, микрофоном и динамиком...</p>
+                    </div>
+                    <div class="btn-wrapper"><a class="btn btn__beige--outline" href="#">Подробнее</a></div>
+                  </div>
+                  <div class="blog-info__item">
+                    <h3 class="blog-info__item-title">2 Какие двери будут в доме будущего?</h3>
+                    <div class="blog-info__item-desc">
+                      <p>В будущем вы «всегда будете дома». Входные двери обзаведутся видеокамерой в дверном глазке, микрофоном и динамиком...</p>
+                    </div>
+                    <div class="btn-wrapper"><a class="btn btn__beige--outline" href="#">Подробнее</a></div>
+                  </div>
+                  <div class="blog-info__item">
+                    <h3 class="blog-info__item-title">3 Какие двери будут в доме будущего?</h3>
+                    <div class="blog-info__item-desc">
+                      <p>В будущем вы «всегда будете дома». Входные двери обзаведутся видеокамерой в дверном глазке, микрофоном и динамиком...</p>
+                    </div>
+                    <div class="btn-wrapper"><a class="btn btn__beige--outline" href="#">Подробнее</a></div>
+                  </div>
+                  <div class="blog-info__item">
+                    <h3 class="blog-info__item-title">4 Какие двери будут в доме будущего?</h3>
+                    <div class="blog-info__item-desc">
+                      <p>В будущем вы «всегда будете дома». Входные двери обзаведутся видеокамерой в дверном глазке, микрофоном и динамиком...</p>
+                    </div>
+                    <div class="btn-wrapper"><a class="btn btn__beige--outline" href="#">Подробнее</a></div>
+                  </div>
+                  <div class="blog-info__item">
+                    <h3 class="blog-info__item-title">5 Какие двери будут в доме будущего?</h3>
+                    <div class="blog-info__item-desc">
+                      <p>В будущем вы «всегда будете дома». Входные двери обзаведутся видеокамерой в дверном глазке, микрофоном и динамиком...</p>
+                    </div>
+                    <div class="btn-wrapper"><a class="btn btn__beige--outline" href="#">Подробнее</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-wrapper">
+            <div class="footer-wrapper__col"><a href="#"><img class="footer-logo" src="/static/images/general/logo.svg" alt="Дом под замком"></a>
+              <div class="phone-footer"><a href="tel:+79991233223">+7 (999) 123-32-23</a></div>
+              <div class="mail-footer"><a href="mailto:dom_pod_zamkom@mail.ru">info@pod-zamkom.ru</a></div><a class="politic-footer" href="#">Политика конфиденциальности</a>
+            </div>
+            <div class="footer-wrapper__col">
+              <h3>Инфо</h3>
+              <ul class="footer-menu">
+                <li class="footer-menu__item"><a href="/about.html">О нас</a></li>
+                <li class="footer-menu__item"><a href="/reviews.html">Отзывы</a></li>
+                <li class="footer-menu__item"><a href="/blog.html">Блог</a></li>
+                <li class="footer-menu__item"><a href="/contacts.html">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="footer-wrapper__col">
+              <h3>Услуги</h3>
+              <ul class="footer-menu">
+                <li class="footer-menu__item"><a href="/service-detail.html">Замер</a></li>
+                <li class="footer-menu__item"><a href="/service-detail.html">Доставка</a></li>
+                <li class="footer-menu__item"><a href="/service-detail.html">Установка</a></li>
+              </ul>
+            </div>
+            <div class="footer-wrapper__col">
+              <h3>Каталог</h3>
+              <ul class="footer-menu">
+                <li class="footer-menu__item"><a href="/catalog-list.html">Входные двери</a></li>
+                <li class="footer-menu__item"><a href="/catalog-list.html">Тамбурные двери</a></li>
+                <li class="footer-menu__item"><a href="/catalog-list.html">Противопожарные двери</a></li>
+                <li class="footer-menu__item"><a href="/brands.html">Бренды</a></li>
+              </ul>
+            </div>
+            <div class="footer-wrapper__col">
+              <div class="search-wrapper">
+                <form class="search-footer" action="/search" method="get">
+                  <input class="search-input form-control" type="text" name="search" id="search" placeholder="Поиск">
+                  <input type="hidden" name="id" value="1">
+                  <input class="search-submit" type="submit" value="">
+                </form>
+              </div>
+              <div class="inst-footer">
+                <p>Наш Instagram:</p><a class="inst-footer__link" href="#">@dom_pod_zamkom</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="developed">
+          <p>Разработано <a href="https://meduza-web.ru/" target="_blank">Meduza</a></p>
+        </div>
+      </footer>
+      <div class="back-top">
+        <p class="top-btn">Наверх</p>
+      </div>
+      <div class="popup" id="consult">
+        <div class="container">
+          <div class="close-popup" data-fancybox-close><img src="/static/images/general/close.svg" alt=""></div>
+          <div class="popup-wrapper">
+            <div class="popup-wrapper__consult">
+              <p class="consult-popup__title">Бесплатная консультация<br>и помощь с выбором</p>
+              <p class="consult-popup__subtitle">Оставьте свои данные для дальнейшего оформления заказа.<br>Наш менеджер свяжеться с вами в течении 5 минут, для уточнения информации.</p>
+              <form class="consult-form" id="consult-form">
+                <input class="consult-form__input" type="text" name="name" placeholder="Ваше имя">
+                <input class="consult-form__input mask__input_phone" type="tel" name="phone" placeholder="Телефон*" required>
+                <div class="btn-wrapper btn-form__consult">
+                  <button class="btn btn__light-brown" id="ConsultSubmit">Оставить заявку</button>
+                </div>
+                <div class="consult-form_privacy">
+                  <input class="consult-form__checkbox" type="checkbox" id="privacy_consult" name="privacy_consult" value="yes" checked onchange="document.getElementById('ConsultSubmit').disabled = !this.checked;">
+                  <label for="privacy_consult">Соглашаюсь с политикой конфидециальности</label>
+                </div>
+              </form>
+            </div>
+            <div class="consult-popup__img"><img src="/static/images/general/consult.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="success">
+        <div class="container">
+          <div class="close-popup" data-fancybox-close><img src="/static/images/general/close.svg" alt=""></div>
+          <div class="popup-wrapper">
+            <div class="popup-wrapper__success"><img src="/static/images/general/success.svg" alt="">
+              <p class="success-popup__title">Заявка отправлена</p>
+              <p class="success-popup__subtitle">Ожидайте звонка от нашего менеджера в ближайшее время</p>
+              <p class="success-popup__timer">Окно закроется автоматически через 5 секунд</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="searchPopup">
+        <div class="container">
+          <div class="close-popup" data-fancybox-close><img src="/static/images/general/close.svg" alt=""></div>
+          <div class="popup-wrapper">
+            <div class="popup-wrapper__search">
+              <form class="search-popup" action="/search" method="get">
+                <input class="search-popup__input form-control" type="text" name="search" id="search" placeholder="Поиск">
+                <input type="hidden" name="id" value="1">
+                <div class="btn-wrapper">
+                  <input class="btn btn__brown search-popup__submit" type="submit" value="Найти">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="reviewPopup">
+        <div class="container">
+          <div class="close-popup" data-fancybox-close><img src="/static/images/general/close.svg" alt=""></div>
+          <div class="popup-wrapper">
+            <div class="popup-wrapper__review">
+              <p class="review-popup__title">Отзыв о работе компании</p>
+              <p class="review-popup__subtitle">Мы всегда рады обратной связи от наших клиентов</p>
+              <form class="review-form" id="review-form">
+                <input class="review-form__input" type="text" name="name" placeholder="Ваше имя*" required>
+                <input class="review-form__input mask__input_phone" type="email" name="phone" placeholder="E-mail">
+                <textarea class="review-form__textarea" name="message" placeholder="Отзыв*" required></textarea>
+                <div class="review-form__bottom">
+                  <div class="btn-wrapper btn-form__review">
+                    <button class="btn btn__light-brown" id="reviewSubmit">Оставить отзыв</button>
+                  </div>
+                  <div class="review-form_privacy">
+                    <input class="review-form__checkbox" type="checkbox" id="privacy_review" name="privacy_review" value="yes" checked onchange="document.getElementById('reviewsSubmit').disabled = !this.checked;">
+                    <label for="privacy_review">Соглашаюсь с политикой конфидециальности</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="review-popup__img"><img src="/static/images/general/consult.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="reviewSuccess">
+        <div class="container">
+          <div class="close-popup" data-fancybox-close><img src="/static/images/general/close.svg" alt=""></div>
+          <div class="popup-wrapper">
+            <div class="popup-wrapper__success"><img src="/static/images/general/success.svg" alt="">
+              <p class="success-popup__title">Спасибо за отзыв!</p>
+              <p class="success-popup__subtitle">После модерации Ваш отзыв будет опубликован на сайте</p>
+              <p class="success-popup__timer">Окно закроется автоматически через 5 секунд</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="order">
+        <div class="container">
+          <div class="close-popup" data-fancybox-close><img src="/static/images/general/close.svg" alt=""></div>
+          <div class="popup-wrapper">
+            <div class="popup-wrapper__order">
+              <div class="popup-wrapper__order-left">
+                <p class="order-popup__title">Оформление заказа</p>
+                <p class="order-popup__subtitle">Оставьте свои данные для дальнейшего оформления заказа.<br>Мы свяжемся с Вами в ближайшее время.</p>
+                <form class="order-form" id="order-form">
+                  <input class="order-form__input" type="text" name="name" placeholder="Ваше имя">
+                  <input class="order-form__input mask__input_phone" type="tel" name="phone" placeholder="Телефон*" required>
+                  <textarea class="order-form__textarea" name="message" placeholder="Примечание к заказу"></textarea>
+                  <input type="hidden" name="productName" value="">
+                  <div class="order-form__bottom">
+                    <div class="btn-wrapper btn-form__order">
+                      <button class="btn btn__light-brown" id="orderSubmit">Оформить заказ</button>
+                    </div>
+                    <div class="order-form_privacy">
+                      <input class="order-form__checkbox" type="checkbox" id="privacy_order" name="privacy_order" value="yes" checked onchange="document.getElementById('orderSubmit').disabled = !this.checked;">
+                      <label for="privacy_order">Соглашаюсь с политикой конфидециальности</label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="popup-wrapper__order-right">
+                <div class="circle-bg">
+                  <div class="circle-big"><img src="/static/images/general/circle-big-brown.png" alt=""></div>
+                  <div class="circle-small"><img src="/static/images/general/circle-small-brown.png" alt=""></div>
+                </div>
+                <div class="order-img"><img src="/static/images/general/slider-img.png" alt="Монтаж входной двери"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="buy1click">
+        <div class="container">
+          <div class="close-popup" data-fancybox-close><img src="/static/images/general/close.svg" alt=""></div>
+          <div class="popup-wrapper">
+            <div class="popup-wrapper__order">
+              <div class="popup-wrapper__order-left">
+                <p class="order-popup__title">Оформление заказа</p>
+                <p class="order-popup__subtitle">Оставьте свои данные для дальнейшего оформления заказа.<br>Мы свяжемся с Вами в ближайшее время.</p>
+                <form class="order-form" id="order-form">
+                  <input class="order-form__input" type="text" name="name" placeholder="Ваше имя">
+                  <input class="order-form__input mask__input_phone" type="tel" name="phone" placeholder="Телефон*" required>
+                  <textarea class="order-form__textarea" name="message" placeholder="Примечание к заказу"></textarea>
+                  <input class="fsdsfdsdfdsfsdf" id="orderProductName" type="hidden" name="productName">
+                  <div class="order-form__bottom">
+                    <div class="btn-wrapper btn-form__order">
+                      <button class="btn btn__light-brown" id="orderSubmit">Оформить заказ</button>
+                    </div>
+                    <div class="order-form_privacy">
+                      <input class="order-form__checkbox" type="checkbox" id="privacy_order" name="privacy_order" value="yes" checked onchange="document.getElementById('orderSubmit').disabled = !this.checked;">
+                      <label for="privacy_order">Соглашаюсь с политикой конфидециальности</label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="popup-wrapper__order-right">
+                <div class="circle-bg">
+                  <div class="circle-big"><img src="/static/images/general/circle-big-brown.png" alt=""></div>
+                  <div class="circle-small"><img src="/static/images/general/circle-small-brown.png" alt=""></div>
+                </div>
+                <div class="order-img order-img__buy1click"><img id="orderProductImage" src="/static/images/general/slider-img.png" alt="Монтаж входной двери"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="orderSuccess">
+        <div class="container">
+          <div class="close-popup" data-fancybox-close><img src="/static/images/general/close.svg" alt=""></div>
+          <div class="popup-wrapper">
+            <div class="popup-wrapper__success"><img src="/static/images/general/success.svg" alt="">
+              <p class="success-popup__title">Спасибо за заказ!</p>
+              <p class="success-popup__subtitle">В ближайшее время мы с Вами свяжемся.</p>
+              <p class="success-popup__timer">Окно закроется автоматически через 5 секунд</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="static/js/jquery.enllax.min.js"></script>
+    <script src="static/js/inputmask.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>

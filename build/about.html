@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>О компании</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css">
+    <link rel="icon" href="/static/images/general/favicon.ico" type="image/ico"><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container header-container">
+          <div class="header-logo"><a href="/"><img src="/static/images/general/logo.svg" alt="Дом под замком"></a></div>
+          <div class="menu-container">
+            <nav class="nav-menu">
+              <ul class="nav-menu__list">
+                <li class="nav-menu__item nav-menu__item--parent"><a href="/services.html">Услуги</a>
+                  <ul class="nav-submenu">
+                    <li class="nav-submenu__item"><a href="/service-detail.html">Замер</a></li>
+                    <li class="nav-submenu__item"><a href="/service-detail.html">Доставка</a></li>
+                    <li class="nav-submenu__item"><a href="/service-detail.html">Установка</a></li>
+                  </ul>
+                </li>
+                <li class="nav-menu__item nav-menu__item--parent active"><a href="/catalog.html">Каталог</a>
+                  <ul class="nav-submenu">
+                    <li class="nav-submenu__item"><a href="/catalog-list.html">Входные двери</a>
+                      <!--ul.nav-submenu
+                      li.nav-submenu__item
+                      	a(href="/product.html") As-doors
+                      li.nav-submenu__item
+                      	a(href="/product.html") As-doors 2
+                      li.nav-submenu__item
+                      	a(href="/product.html") As-doors 3
+                      li.nav-submenu__item
+                      	a(href="/product.html") As-doors 4
+                      -->
+                    </li>
+                    <li class="nav-submenu__item"><a href="/catalog-list.html">Тамбурные двери</a>
+                      <!--ul.nav-submenu
+                      li.nav-submenu__item
+                      	a(href="/product.html") As-doors
+                      li.nav-submenu__item
+                      	a(href="/product.html") As-doors 2
+                      li.nav-submenu__item
+                      	a(href="/product.html") As-doors 3
+                      li.nav-submenu__item
+                      	a(href="/product.html") As-doors 4
+                      -->
+                    </li>
+                    <li class="nav-submenu__item"><a href="/catalog-list.html">Противопожарные двери</a>
+                      <!--ul.nav-submenu
+                      li.nav-submenu__item
+                      	a(href="/product.html") As-doors
+                      li.nav-submenu__item
+                      	a(href="/product.html") As-doors 2
+                      li.nav-submenu__item
+                      	a(href="/product.html") As-doors 3
+                      li.nav-submenu__item
+                      	a(href="/product.html") As-doors 4
+                      -->
+                    </li>
+                    <!--li.nav-submenu__itema(href="/selection.html") Индивидуальный подбор
+                    -->
+                    <li class="nav-submenu__item"><a href="/brands.html">Бренды</a></li>
+                  </ul>
+                </li>
+                <li class="nav-menu__item"><a href="/about.html">О нас</a></li>
+                <li class="nav-menu__item"><a href="/reviews.html">Отзывы</a></li>
+                <li class="nav-menu__item"><a href="/blog.html">Блог</a></li>
+                <li class="nav-menu__item"><a href="/contacts.html">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-contacts">
+            <svg class="phone-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.55081 0.799805H4.00005C2.23274 0.799805 0.800049 2.23249 0.800049 3.9998V7.1998C0.800049 16.0364 7.96349 23.1998 16.8 23.1998H20C21.7674 23.1998 23.2 21.7671 23.2 19.9998V17.7887C23.2 17.1826 22.8576 16.6286 22.3156 16.3576L18.4501 14.4248C17.5792 13.9894 16.5246 14.4262 16.2167 15.35L15.7402 16.7792C15.4316 17.705 14.4819 18.2562 13.525 18.0648C9.69491 17.2988 6.70108 14.3049 5.93506 10.4749C5.74367 9.51792 6.29481 8.56822 7.22062 8.25961L8.99443 7.66834C9.78759 7.40396 10.2435 6.57349 10.0407 5.76239L9.10303 2.01175C8.92497 1.29948 8.28499 0.799805 7.55081 0.799805Z" stroke="black"></path>
+            </svg><a class="phone" href="tel:+79262625289">+7 (926) 262-52-89</a>
+          </div>
+          <div class="header-callback"><span class="callback" data-fancybox data-src="#consult">Заказать звонок</span></div>
+          <div class="header-toolbar">
+            <div class="header-toolbar__social">
+              <ul class="social-list">
+                <li class="social-item"><a href="#">
+                    <svg class="inst-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17.6 5.5998H19.2M7.20005 0.799805H16.8C20.3347 0.799805 23.2 3.66518 23.2 7.1998V16.7998C23.2 20.3344 20.3347 23.1998 16.8 23.1998H7.20005C3.66543 23.1998 0.800049 20.3344 0.800049 16.7998V7.1998C0.800049 3.66518 3.66543 0.799805 7.20005 0.799805ZM12 16.7998C9.34908 16.7998 7.20005 14.6508 7.20005 11.9998C7.20005 9.34884 9.34908 7.1998 12 7.1998C14.651 7.1998 16.8 9.34884 16.8 11.9998C16.8 14.6508 14.651 16.7998 12 16.7998Z" stroke="black"></path>
+                    </svg></a></li>
+              </ul>
+            </div>
+            <div class="header-toolbar__search"><span data-fancybox data-src="#searchPopup">
+                <svg class="search-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M23.2 23.1998L16.8 16.7998M10.4 19.9998C5.09812 19.9998 0.800049 15.7017 0.800049 10.3998C0.800049 5.09787 5.09812 0.799805 10.4 0.799805C15.702 0.799805 20 5.09787 20 10.3998C20 15.7017 15.702 19.9998 10.4 19.9998Z" stroke="black"></path>
+                </svg></span></div>
+          </div>
+          <div class="header-mobile__bottom">
+            <div class="header-contacts">
+              <svg class="phone-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.55081 0.799805H4.00005C2.23274 0.799805 0.800049 2.23249 0.800049 3.9998V7.1998C0.800049 16.0364 7.96349 23.1998 16.8 23.1998H20C21.7674 23.1998 23.2 21.7671 23.2 19.9998V17.7887C23.2 17.1826 22.8576 16.6286 22.3156 16.3576L18.4501 14.4248C17.5792 13.9894 16.5246 14.4262 16.2167 15.35L15.7402 16.7792C15.4316 17.705 14.4819 18.2562 13.525 18.0648C9.69491 17.2988 6.70108 14.3049 5.93506 10.4749C5.74367 9.51792 6.29481 8.56822 7.22062 8.25961L8.99443 7.66834C9.78759 7.40396 10.2435 6.57349 10.0407 5.76239L9.10303 2.01175C8.92497 1.29948 8.28499 0.799805 7.55081 0.799805Z" stroke="black"></path>
+              </svg><a class="phone" href="tel:+79262625289">+7 (926) 262-52-89</a>
+            </div>
+            <div class="header-callback"><span class="callback" data-fancybox data-src="#consult">Заказать звонок</span></div>
+            <div class="header-toolbar">
+              <div class="header-toolbar__social">
+                <ul class="social-list">
+                  <li class="social-item"><a href="#">
+                      <svg class="inst-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.6 5.5998H19.2M7.20005 0.799805H16.8C20.3347 0.799805 23.2 3.66518 23.2 7.1998V16.7998C23.2 20.3344 20.3347 23.1998 16.8 23.1998H7.20005C3.66543 23.1998 0.800049 20.3344 0.800049 16.7998V7.1998C0.800049 3.66518 3.66543 0.799805 7.20005 0.799805ZM12 16.7998C9.34908 16.7998 7.20005 14.6508 7.20005 11.9998C7.20005 9.34884 9.34908 7.1998 12 7.1998C14.651 7.1998 16.8 9.34884 16.8 11.9998C16.8 14.6508 14.651 16.7998 12 16.7998Z" stroke="black"></path>
+                      </svg></a></li>
+                </ul>
+              </div>
+              <div class="header-toolbar__search"><span data-fancybox data-src="#searchPopup">
+                  <svg class="search-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.2 23.1998L16.8 16.7998M10.4 19.9998C5.09812 19.9998 0.800049 15.7017 0.800049 10.3998C0.800049 5.09787 5.09812 0.799805 10.4 0.799805C15.702 0.799805 20 5.09787 20 10.3998C20 15.7017 15.702 19.9998 10.4 19.9998Z" stroke="black"></path>
+                  </svg></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="header-burger">
+          <button class="burger" type="button" id="burger"><span class="burger__icon"></span><span class="burger__text"></span><span class="burger__hidden-text"></span></button>
+        </div>
+      </header>
+      <div class="content">
+        <div class="container container--page">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs-item"><a class="breadcrumbs-item__link" href="/">Главная /</a></li>
+            <li class="breadcrumbs__item breadcrumbs__item--active">О нас</li>
+          </ul>
+          <h1 class="page-title page-title__post">О нас</h1>
+        </div>
+        <section class="page-content page-about">
+          <div class="container">
+            <div class="about-top">
+              <div class="about-top__content">
+                <h2 class="title-line">Lorem ipsum dolor</h2>
+                <p data-enllax-ratio=".2" data-enllax-type="foreground">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p data-enllax-ratio=".2" data-enllax-type="foreground">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+              <div class="about-top__image"><img src="/static/images/general/about-top.png" alt="Дом под замком"></div>
+            </div>
+            <div class="about-center">
+              <div class="about-center__preview" data-enllax-ratio=".1" data-enllax-type="foreground">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              </div>
+              <div class="about-center__wrapper">
+                <div class="about-center__wrapper-left" data-enllax-ratio=".1" data-enllax-type="foreground"><img src="/static/images/general/about-2.jpg" alt="Дом под замком"></div>
+                <div class="about-center__wrapper-right" data-enllax-ratio="-.1" data-enllax-type="foreground">
+                  <h2 class="title-line">Lorem ipsum dolor</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+              </div>
+            </div>
+            <div class="about-bottom">
+              <div class="about-bottom__wrapper">
+                <div class="about-bottom__wrapper-left" data-enllax-ratio=".2" data-enllax-type="foreground">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+                <div class="about-bottom__wrapper-right"><img src="/static/images/general/about-4.jpg" alt="Дом под замком" data-enllax-ratio="-.1" data-enllax-type="foreground"></div>
+              </div>
+              <div class="about-bottom__title">Цель</div>
+              <div class="about-bottom__wrapper">
+                <div class="about-bottom__wrapper-left"><img src="/static/images/general/about-3.jpg" alt="Дом под замком" data-enllax-ratio=".1" data-enllax-type="foreground"></div>
+                <div class="about-bottom__wrapper-right" data-enllax-ratio=".2" data-enllax-type="foreground">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="instagram">
+          <div class="container">
+            <div class="instagram-top">
+              <h2 class="title-line">Наши работы в Instagram</h2>
+              <div class="instagram-link"><a href="#">@dom_pod_zamkom</a></div>
+              <div class="instagram-slider__nav">
+                <div class="slider__nav">
+                  <div class="arrow-prev" id="inst-prev"><img src="/static/images/general/arrow-left-brown.svg" alt=""></div>
+                  <div class="arrow-next" id="inst-next"><img src="/static/images/general/arrow-right-brown.svg" alt=""></div>
+                </div>
+              </div>
+            </div>
+            <div class="instagram-slider__list">
+              <div class="instagram-slider__item">
+                <div class="instagram-slider__item-img"><img src="/static/images/general/inst-slide.jpg" alt="Название поста">
+                  <div class="instagram-slider__item-overlay">
+                    <div class="btn-wrapper"><a class="btn btn__light-brown" href="#">Посмотреть</a></div>
+                  </div>
+                </div>
+                <div class="instagram-slider__item-desc">
+                  <p>Абсолютно чёрные двери из Италии  с чёрными коробами ...</p>
+                </div>
+              </div>
+              <div class="instagram-slider__item">
+                <div class="instagram-slider__item-img"><img src="/static/images/general/inst-slide.jpg" alt="Название поста">
+                  <div class="instagram-slider__item-overlay">
+                    <div class="btn-wrapper"><a class="btn btn__light-brown" href="#">Посмотреть</a></div>
+                  </div>
+                </div>
+                <div class="instagram-slider__item-desc">
+                  <p>Абсолютно чёрные двери из Италии  с чёрными коробами ...</p>
+                </div>
+              </div>
+              <div class="instagram-slider__item">
+                <div class="instagram-slider__item-img"><img src="/static/images/general/inst-slide.jpg" alt="Название поста">
+                  <div class="instagram-slider__item-overlay">
+                    <div class="btn-wrapper"><a class="btn btn__light-brown" href="#">Посмотреть</a></div>
+                  </div>
+                </div>
+                <div class="instagram-slider__item-desc">
+                  <p>Абсолютно чёрные двери из Италии  с чёрными коробами ...</p>
+                </div>
+              </div>
+              <div class="instagram-slider__item">
+                <div class="instagram-slider__item-img"><img src="/static/images/general/inst-slide.jpg" alt="Название поста">
+                  <div class="instagram-slider__item-overlay">
+                    <div class="btn-wrapper"><a class="btn btn__light-brown" href="#">Посмотреть</a></div>
+                  </div>
+                </div>
+                <div class="instagram-slider__item-desc">
+                  <p>Абсолютно чёрные двери из Италии  с чёрными коробами ...</p>
+                </div>
+              </div>
+              <div class="instagram-slider__item">
+                <div class="instagram-slider__item-img"><img src="/static/images/general/inst-slide.jpg" alt="Название поста">
+                  <div class="instagram-slider__item-overlay">
+                    <div class="btn-wrapper"><a class="btn btn__light-brown" href="#">Посмотреть</a></div>
+                  </div>
+                </div>
+                <div class="instagram-slider__item-desc">
+                  <p>Абсолютно чёрные двери из Италии  с чёрными коробами ...</p>
+                </div>
+              </div>
+              <div class="instagram-slider__item">
+                <div class="instagram-slider__item-img"><img src="/static/images/general/inst-slide.jpg" alt="Название поста">
+                  <div class="instagram-slider__item-overlay">
+                    <div class="btn-wrapper"><a class="btn btn__light-brown" href="#">Посмотреть</a></div>
+                  </div>
+                </div>
+                <div class="instagram-slider__item-desc">
+                  <p>Абсолютно чёрные двери из Италии  с чёрными коробами ...</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider-progress_bar" id="progressBarInstagram" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </section>
+        <section class="action">
+          <div class="container">
+            <h3 class="action-title">Оставьте Ваши данные и мы свяжемся с Вами в течении 5 минут.</h3>
+            <form class="action-form" id="action-form">
+              <input class="action-form__input" type="text" name="name" placeholder="Ваше имя">
+              <input class="action-form__input mask__input_phone" type="tel" name="phone" placeholder="Телефон*" required>
+              <div class="btn-wrapper btn-form__action">
+                <button class="btn btn__light-brown" id="actionSubmit">Оставить заявку</button>
+              </div>
+              <div class="action-form_privacy">
+                <input class="action-form__checkbox" type="checkbox" id="privacy" name="privacy" value="yes" checked onchange="document.getElementById('actionSubmit').disabled = !this.checked;">
+                <label for="privacy">Соглашаюсь с политикой конфидециальности</label>
+              </div>
+            </form>
+          </div>
+          <div class="action-form__success"><img src="/static/images/general/success.svg" alt="">
+            <p class="action-form__success-title">Заявка отправлена</p>
+            <p class="action-form__success-subtitle">Ожидайте звонка от нашего менеджера в ближайшее время</p>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-wrapper">
+            <div class="footer-wrapper__col"><a href="#"><img class="footer-logo" src="/static/images/general/logo.svg" alt="Дом под замком"></a>
+              <div class="phone-footer"><a href="tel:+79991233223">+7 (999) 123-32-23</a></div>
+              <div class="mail-footer"><a href="mailto:dom_pod_zamkom@mail.ru">info@pod-zamkom.ru</a></div><a class="politic-footer" href="#">Политика конфиденциальности</a>
+            </div>
+            <div class="footer-wrapper__col">
+              <h3>Инфо</h3>
+              <ul class="footer-menu">
+                <li class="footer-menu__item"><a href="/about.html">О нас</a></li>
+                <li class="footer-menu__item"><a href="/reviews.html">Отзывы</a></li>
+                <li class="footer-menu__item"><a href="/blog.html">Блог</a></li>
+                <li class="footer-menu__item"><a href="/contacts.html">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="footer-wrapper__col">
+              <h3>Услуги</h3>
+              <ul class="footer-menu">
+                <li class="footer-menu__item"><a href="/service-detail.html">Замер</a></li>
+                <li class="footer-menu__item"><a href="/service-detail.html">Доставка</a></li>
+                <li class="footer-menu__item"><a href="/service-detail.html">Установка</a></li>
+              </ul>
+            </div>
+            <div class="footer-wrapper__col">
+              <h3>Каталог</h3>
+              <ul class="footer-menu">
+                <li class="footer-menu__item"><a href="/catalog-list.html">Входные двери</a></li>
+                <li class="footer-menu__item"><a href="/catalog-list.html">Тамбурные двери</a></li>
+                <li class="footer-menu__item"><a href="/catalog-list.html">Противопожарные двери</a></li>
+                <li class="footer-menu__item"><a href="/brands.html">Бренды</a></li>
+              </ul>
+            </div>
+            <div class="footer-wrapper__col">
+              <div class="search-wrapper">
+                <form class="search-footer" action="/search" method="get">
+                  <input class="search-input form-control" type="text" name="search" id="search" placeholder="Поиск">
+                  <input type="hidden" name="id" value="1">
+                  <input class="search-submit" type="submit" value="">
+                </form>
+              </div>
+              <div class="inst-footer">
+                <p>Наш Instagram:</p><a class="inst-footer__link" href="#">@dom_pod_zamkom</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="developed">
+          <p>Разработано <a href="https://meduza-web.ru/" target="_blank">Meduza</a></p>
+        </div>
+      </footer>
+      <div class="back-top">
+        <p class="top-btn">Наверх</p>
+      </div>
+      <div class="popup" id="consult">
+        <div class="container">
+          <div class="close-popup" data-fancybox-close><img src="/static/images/general/close.svg" alt=""></div>
+          <div class="popup-wrapper">
+            <div class="popup-wrapper__consult">
+              <p class="consult-popup__title">Бесплатная консультация<br>и помощь с выбором</p>
+              <p class="consult-popup__subtitle">Оставьте свои данные для дальнейшего оформления заказа.<br>Наш менеджер свяжеться с вами в течении 5 минут, для уточнения информации.</p>
+              <form class="consult-form" id="consult-form">
+                <input class="consult-form__input" type="text" name="name" placeholder="Ваше имя">
+                <input class="consult-form__input mask__input_phone" type="tel" name="phone" placeholder="Телефон*" required>
+                <div class="btn-wrapper btn-form__consult">
+                  <button class="btn btn__light-brown" id="ConsultSubmit">Оставить заявку</button>
+                </div>
+                <div class="consult-form_privacy">
+                  <input class="consult-form__checkbox" type="checkbox" id="privacy_consult" name="privacy_consult" value="yes" checked onchange="document.getElementById('ConsultSubmit').disabled = !this.checked;">
+                  <label for="privacy_consult">Соглашаюсь с политикой конфидециальности</label>
+                </div>
+              </form>
+            </div>
+            <div class="consult-popup__img"><img src="/static/images/general/consult.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="success">
+        <div class="container">
+          <div class="close-popup" data-fancybox-close><img src="/static/images/general/close.svg" alt=""></div>
+          <div class="popup-wrapper">
+            <div class="popup-wrapper__success"><img src="/static/images/general/success.svg" alt="">
+              <p class="success-popup__title">Заявка отправлена</p>
+              <p class="success-popup__subtitle">Ожидайте звонка от нашего менеджера в ближайшее время</p>
+              <p class="success-popup__timer">Окно закроется автоматически через 5 секунд</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="searchPopup">
+        <div class="container">
+          <div class="close-popup" data-fancybox-close><img src="/static/images/general/close.svg" alt=""></div>
+          <div class="popup-wrapper">
+            <div class="popup-wrapper__search">
+              <form class="search-popup" action="/search" method="get">
+                <input class="search-popup__input form-control" type="text" name="search" id="search" placeholder="Поиск">
+                <input type="hidden" name="id" value="1">
+                <div class="btn-wrapper">
+                  <input class="btn btn__brown search-popup__submit" type="submit" value="Найти">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="reviewPopup">
+        <div class="container">
+          <div class="close-popup" data-fancybox-close><img src="/static/images/general/close.svg" alt=""></div>
+          <div class="popup-wrapper">
+            <div class="popup-wrapper__review">
+              <p class="review-popup__title">Отзыв о работе компании</p>
+              <p class="review-popup__subtitle">Мы всегда рады обратной связи от наших клиентов</p>
+              <form class="review-form" id="review-form">
+                <input class="review-form__input" type="text" name="name" placeholder="Ваше имя*" required>
+                <input class="review-form__input mask__input_phone" type="email" name="phone" placeholder="E-mail">
+                <textarea class="review-form__textarea" name="message" placeholder="Отзыв*" required></textarea>
+                <div class="review-form__bottom">
+                  <div class="btn-wrapper btn-form__review">
+                    <button class="btn btn__light-brown" id="reviewSubmit">Оставить отзыв</button>
+                  </div>
+                  <div class="review-form_privacy">
+                    <input class="review-form__checkbox" type="checkbox" id="privacy_review" name="privacy_review" value="yes" checked onchange="document.getElementById('reviewsSubmit').disabled = !this.checked;">
+                    <label for="privacy_review">Соглашаюсь с политикой конфидециальности</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="review-popup__img"><img src="/static/images/general/consult.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="reviewSuccess">
+        <div class="container">
+          <div class="close-popup" data-fancybox-close><img src="/static/images/general/close.svg" alt=""></div>
+          <div class="popup-wrapper">
+            <div class="popup-wrapper__success"><img src="/static/images/general/success.svg" alt="">
+              <p class="success-popup__title">Спасибо за отзыв!</p>
+              <p class="success-popup__subtitle">После модерации Ваш отзыв будет опубликован на сайте</p>
+              <p class="success-popup__timer">Окно закроется автоматически через 5 секунд</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="order">
+        <div class="container">
+          <div class="close-popup" data-fancybox-close><img src="/static/images/general/close.svg" alt=""></div>
+          <div class="popup-wrapper">
+            <div class="popup-wrapper__order">
+              <div class="popup-wrapper__order-left">
+                <p class="order-popup__title">Оформление заказа</p>
+                <p class="order-popup__subtitle">Оставьте свои данные для дальнейшего оформления заказа.<br>Мы свяжемся с Вами в ближайшее время.</p>
+                <form class="order-form" id="order-form">
+                  <input class="order-form__input" type="text" name="name" placeholder="Ваше имя">
+                  <input class="order-form__input mask__input_phone" type="tel" name="phone" placeholder="Телефон*" required>
+                  <textarea class="order-form__textarea" name="message" placeholder="Примечание к заказу"></textarea>
+                  <input type="hidden" name="productName" value="">
+                  <div class="order-form__bottom">
+                    <div class="btn-wrapper btn-form__order">
+                      <button class="btn btn__light-brown" id="orderSubmit">Оформить заказ</button>
+                    </div>
+                    <div class="order-form_privacy">
+                      <input class="order-form__checkbox" type="checkbox" id="privacy_order" name="privacy_order" value="yes" checked onchange="document.getElementById('orderSubmit').disabled = !this.checked;">
+                      <label for="privacy_order">Соглашаюсь с политикой конфидециальности</label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="popup-wrapper__order-right">
+                <div class="circle-bg">
+                  <div class="circle-big"><img src="/static/images/general/circle-big-brown.png" alt=""></div>
+                  <div class="circle-small"><img src="/static/images/general/circle-small-brown.png" alt=""></div>
+                </div>
+                <div class="order-img"><img src="/static/images/general/slider-img.png" alt="Монтаж входной двери"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="buy1click">
+        <div class="container">
+          <div class="close-popup" data-fancybox-close><img src="/static/images/general/close.svg" alt=""></div>
+          <div class="popup-wrapper">
+            <div class="popup-wrapper__order">
+              <div class="popup-wrapper__order-left">
+                <p class="order-popup__title">Оформление заказа</p>
+                <p class="order-popup__subtitle">Оставьте свои данные для дальнейшего оформления заказа.<br>Мы свяжемся с Вами в ближайшее время.</p>
+                <form class="order-form" id="order-form">
+                  <input class="order-form__input" type="text" name="name" placeholder="Ваше имя">
+                  <input class="order-form__input mask__input_phone" type="tel" name="phone" placeholder="Телефон*" required>
+                  <textarea class="order-form__textarea" name="message" placeholder="Примечание к заказу"></textarea>
+                  <input class="fsdsfdsdfdsfsdf" id="orderProductName" type="hidden" name="productName">
+                  <div class="order-form__bottom">
+                    <div class="btn-wrapper btn-form__order">
+                      <button class="btn btn__light-brown" id="orderSubmit">Оформить заказ</button>
+                    </div>
+                    <div class="order-form_privacy">
+                      <input class="order-form__checkbox" type="checkbox" id="privacy_order" name="privacy_order" value="yes" checked onchange="document.getElementById('orderSubmit').disabled = !this.checked;">
+                      <label for="privacy_order">Соглашаюсь с политикой конфидециальности</label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="popup-wrapper__order-right">
+                <div class="circle-bg">
+                  <div class="circle-big"><img src="/static/images/general/circle-big-brown.png" alt=""></div>
+                  <div class="circle-small"><img src="/static/images/general/circle-small-brown.png" alt=""></div>
+                </div>
+                <div class="order-img order-img__buy1click"><img id="orderProductImage" src="/static/images/general/slider-img.png" alt="Монтаж входной двери"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="orderSuccess">
+        <div class="container">
+          <div class="close-popup" data-fancybox-close><img src="/static/images/general/close.svg" alt=""></div>
+          <div class="popup-wrapper">
+            <div class="popup-wrapper__success"><img src="/static/images/general/success.svg" alt="">
+              <p class="success-popup__title">Спасибо за заказ!</p>
+              <p class="success-popup__subtitle">В ближайшее время мы с Вами свяжемся.</p>
+              <p class="success-popup__timer">Окно закроется автоматически через 5 секунд</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="static/js/jquery.enllax.min.js"></script>
+    <script src="static/js/inputmask.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
